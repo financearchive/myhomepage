@@ -301,17 +301,22 @@ ul.task-list {
 }
 
 .filetree-sidebar {
-    margin: 0;
-    z-index: 10;
-    padding: 10px;
-    top: 0px;
-    left: 0;
-    position: fixed;
+    osition: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
     height: 100%;
+    padding: 10px;
     background-color: var(--background-secondary);
     color: var(--text-muted);
     overflow-y: auto;
-    width: 250px;
+    transition: left 0.3s ease-in-out;
+    z-index: 10;
+
+    &.open {
+        left: 0;
+    }
+	
     h1 {
         font-size: 32px !important;
     }
