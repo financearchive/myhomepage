@@ -17,9 +17,9 @@
 
 Holtec International은 미국 뉴저지주 캠든에 본사를 둔 민간 원자력 기술 및 에너지 솔루션 전문기업입니다. 이 회사는 전통적인 [[원자력\|원자력]] 발전소장 설계, 사용후핵연료 저장/운송, 원자로 해체 서비스, 최신 [[소형모듈원자로\|소형모듈원자로]]([[1.Study/★ 산업/에너지 산업/2.친환경 에너지/1.원자력발전/SMR\|SMR]]) 개발 등 미래 에너지 산업 트렌드를 선도하는 혁신 기술 기업으로 꼽힙니다. 비상장 회사라서 재무/지분 정보는 제한적이지만, 전 세계적으로 활발히 사업을 확장하고 있습니다.
 
-![](/img/user/attachments/Pasted image 20250321145427.png)
+![-](/img/user/attachments/Pasted%20image%2020250321145427.png)
 
-비상장 private company로서 일반인들에게는 익숙하지 않지만 5개 대륙에 19개 자회사를 보유하고 있으며 설립 이후 원자력 에너지 분야, 특히 [[사용후 핵연료 저장\|사용후 핵연료 저장]] (Spent Fuel Storage) 분야에 강점을 보여온 회사다. ![](/img/user/attachments/Pasted image 20250321145504.png)
+비상장 private company로서 일반인들에게는 익숙하지 않지만 5개 대륙에 19개 자회사를 보유하고 있으며 설립 이후 원자력 에너지 분야, 특히 [[사용후 핵연료 저장\|사용후 핵연료 저장]] (Spent Fuel Storage) 분야에 강점을 보여온 회사다. ![-](/img/user/attachments/Pasted%20image%2020250321145504.png)
 
 [[HI-STORM\|HI-STORM]] 및 [[HI-STAR\|HI-STAR]]와 같은 첨단 사용후핵연료 저장 시스템을 통해 원자력 밸류체인의 후방에서 글로벌 1위의 자리를 차지하고있다. 
 
@@ -40,7 +40,7 @@ SMR 시장이 성장함에 따라 발생할 여러 프로젝트에 연계되어 
 ## 기술 개요 및 특징
 
 원자로에 대한 기술력이 부족하다는 이미지와는 달리 Holtec이 최초로 SMR 개발을 시작한 것은 2010년부터다. 1년 뒤인 2011년 Holtec은 [[소형모듈원자로\|소형모듈원자로]]에 대한 실증 연구를 성공적으로 완료하며 자회사인 SMR LLC를 설립해 SMR 개발 프로그램을 이전하였다.
-![](/img/user/attachments/Pasted image 20250321160905.png)
+![-](/img/user/attachments/Pasted%20image%2020250321160905.png)
 이후 SMR 개발을 이어오던 Holtec은 2018년 자사가 개발중인 160MWe급 3.5세대 [[가압 경수로\|가압 경수로]]형 소형모듈원전의 모델명을 SMR-160으로 명명하였으며, 동일한 3.5세대 기반의 소형모듈원전을 개발하고 있는 GE-Hitachi와 SMR-160 상용화를 위한 협약을 맺고 본격적인 개발에 착수하였다.
 
 최근에는 160MWe였던 발전 용량을 300MWe로 확장시킨 SMR-300 모델을 공개하였으며 자사가 보유중인 Palisades 원전 부지 내 2기의 SMR-300을 건설하는 프로젝트를 진행하고 있다. SMR-300 모델의 가장 큰 장점은 피동 안전 계통을 통해 원전
@@ -56,9 +56,9 @@ SMR 시장이 성장함에 따라 발생할 여러 프로젝트에 연계되어 
 
 ## 주요 프로젝트 및 인허가 현황
 
-Holtec은 자사의 SMR-300 실증 및 Palisades 원자력 발전소 재가동을 위한 Palisades restart 프로젝트를 진행하고 있다.![](/img/user/attachments/Pasted image 20250321161032.png)
+Holtec은 자사의 SMR-300 실증 및 Palisades 원자력 발전소 재가동을 위한 Palisades restart 프로젝트를 진행하고 있다.![-](/img/user/attachments/Pasted%20image%2020250321161032.png)
 Palisades 원자력 발전소는 1971년부터 800MWe급 원자로를 운영하며 미시간주 전체 전력 수요의 5%를 생산해왔다. 하지만 설비 노후화로 인해 2022년 5월 원전 폐쇄가 결정되었다. 
-![](/img/user/attachments/Pasted image 20250321161112.png)
+![-](/img/user/attachments/Pasted%20image%2020250321161112.png)
 
 당시 Holtec은 원전 폐쇄를 결정한 Entergy로부터 Palisades 발전소를 인수하였다.
 

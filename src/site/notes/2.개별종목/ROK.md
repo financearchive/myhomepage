@@ -16,7 +16,7 @@ Rockwell Automation Inc.(NYSE: ROK)는 미국 위스콘신주 밀워키에 본�
 
 록웰 오토메이션은 다양한 산업 자동화 솔루션과 정보 서비스를 제공 하는 기업이다. PLC에 강점이 있다. 
 
-사업부는 크게 Intelligent Devices(지능형 장치), Software & Control(소프트웨어 및 컨트롤), Lifecycle Services(서비스)로 구성돼 있다.![](/img/user/attachments/Pasted image 20250331172254.png)
+사업부는 크게 Intelligent Devices(지능형 장치), Software & Control(소프트웨어 및 컨트롤), Lifecycle Services(서비스)로 구성돼 있다.![-](/img/user/attachments/Pasted%20image%2020250331172254.png)
 
 [[지능형 장치 사업부\|지능형 장치 사업부]]는 록웰의 하드웨어 사업부다. 드라이브, 모션, 안전 센싱, 산업용 부품 및 주문형 제품 판매 등을 영위한다. 
 
