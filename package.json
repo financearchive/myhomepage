@@ -4,14 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "prebuild": "rimraf dist",
+        "prebuild": "echo Skipping dist cleanup",
         "start": "npm-run-all get-theme build:sass --parallel watch:*",
         "watch:sass": "sass --watch src/site/styles:dist/styles",
-        "watch:eleventy": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-        "build:eleventy": "cross-env ELEVENTY_ENV=prod NODE_OPTIONS=--max-old-space-size=4096 eleventy",
-        "build:sass": "sass src/site/styles:dist/styles --style compressed",
+        "watch:eleventy": "cross-env ELEVENTY_ENV=dev eleventy --serve --incremental",
+        "build:eleventy": "cross-env ELEVENTY_ENV=prod NODE_OPTIONS=--max-old-space-size=4096 eleventy --incremental",
+        "build:sass": "sass src/site/styles:dist/styles --style compressed --no-source-map",
         "get-theme": "node src/site/get-theme.js",
-        "build": "NODE_OPTIONS=--max_old_space_size=2048 npm run build"
+        "build": "NODE_OPTIONS=--max_old_space_size=2048 npm-run-all get-theme build:*"
     },
     "keywords": [],
     "author": "",
@@ -22,7 +22,8 @@
         "cross-env": "^7.0.3",
         "html-minifier-terser": "^7.2.0",
         "node-html-parser": "^6.1.13",
-        "sass": "^1.49.9"
+        "sass": "^1.49.9",
+        "netlify-plugin-cache": "^1.0.3"
     },
     "dependencies": {
         "@11ty/eleventy-img": "^4.0.2",
