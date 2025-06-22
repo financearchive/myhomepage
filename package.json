@@ -11,7 +11,7 @@
     "build:eleventy": "cross-env ELEVENTY_ENV=prod NODE_OPTIONS=--max-old-space-size=8192 eleventy --incremental",
     "build:sass": "sass src/site/styles:dist/styles --style compressed",
     "get-theme": "node src/site/get-theme.js",
-    "build": "NODE_OPTIONS=--max-old-space-size=8192 npm-run-all get-theme build:sass build:eleventy"
+    "build": "NODE_OPTIONS=--max-old-space_size=8192 npm-run-all get-theme build:sass build:eleventy"
   },
   "engines": {
     "node": "22.x"
@@ -24,6 +24,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "cross-env": "^7.0.3",
     "html-minifier-terser": "^7.2.0",
+    "netlify-plugin-cache": "^1.0.3",
     "node-html-parser": "^6.1.13",
     "sass": "^1.49.9"
   },
