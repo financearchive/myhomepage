@@ -23,7 +23,6 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     urlPath: "/img/optimized",
   };
 
-  // generate images, while this is async we don’t wait
   Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
@@ -135,7 +134,6 @@ module.exports = function (eleventyConfig) {
     })
     .use(namedHeadingsFilter)
     .use(function (md) {
-      //https://github.com/DCsunset/markdown-it-mermaid-plugin
       const origFenceRule =
         md.renderer.rules.fence ||
         function (tokens, idx, options, env, self) {
@@ -203,7 +201,6 @@ module.exports = function (eleventyConfig) {
           return res
         }
 
-        // Other languages
         return origFenceRule(tokens, idx, options, env, slf);
       };
 
@@ -214,7 +211,6 @@ module.exports = function (eleventyConfig) {
         };
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const imageName = tokens[idx].content;
-        //"image.png|metadata?|width"
         const [fileName, ...widthAndMetaData] = imageName.split("|");
         const lastValue = widthAndMetaData[widthAndMetaData.length - 1];
         const lastValueIsNumber = !isNaN(lastValue);
@@ -270,6 +266,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // 컬렉션 크기 제한 추가
+  eleventyConfig.addCollection("dailyNotes", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/notes/0.DAILY Invest/**/*.md").slice(0, 200); // 최대 200개 파일만 처리
+  });
+
+  eleventyConfig.addCollection("stocks", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/notes/2.개별종목/*.md").slice(0, 200); // 최대 200개 파일만 처리
+  });
+
   eleventyConfig.addFilter("isoDate", function (date) {
     return date && date.toISOString();
   });
@@ -278,7 +283,6 @@ module.exports = function (eleventyConfig) {
     return (
       str &&
       str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
-        //Check if it is an embedded excalidraw drawing or mathjax javascript
         if (p1.indexOf("],[") > -1 || p1.indexOf('"$"') > -1) {
           return match;
         }
@@ -381,14 +385,6 @@ module.exports = function (eleventyConfig) {
           }
         );
 
-        /* Hacky fix for callouts with only a title:
-        This will ensure callout-content isn't produced if
-        the callout only has a title, like this:
-        ```md
-        > [!info] i only have a title
-        ```
-        Not sure why content has a random <p> tag in it,
-        */
         if (content === "\n<p>\n") {
           content = "";
         }
@@ -443,7 +439,6 @@ module.exports = function (eleventyConfig) {
     imageTag.innerHTML = html;
   }
 
-
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
       return str;
@@ -468,7 +463,6 @@ module.exports = function (eleventyConfig) {
             fillPictureSourceSets(src, cls, alt, meta, width, imageTag);
           }
         } catch {
-          // Make it fault tolarent.
         }
       }
     }
@@ -529,7 +523,6 @@ module.exports = function (eleventyConfig) {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
   });
-
 
   eleventyConfig.addFilter("dateToZulu", function (date) {
     try {
