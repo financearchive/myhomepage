@@ -443,7 +443,6 @@ module.exports = function (eleventyConfig) {
     imageTag.innerHTML = html;
   }
 
-
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
       return str;
@@ -530,7 +529,6 @@ module.exports = function (eleventyConfig) {
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
   });
 
-
   eleventyConfig.addFilter("dateToZulu", function (date) {
     try {
       return new Date(date).toISOString("dd-MM-yyyyTHH:mm:ssZ");
@@ -560,6 +558,15 @@ module.exports = function (eleventyConfig) {
   });
 
   userEleventySetup(eleventyConfig);
+
+  // 컬렉션 제한 추가
+  eleventyConfig.addCollection("dailyNotes", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/notes/0.DAILY Invest/**/*.md").slice(0, 200);
+  });
+
+  eleventyConfig.addCollection("stocks", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/site/notes/2.개별종목/*.md").slice(0, 200);
+  });
 
   return {
     dir: {
