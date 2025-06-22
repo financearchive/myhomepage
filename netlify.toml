@@ -1,6 +1,7 @@
 [build]
+  command = "npm run build"
   publish = "dist"
-  command = "npm install && npm run build"
+  environment = { NODE_VERSION = "22.16.0" }
 
 [[redirects]]
   from = "/api/*"
@@ -12,3 +13,11 @@
   to = "/404"
   status = 404
 
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = [
+      ".cache",
+      "node_modules",
+      "dist/styles"
+    ]
