@@ -2,17 +2,6 @@
   publish = "dist"
   command = "npm install && npm run build"
 
-[build.cache]
-  paths = [
-    "dist/styles",
-    "node_modules"
-  ]
-
-[[plugins]]
-  package = "netlify-plugin-cache"
-  [plugins.inputs]
-    paths = ["dist"]
-
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
@@ -22,3 +11,4 @@
   from = "/*"
   to = "/404"
   status = 404
+
