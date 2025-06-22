@@ -11,8 +11,7 @@
         "build:eleventy": "cross-env ELEVENTY_ENV=prod NODE_OPTIONS=--max-old-space-size=4096 eleventy",
         "build:sass": "sass src/site/styles:dist/styles --style compressed",
         "get-theme": "node src/site/get-theme.js",
-        "build": "NODE_OPTIONS=--max_old_space_size=2048 npm run build get-theme build:*"
-
+        "build": "NODE_OPTIONS=--max_old_space_size=2048 npm run build"
     },
     "keywords": [],
     "author": "",
