@@ -1,6 +1,7 @@
 [build]
   publish = "dist"
   command = "npm install && npm run build"
+  functions = "src/functions"  # ✅ 여기만 변경됨!
 
 [[redirects]]
   from = "/api/*"
