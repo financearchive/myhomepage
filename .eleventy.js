@@ -574,3 +574,4 @@ module.exports = function (eleventyConfig) {
     passthroughFileCopy: true,
     cacheDir: ".eleventy-cache"
   };
+};
