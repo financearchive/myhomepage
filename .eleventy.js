@@ -7,7 +7,6 @@ const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pMap = require("p-map");
 
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
@@ -23,6 +22,8 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     outputDir: "./dist/img/optimized",
     urlPath: "/img/optimized",
   };
+
+  // generate images, while this is async we don’t wait
   Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
@@ -134,6 +135,7 @@ module.exports = function (eleventyConfig) {
     })
     .use(namedHeadingsFilter)
     .use(function (md) {
+      //https://github.com/DCsunset/markdown-it-mermaid-plugin
       const origFenceRule =
         md.renderer.rules.fence ||
         function (tokens, idx, options, env, self) {
@@ -201,6 +203,7 @@ module.exports = function (eleventyConfig) {
           return res
         }
 
+        // Other languages
         return origFenceRule(tokens, idx, options, env, slf);
       };
 
@@ -211,6 +214,7 @@ module.exports = function (eleventyConfig) {
         };
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const imageName = tokens[idx].content;
+        //"image.png|metadata?|width"
         const [fileName, ...widthAndMetaData] = imageName.split("|");
         const lastValue = widthAndMetaData[widthAndMetaData.length - 1];
         const lastValueIsNumber = !isNaN(lastValue);
@@ -274,10 +278,12 @@ module.exports = function (eleventyConfig) {
     return (
       str &&
       str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
+        //Check if it is an embedded excalidraw drawing or mathjax javascript
         if (p1.indexOf("],[") > -1 || p1.indexOf('"$"') > -1) {
           return match;
         }
         const [fileLink, linkTitle] = p1.split("|");
+
         return getAnchorLink(fileLink, linkTitle);
       })
     );
@@ -318,21 +324,18 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addTransform("dataview-js-links", async function (str) {
+  eleventyConfig.addTransform("dataview-js-links", function (str) {
     const parsed = parse(str);
-    await pMap(
-      parsed.querySelectorAll("a[data-href].internal-link"),
-      async (dataViewJsLink) => {
-        const notePath = dataViewJsLink.getAttribute("data-href");
-        const title = dataViewJsLink.innerHTML;
-        const {attributes, innerHTML} = getAnchorAttributes(notePath, title);
-        for (const key in attributes) {
-          dataViewJsLink.setAttribute(key, attributes[key]);
-        }
-        dataViewJsLink.innerHTML = innerHTML;
-      },
-      { concurrency: 4 }
-    );
+    for (const dataViewJsLink of parsed.querySelectorAll("a[data-href].internal-link")) {
+      const notePath = dataViewJsLink.getAttribute("data-href");
+      const title = dataViewJsLink.innerHTML;
+      const {attributes, innerHTML} = getAnchorAttributes(notePath, title);
+      for (const key in attributes) {
+        dataViewJsLink.setAttribute(key, attributes[key]);
+      }
+      dataViewJsLink.innerHTML = innerHTML;
+    }
+
     return str && parsed.innerHTML;
   });
 
@@ -378,6 +381,14 @@ module.exports = function (eleventyConfig) {
           }
         );
 
+        /* Hacky fix for callouts with only a title:
+        This will ensure callout-content isn't produced if
+        the callout only has a title, like this:
+        ```md
+        > [!info] i only have a title
+        ```
+        Not sure why content has a random <p> tag in it,
+        */
         if (content === "\n<p>\n") {
           content = "";
         }
@@ -432,6 +443,7 @@ module.exports = function (eleventyConfig) {
     imageTag.innerHTML = html;
   }
 
+
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
       return str;
@@ -469,7 +481,7 @@ module.exports = function (eleventyConfig) {
       let inner = t.innerHTML;
       t.tagName = "div";
       t.classList.add("table-wrapper");
-      t.innerHTML = `<table>${inner}</div>`;
+      t.innerHTML = `<table>${inner}</table>`;
     }
 
     for (const t of parsed.querySelectorAll(
@@ -497,7 +509,7 @@ module.exports = function (eleventyConfig) {
     ) {
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
-        removeComments: false,
+        removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true,
         preserveLineBreaks: true,
@@ -511,12 +523,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/site/img");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
-  eleventyConfig.addPassthroughCopy("src/site/styles/**/*.css");
+  eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
   eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
   });
+
 
   eleventyConfig.addFilter("dateToZulu", function (date) {
     try {
@@ -547,52 +560,6 @@ module.exports = function (eleventyConfig) {
   });
 
   userEleventySetup(eleventyConfig);
-
-  // Search Index with Caching
-  eleventyConfig.addCollection("searchIndex", function (collectionApi) {
-    const cacheFile = "myhomepage/.cache/searchIndex.json";
-    let cache = {};
-    if (fs.existsSync(cacheFile)) {
-      try {
-        cache = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
-      } catch (e) {
-        console.error("Error reading searchIndex:", e);
-      }
-    }
-    const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
-    notes.forEach((note) => {
-      if (!cache[note.inputPath] || fs.statSync(note.inputPath).mtime > cache[note.inputPath].mtime) {
-        cache[note.inputPath] = {
-          title: note.data.title || note.fileSlug,
-          date: note.date,
-          url: note.url,
-          content: note.templateContent || "",
-          tags: note.data.tags || [],
-          mtime: fs.statSync(note.inputPath).mtime,
-        };
-      }
-    });
-    try {
-      fs.mkdirSync("myhomepage/.cache", { recursive: true });
-      fs.writeFileSync(cacheFile, JSON.stringify(cache));
-    } catch (e) {
-      console.error("Error writing searchIndex cache:", e);
-    }
-    return Object.values(cache);
-  });
-
-  // 컬렉션 제한 제거
-  eleventyConfig.addCollection("dailyNotes", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/site/notes/0.DAILY Invest/**/*.md");
-  });
-
-  eleventyConfig.addCollection("stocks", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/site/notes/2.개별종목/**/*.md");
-  });
-
-  eleventyConfig.addCollection("note", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
-  });
 
   return {
     dir: {
