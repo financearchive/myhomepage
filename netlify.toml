@@ -1,7 +1,7 @@
 [build]
   publish = "dist"
   command = "npm install && npm run build"
-  functions = "src/functions"  # ✅ 여기만 변경됨!
+  functions = "src/functions"
 
 [[redirects]]
   from = "/api/*"
@@ -12,3 +12,8 @@
   from = "/*"
   to = "/404"
   status = 404
+
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+  paths = [".cache", "node_modules", "dist/styles"]
