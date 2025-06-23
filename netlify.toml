@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  environment = { NODE_VERSION = "22.16.0" }
+  environment = { NODE_VERSION = "22.6.0", NODE_ENV = "production", NETLIFY_USE_YARN = "false" }
 
 [[redirects]]
   from = "/api/*"
@@ -17,7 +17,6 @@
   package = "netlify-plugin-cache"
   [plugins.inputs]
     paths = [
-      ".cache",
-      "node_modules",
+      "myhomepage/.cache",
       "dist/styles"
     ]
