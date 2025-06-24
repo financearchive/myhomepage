@@ -1,0 +1,27 @@
+---
+permalink: rss.xml
+eleventyExcludeFromCollections: true
+---
+
+{% set posts = collections.post | reverse | slice(0, 20) %}
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>머니다이어리</title>
+    <link>https://www.moneydiary.co.kr</link>
+    <description>돈의 흐름을 기록하고 분석하는 머니다이어리</description>
+    <language>ko</language>
+
+    {% for post in posts %}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>https://www.moneydiary.co.kr{{ post.url }}?utm_source=rss&utm_medium=feed</link>
+      <guid>https://www.moneydiary.co.kr{{ post.url }}</guid>
+      <pubDate>{{ post.date | rssDate }}</pubDate>
+      <description><![CDATA[
+        {{ post.templateContent | safe }}
+      ]]></description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
