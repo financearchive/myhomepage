@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/BTM/","created":"2024-11-20T21:02:27.673+09:00","updated":"2025-06-03T20:07:21.467+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/BTM/","created":"2024-11-20T21:02:27.673+09:00","updated":"2025-06-26T16:52:58.326+09:00"}
 ---
 
+#BTM
 
 - 기본정보
 	- BTM(Behind the Meter)은 가정과 건물에 전기를 직접 공급하는 에너지 생산 및 저장 시스템을 의미![](https://i.imgur.com/QZajxRe.png)

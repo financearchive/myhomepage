@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/VPP 운영사/","created":"2024-11-20T21:02:27.680+09:00","updated":"2025-06-03T20:07:21.509+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/VPP 운영사/","created":"2024-11-20T21:02:27.680+09:00","updated":"2025-06-26T16:54:39.554+09:00"}
 ---
 
-#
+#VPP #VPP운영사
 
 
 - 기본정보![](https://i.imgur.com/7BJxwql.png)

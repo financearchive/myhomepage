@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG/","created":"2024-12-30T21:22:50.374+09:00","updated":"2025-06-03T20:07:20.928+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG/","created":"2024-12-30T21:22:50.374+09:00","updated":"2025-06-25T13:55:02.665+09:00"}
 ---
 
 #천연가스 #LNG
@@ -7,8 +7,7 @@
 
 - 최근이슈
 	- 2025년
-		- [[0.DAILY Invest/☆ 2025/3월/2025-03-20\|2025-03-20]], [LNG 얼음 위의 체스판]알래스카 LNG 개발![](/img/user/attachments/Pasted image 20250321142654.png)
-
+		- [[0.DAILY Invest/☆ 2025/3월/2025-03-20\|2025-03-20]], [LNG 얼음 위의 체스판]알래스카 LNG 개발![Pasted image 20250625135500.png](/img/user/attachments/Pasted%20image%2020250625135500.png)
 
 
 1. 다른 용어와의 차이:
