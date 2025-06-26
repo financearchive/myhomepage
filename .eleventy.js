@@ -1,6 +1,22 @@
 const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
+
+const fileCache = new Map();
+function getFrontMatter(filePath) {
+  if (fileCache.has(filePath)) {
+    return fileCache.get(filePath);
+  }
+  try {
+    const file = fs.readFileSync(filePath, "utf8");
+    const frontMatter = matter(file);
+    fileCache.set(filePath, frontMatter);
+    return frontMatter;
+  } catch {
+    return null;
+  }
+}
+
 const matter = require("gray-matter");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const tocPlugin = require("eleventy-plugin-nesting-toc");
@@ -24,7 +40,7 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
   };
 
   // generate images, while this is async we don’t wait
-  Image(src, options);
+  if (process.env.ELEVENTY_ENV === "prod") Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
 }
@@ -52,8 +68,7 @@ function getAnchorAttributes(filePath, linkTitle) {
     const fullPath = fileName.endsWith(".md")
       ? `${startPath}${fileName}`
       : `${startPath}${fileName}.md`;
-    const file = fs.readFileSync(fullPath, "utf8");
-    const frontMatter = matter(file);
+    const frontMatter = getFrontMatter(fullPath);
     if (frontMatter.data.permalink) {
       permalink = frontMatter.data.permalink;
     }
