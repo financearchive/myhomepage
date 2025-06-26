@@ -16,4 +16,4 @@
 [[plugins]]
   package = "netlify-plugin-cache"
   [plugins.inputs]
-  paths = [".cache", "dist/styles"]  # "node_modules" 제거
+  paths = [".cache", "dist/styles", "node_modules", "dist/img/optimized"]
