@@ -12,8 +12,3 @@
   from = "/*"
   to = "/404"
   status = 404
-
-[[plugins]]
-  package = "netlify-plugin-cache"
-  [plugins.inputs]
-  paths = [".cache", "dist/styles", "node_modules", "dist/img/optimized"]
