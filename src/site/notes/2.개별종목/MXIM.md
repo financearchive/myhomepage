@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MXIM/","created":"2024-12-26T21:09:10.745+09:00","updated":"2025-06-03T20:06:00.267+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/MXIM/","created":"2024-12-26T21:09:10.745+09:00","updated":"2025-07-10T10:44:22.265+09:00"}
 ---
 
 #반도체 #아날로그IC #혼합신호IC #자동차 #산업용전자 #통신 #정보기술 #전기차
@@ -67,7 +67,7 @@ Maxim Integrated Products의 핵심 경쟁력은 다음과 같습니다:
 ## 주요고객
 
 1. Apple (US, [[2.개별종목/AAPL\|AAPL]])
-2. [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] 
+2. [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] 
 3. General Motors (US, [[2.개별종목/GM\|GM]])
 4. Ford (US, [[2.개별종목/F\|F]])
 5. Siemens (DE, [[2.개별종목/SIE\|SIE]])

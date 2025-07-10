@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Omron/","created":"2023-06-28T12:17:49.097+09:00","updated":"2025-06-03T20:06:00.535+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Omron/","created":"2023-06-28T12:17:49.097+09:00","updated":"2025-07-10T10:44:22.349+09:00"}
 ---
 
 #로봇 #제어기기 #협동로봇 #AMR #로봇부품 #테크 #전자부품 #자동화시스템
@@ -27,7 +27,7 @@ Omron Corporation은 전 세계적으로 산업 자동화, 전자 부품, 사회
 
 **후방산업:**
 
-- **반도체 제조업체:** TSMC (US, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (KR, 005930)
+- **반도체 제조업체:** TSMC (US, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930)
 - **소프트웨어 공급업체:** Microsoft (US, [[2.개별종목/MSFT\|MSFT]]), Oracle (US, [[2.개별종목/ORCL\|ORCL]])
 
 ### 밸류체인

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Yaskawa/","created":"2023-06-28T12:13:14.213+09:00","updated":"2025-06-03T20:06:02.263+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Yaskawa/","created":"2023-06-28T12:13:14.213+09:00","updated":"2025-07-10T10:44:22.792+09:00"}
 ---
 
 #로봇 #산업용로봇 #산업재 #전기장비및부품 #모터 
@@ -26,7 +26,7 @@ Yaskawa Electric Corporation은 일본의 다국적 전기 장비 제조업체�
 #### 전방산업
 
 - **자동차 산업**: Yaskawa의 로봇과 모션 제어 시스템은 자동차 제조 공정에서 사용됩니다. 주요 기업: [[Toyota\|Toyota]] (JP, 7203), Ford (US, [[2.개별종목/F\|F]]).
-- **전자 산업**: 반도체 제조 공정에서 Yaskawa의 모션 제어 시스템이 사용됩니다. 주요 기업: [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (KR, 005930), Intel (US, [[2.개별종목/INTC\|INTC]]).
+- **전자 산업**: 반도체 제조 공정에서 Yaskawa의 모션 제어 시스템이 사용됩니다. 주요 기업: [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930), Intel (US, [[2.개별종목/INTC\|INTC]]).
 
 #### 후방산업
 

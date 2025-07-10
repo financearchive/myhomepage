@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MARA/","created":"2024-11-07T09:55:33.219+09:00","updated":"2025-06-03T20:06:00.002+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/MARA/","created":"2024-11-07T09:55:33.219+09:00","updated":"2025-07-10T10:44:22.209+09:00"}
 ---
 
 #금융 #자본시장 #암호화폐 #비트코인
@@ -21,13 +21,13 @@
     - **금융 서비스:** 디지털 자산을 활용한 금융 서비스 제공. 주요 기업: Block (미국, [[2.개별종목/SQ\|SQ]]), PayPal (미국, [[2.개별종목/PYPL\|PYPL]]).
 - **후방산업:** 반도체 제조, 데이터 센터 운영
     
-    - **반도체 제조:** 비트코인 채굴에 필요한 ASIC 칩 제조. 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (한국, 005930).
+    - **반도체 제조:** 비트코인 채굴에 필요한 ASIC 칩 제조. 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (한국, 005930).
     - **데이터 센터 운영:** 채굴 장비를 운영하는 데이터 센터. 주요 기업: Equinix (미국, [[2.개별종목/EQIX\|EQIX]]), Digital Realty (미국, [[2.개별종목/DLR\|DLR]]).
 
 #### 밸류체인
 
 - **하드웨어 제조:** 비트코인 채굴에 필요한 ASIC 칩 제조
-    - 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]]  (한국, 005930).
+    - 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]  (한국, 005930).
 - **데이터 센터 운영:** 채굴 장비를 운영하는 데이터 센터
     - 주요 기업: Equinix (미국, [[2.개별종목/EQIX\|EQIX]]), Digital Realty (미국, [[2.개별종목/DLR\|DLR]]).
 - **비트코인 채굴:** 비트코인 채굴 및 관리

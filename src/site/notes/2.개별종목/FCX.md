@@ -114,7 +114,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 **전방산업:**
 
 - 전기차 제조업: 구리 와이어링 및 모터 제조용 - Tesla(US, [[2.개별종목/TSLA\|TSLA]]), Ford(US, [[2.개별종목/F\|F]]), GM(US, [[2.개별종목/GM\|GM]])
-- 전자기기 제조업: 반도체 및 전자부품 제조 - Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[Samsung\|Samsung]])
+- 전자기기 제조업: 반도체 및 전자부품 제조 - Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
 - 건설업: 배관 및 전기 설비 - Caterpillar(US, [[2.개별종목/CAT\|CAT]]), Fluor(US, [[2.개별종목/FLR\|FLR]])
 - 재생에너지 산업: 태양광, 풍력 발전 설비 - General Electric(US, [[2.개별종목/GE\|GE]]), Siemens(DE, [[Siemens\|Siemens]])
 
@@ -201,7 +201,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 - General Electric(US, [[2.개별종목/GE\|GE]]) - 발전기 및 전기 장비용 구리 
 - Siemens(DE, [[Siemens\|Siemens]]) - 산업용 전기 장비
 - Ford Motor(US, [[2.개별종목/F\|F]]) - 자동차 전기 시스템용 구리 
-- Samsung(KR, [[Samsung\|Samsung]]) - 스마트폰 및 반도체용 구리 
+- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 스마트폰 및 반도체용 구리 
 - Caterpillar(US, [[2.개별종목/CAT\|CAT]]) - 건설장비용 구리 부품 
 - Boeing(US, [[2.개별종목/BA\|BA]]) - 항공기 전기 시스템용 구리 
 - Schneider Electric(FR, [[Schneider Electric\|Schneider Electric]]) - 전기 장비 및 자동화 시스템 

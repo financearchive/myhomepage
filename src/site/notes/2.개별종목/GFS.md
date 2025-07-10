@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/GFS/","created":"2024-12-26T21:04:55.472+09:00","updated":"2025-06-03T20:05:59.193+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/GFS/","created":"2024-12-26T21:04:55.472+09:00","updated":"2025-07-10T10:44:22.164+09:00"}
 ---
 
 #반도체 #파운드리 #첨단공정 #자동차 #IoT #데이터센터 #정보기술 #반도체마스크 
@@ -49,7 +49,7 @@ GlobalFoundries의 핵심 경쟁력은 다음과 같습니다:
 2. 전방산업:
     
     - 자동차: General Motors (US, [[2.개별종목/GM\|GM]]), Ford (US, [[2.개별종목/F\|F]])
-    - 스마트폰: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] 
+    - 스마트폰: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] 
     - 데이터센터: Amazon Web Services (US, [[2.개별종목/AMZN\|AMZN]]), Microsoft Azure (US, [[2.개별종목/MSFT\|MSFT]])
     
 
@@ -83,7 +83,7 @@ GlobalFoundries의 핵심 경쟁력은 다음과 같습니다:
 ## 경쟁업체
 
 1. Taiwan Semiconductor Manufacturing Company (TW, [[2.개별종목/TSM\|TSM]]) - 첨단 로직 반도체
-2. [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] - 첨단 로직 및 메모리 반도체
+2. [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] - 첨단 로직 및 메모리 반도체
 3. United Microelectronics Corporation (TW, [[UMC\|UMC]]) - 특수 공정 반도체
 4. Semiconductor Manufacturing International Corporation (HK, [[0981\|0981]]) - 중국 기반 파운드리
 5. Tower Semiconductor (IL, [[TSEM\|TSEM]]) - 아날로그 및 혼합 신호 반도체

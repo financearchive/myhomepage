@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MPWR/","created":"2024-12-24T11:59:04.847+09:00","updated":"2025-06-03T20:06:00.195+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/MPWR/","created":"2024-12-24T11:59:04.847+09:00","updated":"2025-07-10T10:44:22.233+09:00"}
 ---
 
 #팹리스 #반도체 #정보기술 #반도체 #전력관리IC #데이터센터 #자동차 #통신 #DC-DC변환기 #전력관리통합회로 
@@ -39,7 +39,7 @@ MPS는 단순한 칩 공급업체에서 종합 솔루션 제공업체로 전환�
     - 데이터센터: Amazon Web Services (US, [[2.개별종목/AMZN\|AMZN]]), Microsoft Azure (US, [[2.개별종목/MSFT\|MSFT]])
     - 자동차: Tesla (US, [[2.개별종목/TSLA\|TSLA]]), General Motors (US, [[2.개별종목/GM\|GM]])
     - 통신장비: Cisco Systems (US, [[2.개별종목/CSCO\|CSCO]]), Huawei (비상장)
-    - 소비자 가전: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]]
+    - 소비자 가전: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
     
 
 ## 밸류체인

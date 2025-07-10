@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/반도체 산업/INFO_반도체/HBM/","created":"2024-11-20T21:02:28.103+09:00","updated":"2025-06-25T13:32:55.074+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/반도체 산업/INFO_반도체/HBM/","created":"2024-11-20T21:02:28.103+09:00","updated":"2025-07-10T10:44:21.972+09:00"}
 ---
 
 #반도체 #DRAM
@@ -31,7 +31,7 @@
 
 
 - 관련기업
-	- [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]]
+	- [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
 	- [[2.개별종목/MU\|MU]](마이크론)
 	- [[SK하이닉스\|SK하이닉스]]
 

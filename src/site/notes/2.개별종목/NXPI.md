@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/NXPI/","created":"2024-11-05T14:50:04.066+09:00","updated":"2025-06-03T20:06:00.473+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/NXPI/","created":"2024-11-05T14:50:04.066+09:00","updated":"2025-07-10T10:44:22.327+09:00"}
 ---
 
 #반도체 #테크 #반도체장비 #자동차 #중국 #마이크로컨트롤러
@@ -19,11 +19,11 @@ NXP 반도체는 다양한 반도체 제품을 설계, 제조 및 판매하는 �
     
     - **자동차:** 자동차 전자 시스템 및 반도체. 주요 기업: Tesla (미국, [[2.개별종목/TSLA\|TSLA]]), [[Toyota\|Toyota]] (일본, 7203).
     - **산업:** 산업 자동화 및 제어 시스템. 주요 기업: Siemens (독일, [[2.개별종목/SIE\|SIE]]), ABB (스위스, [[ABBN\|ABBN]]).
-    - **모바일:** 스마트폰 및 모바일 기기. 주요 기업: Apple (미국, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (한국,005930).
+    - **모바일:** 스마트폰 및 모바일 기기. 주요 기업: Apple (미국, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (한국,005930).
     - **통신 인프라:** 네트워크 장비 및 통신 솔루션. 주요 기업: Cisco Systems (미국, [[2.개별종목/CSCO\|CSCO]]), Ericsson (스웨덴, [[ERIC\|ERIC]]).
 - **후방산업:** 반도체 제조, 연구 개발
     
-    - **반도체 제조:** 반도체 칩 제조 및 공급. 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (한국,005930).
+    - **반도체 제조:** 반도체 칩 제조 및 공급. 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (한국,005930).
     - **연구 개발:** 신제품 개발 및 혁신. 주요 기업: Intel (미국, [[2.개별종목/INTC\|INTC]]), Qualcomm (미국, [[2.개별종목/QCOM\|QCOM]]).
 
 #### 밸류체인
@@ -31,7 +31,7 @@ NXP 반도체는 다양한 반도체 제품을 설계, 제조 및 판매하는 �
 - **설계 및 개발:** 반도체 제품 설계 및 개발
     - 주요 기업: Intel (미국, [[2.개별종목/INTC\|INTC]]), Qualcomm (미국, [[2.개별종목/QCOM\|QCOM]]).
 - **제조:** 반도체 칩 제조
-    - 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]] (한국,005930).
+    - 주요 기업: Taiwan Semiconductor Manufacturing Company (대만, [[2.개별종목/TSM\|TSM]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (한국,005930).
       
 - **테스트 및 패키징:** 반도체 제품 테스트 및 패키징
     - 주요 기업: ASE Technology (대만, [[ASX\|ASX]]), Amkor Technology (미국, [[2.개별종목/AMKR\|AMKR]]).

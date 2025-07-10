@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 테마/VR,AR,MR/XR/","created":"2024-11-20T21:02:29.917+09:00","updated":"2025-06-26T17:40:10.723+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 테마/VR,AR,MR/XR/","created":"2024-11-20T21:02:29.917+09:00","updated":"2025-07-10T10:44:22.050+09:00"}
 ---
 
 #VR #AR #XR
@@ -24,7 +24,7 @@
 3. 관련기업
 	1. XR 기기 판매
 		1. [[1.Study/★ 테마/VR,AR,MR/종목/AAPL\|1.Study/★ 테마/VR,AR,MR/종목/AAPL]]
-		2. [[1.Study/★ 테마/VR,AR,MR/종목/삼성전자\|삼성전자]]
+		2. [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
 	2. 카메라모듈
 		1. 애플향
 		2. 삼성향
