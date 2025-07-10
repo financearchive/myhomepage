@@ -42,7 +42,7 @@
 			- [[0.DAILY Invest/과거/2023/6월/2023-06-07\|2023-06-07]] 
 				- https://www.youtube.com/watch?v=ktZ3XR887wk
 				- 애플 AR헤드셋 기대 못미쳐2일째 애플 주가 하락 | 한국경제](https://www.hankyung.com/economy/article/202306062459i
-				- ![-](https://i.imgur.com/tStGabA.png)
+				- ![](https://i.imgur.com/tStGabA.png)
 				- Trendforce는 2024년 애플 비전프로 출하량을 20만대 수준으로 예상. 가격 수준 & essential features 부재 고려(악재)
 			- 
 

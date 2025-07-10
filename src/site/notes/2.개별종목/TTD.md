@@ -28,7 +28,7 @@ The Trade Desk는 실시간 프로그래매틱 마케팅 자동화 기술, 제�
 - **후방산업**:
     
     - **핵심 산업 및 역할**: 데이터 제공업체, 광고 인벤토리 공급업체
-    - **관련 기업**: Oracle (US, [[2.개별종목/ORCL\|ORCL]]), Magnite (US, [[MGNI\|MGNI]])
+    - **관련 기업**: Oracle (US, [[2.개별종목/ORCL\|ORCL]]), Magnite (US, [[2.개별종목/MGNI\|MGNI]])
     
 
 ## 밸류체인

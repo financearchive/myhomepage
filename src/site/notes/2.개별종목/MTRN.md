@@ -22,12 +22,12 @@ Materion Corporation은 [[고성능 엔지니어링 소재\|고성능 엔지니�
     - **자동차**: 자동차 제조업체 (예: Tesla (US, [[2.개별종목/TSLA\|TSLA]]), Toyota (JP, [[7203\|7203]]))
 - **후방산업**:
     
-    - **광업**: 원자재 공급업체 (예: Freeport-McMoRan (US, [[2.개별종목/FCX\|FCX]]), Southern Copper (US, [[SCCO\|SCCO]]))
+    - **광업**: 원자재 공급업체 (예: Freeport-McMoRan (US, [[2.개별종목/FCX\|FCX]]), Southern Copper (US, [[2.개별종목/SCCO\|SCCO]]))
     - **화학**: 화학 원료 공급업체 (예: Dow Inc. (US, [[2.개별종목/DOW\|DOW]]), BASF (DE, [[BAS\|BAS]]))
 
 #### 밸류체인
 
-- **원자재 조달**: 원자재 공급업체 (예: Freeport-McMoRan (US, [[2.개별종목/FCX\|FCX]]), Southern Copper (US, [[SCCO\|SCCO]]))
+- **원자재 조달**: 원자재 공급업체 (예: Freeport-McMoRan (US, [[2.개별종목/FCX\|FCX]]), Southern Copper (US, [[2.개별종목/SCCO\|SCCO]]))
 - **제조 및 생산**: 고성능 소재 제조업체 (예: Materion 자체 생산)
 - **유통 및 판매**: 글로벌 유통 네트워크를 통해 제품 판매 (예: 직접 판매, 대리점, 서비스 센터)
 

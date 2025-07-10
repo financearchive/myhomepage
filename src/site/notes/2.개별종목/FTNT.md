@@ -13,7 +13,7 @@
 
 ## 영위사업
 
-Fortinet Inc.(NASDAQ: FTNT)는 미국 캘리포니아에 본사를 둔 글로벌 [[사이버 보안\|사이버 보안]] 기업입니다. 1999년 설립된 이 회사는 네트워크 보안 어플라이언스와 통합 보안 솔루션을 제공하는 선도적인 기업으로, 특히 [[차세대 방화벽\|차세대 방화벽]]([[NGFW\|NGFW]]) 시장에서 강세를 보이고 있습니다.주요 제품 라인에는 FortiGate NGFW, FortiManager, FortiAnalyzer, FortiClient 등이 있으며, 이들은 Fortinet Security Fabric이라는 통합 아키텍처로 연결되어 있습니다. 
+Fortinet Inc.(NASDAQ: FTNT)는 미국 캘리포니아에 본사를 둔 글로벌 [[1.Study/★ 산업/보안/INFO_보안/사이버 보안\|사이버 보안]] 기업입니다. 1999년 설립된 이 회사는 네트워크 보안 어플라이언스와 통합 보안 솔루션을 제공하는 선도적인 기업으로, 특히 [[차세대 방화벽\|차세대 방화벽]]([[NGFW\|NGFW]]) 시장에서 강세를 보이고 있습니다.주요 제품 라인에는 FortiGate NGFW, FortiManager, FortiAnalyzer, FortiClient 등이 있으며, 이들은 Fortinet Security Fabric이라는 통합 아키텍처로 연결되어 있습니다. 
 
 회사의 솔루션은 엔터프라이즈, 서비스 제공업체, 정부 기관 등 다양한 고객층을 대상으로 합니다.최근 1년 내 주요 이슈로는 AI 기반 보안 솔루션 강화, 제로 트러스트 네트워크 접근(ZTNA) 제품 라인 확대, 그리고 OT(운영 기술) 보안 분야 진출 등이 있습니다. 특히 FortiGate 7000 시리즈 출시로 하이퍼스케일 데이터센터 시장 공략을 강화하고 있습니다.
 

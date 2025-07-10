@@ -12,7 +12,7 @@
 
 **영위사업**: Dutch Bros Inc.는 미국 전역에서 [[드라이브 스루 커피숍\|드라이브 스루 커피숍]]을 운영하고 프랜차이즈를 제공합니다. 이 회사는 회사 운영 매장과 프랜차이즈 및 기타 부문을 통해 운영됩니다. Dutch Bros, Dutch Bros Coffee, Dutch Bros Rebel, Blue Rebel 브랜드로 운영되며, 커피, 에너지 음료, 기타 음료 및 간식을 제공합니다
 
-직영이 프렌차이즈보다 많은 612개를 유지하며 약 60% 수준임 ![-](/img/user/attachments/Pasted%20image%2020240916122842.png)
+직영이 프렌차이즈보다 많은 612개를 유지하며 약 60% 수준임 ![](/img/user/attachments/Pasted image 20240916122842.png)
 
 **전방/후방산업**:
 

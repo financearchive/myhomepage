@@ -11,7 +11,7 @@ Industry: [[소프트웨어\|소프트웨어]] - 인프라(Software - Infrastruc
 
 ## 영위사업
 
-BlackBerry Limited는 [[사이버 보안\|사이버 보안]] 및 [[IoT\|IoT]] 솔루션을 제공하는 소프트웨어 기업입니다. 주요 사업 부문은 다음과 같습니다:
+BlackBerry Limited는 [[1.Study/★ 산업/보안/INFO_보안/사이버 보안\|사이버 보안]] 및 [[IoT\|IoT]] 솔루션을 제공하는 소프트웨어 기업입니다. 주요 사업 부문은 다음과 같습니다:
 
 1. 사이버보안: AI와 머신러닝을 활용한 엔드포인트 보안 솔루션 제공
 2. IoT: 자동차 및 임베디드 시스템용 소프트웨어 개발 (BlackBerry QNX)
