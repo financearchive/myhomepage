@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
         {% if page.date %}
           {{ page.date | dateToZulu }}
         {% else %}
-          {{ "now" | date | dateToZulu }}
+          {{ "" | dateToZulu }}
         {% endif %}
       </lastmod>
     </url>
