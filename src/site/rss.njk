@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
       {% if posts.length and posts[0].date %}
         {{ posts[0].date | rssDate }}
       {% else %}
-        {{ "now" | date | rssDate }}
+        {{ "" | rssDate }}
       {% endif %}
     </lastBuildDate>
     <generator>Eleventy</generator>
@@ -29,7 +29,7 @@ eleventyExcludeFromCollections: true
         {% if post.date %}
           {{ post.date | rssDate }}
         {% else %}
-          {{ "now" | date | rssDate }}
+          {{ "" | rssDate }}
         {% endif %}
       </pubDate>
       <description><![CDATA[{{ post.templateContent | safe }}]]></description>
