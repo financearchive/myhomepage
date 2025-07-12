@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/FCX/","created":"2024-08-29T12:15:37.519+09:00","updated":"2025-07-10T10:19:00.739+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/FCX/","created":"2024-08-29T12:15:37.519+09:00","updated":"2025-07-12T16:20:55.887+09:00"}
 ---
 
 #구리채굴 #몰리브덴 #금채굴 #광산업 #원자재 #국제광산업 #그라스베르크광산 #모렌시광산 #세로베르데광산 #구리생산 #몰리브덴생산 #금생산 #광물자원 #대규모광산 #장기자산 #지리적다양성 #원자재가격 #광산운영 #소재 #광업
@@ -237,7 +237,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 - Codelco(CL, [[Codelco\|Codelco]]) - 칠레 국영 구리 생산업체, 세계 최대 구리 생산량
 - Vale(BR, [[2.개별종목/Vale\|VALE]]) - 브라질 광산업체, 철광석 및 구리 생산
 - Newmont(US, [[2.개별종목/NEM\|NEM]]) - 세계 최대 금 생산업체, 구리도 생산
-- Barrick Gold(CA, [[GOLD\|GOLD]]) - 대형 금 생산업체, 구리 부문도 운영
+- Barrick Gold(CA, [[2.개별종목/B\|B]]) - 대형 금 생산업체, 구리 부문도 운영
 - Antofagasta(UK, [[2.개별종목/Antofagasta\|Antofagasta]]) - 칠레 기반 구리 생산업체
 - First Quantum Minerals(CA, [[2.개별종목/FM\|FM]]) - 캐나다 구리 생산업체
 - Hudbay Minerals(CA, [[1.Study/★ 산업/반도체 산업/INFO_반도체/HBM\|HBM]]) - 캐나다 구리 및 아연 생산업체

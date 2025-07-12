@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/PPTA/","created":"2024-11-19T16:23:11.637+09:00","updated":"2025-06-03T20:06:00.732+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/PPTA/","created":"2024-11-19T16:23:11.637+09:00","updated":"2025-07-12T16:20:55.900+09:00"}
 ---
 
 #안티모니 #희토류 #금속및광업 #기초소재 #원자재 #금 
@@ -39,7 +39,7 @@
 
 주요 판매국가: 미국 (예정)경쟁업체:
 
-- Barrick Gold Corporation (캐나다, [[GOLD\|GOLD]]) (금 생산)
+- Barrick Gold Corporation (캐나다, [[2.개별종목/B\|B]]) (금 생산)
 - Newmont Corporation (US, [[2.개별종목/NEM\|NEM]]) (금 생산)
 - United States Antimony Corporation (US, [[2.개별종목/UAMY\|UAMY]]) (안티모니 생산) 
 - [[Hunan Gold \|Hunan Gold ]]Corporation(002155 CH)

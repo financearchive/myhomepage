@@ -55,7 +55,7 @@
 				5️⃣ 올해 지준은 부족한 수준이 될 것으로 예상하지 않으며 (We don’t think reserves are likely to become scarce in the near term or even over the course of the year), 손실이 예상되는 상업용 부동산에 연준은 매우 주의를 기울이고 있음 (Fed is watching commercial real estate “very carefully")
 
 			- **[점도표]
-				- ![-](https://i.imgur.com/BqjQBUt.png)
+				- ![](https://i.imgur.com/BqjQBUt.png)
 				- < 6월 점도표 중간값 변화 >
 				23년: 5.125% ➡️ 5.125% ➡️ 5.625% (50bp⬆️)
 				24년: 4.125% ➡️ 4.250% ➡️ 4.625% (37.5bp⬆️)
@@ -68,17 +68,17 @@
 				- 장기중립금리 중간값은 2.5%를 유지. 단, 중간값 위에 점을 찍은 위원수는 3명 ➡️ 4명 ➡️ 7명으로 꾸준히 증가하는 모습
 
 			- **[경제전망]
-				- ![-](https://i.imgur.com/EQwtLIi.png)
+				- ![](https://i.imgur.com/EQwtLIi.png)
 
 
 			- **[FED WATCH]
-				- ![-](https://i.imgur.com/X6Wj5KY.png)
+				- ![](https://i.imgur.com/X6Wj5KY.png)
 				- 연말까지 1번 추가 인상한 후 동결한다는 확률이 30% 정도이고
 				- 현 금리 수준에서 쭉 동결한다는 것이 45.5% 확률도 가장 높음 이제 "금리인상 끝났다"는 생각들도 많이 하는 분위기
 	- 2024년
 		- [[2024-06-13\|2024-06-13]]
-			- ![-](https://i.imgur.com/XyAM1wZ.png)
-			- ![-](https://i.imgur.com/YPHKSIf.png)
+			- ![](https://i.imgur.com/XyAM1wZ.png)
+			- ![](https://i.imgur.com/YPHKSIf.png)
 				- < 🇺🇸 6월 점도표 중간값 변화 >
 					24년: 4.625➡️5.125 (50bp 상향)
 					25년: 3.875➡️4.125 (25bp 상승)
@@ -93,14 +93,14 @@
 					- 26년도 중간값은 3월 수준을 유지. 이에 추가 4회 인하를 시사. 결국 3월에 이어 2026년에 기대하는 최종금리 수준을 3.125%로 유지한 것
 					
 					- 단, 장기중립금리 중간값은 3월에 이어 추가 상향조정. 단, 중간값 위에 점을 찍은 위원수는 3월과 동일한 9명
-			- ![-](https://i.imgur.com/3n8oVuo.png)
+			- ![](https://i.imgur.com/3n8oVuo.png)
 				- < 🇺🇸 6월 수정경제전망 >
 					- 2024~26년 실질성장률과 장기잠재성장률 전망치 모두 유지
 					
 					- 실업률 전망치는 올해는 유지했으나 2025~26년 전망치를 각각 0.1%p씩 상향조정. 자연실업률 추정치도 4.2%로 0.1%p 상향조정
 					
 					- PCE 물가는 헤드라인과 근원 모두 올해 0.2%p씩, 내년 0.1%p씩 상향조정. 단, 둘다 2026년에 물가목표치 2%에 도달할 것이란 전망은 유지
-			- ![-](https://i.imgur.com/O6fcNCl.jpeg)
+			- ![](https://i.imgur.com/O6fcNCl.jpeg)
 				- < 🇺🇸 6월 FOMC 성명서 변화 >
 					5월과 거의 동일한 가운데 핵심 내용은 다음과 같음 
 					1⃣ 만장일치 동결 5.25-5.50%
@@ -110,4 +110,4 @@
 					5⃣ QT 테이퍼링 실시
 				- *올해와 중립금리 중간값을 상향조정했지만 3년간 총 인하 폭을 유지하면서 시장이 우려했던 1️⃣ 시점과 2️⃣ 폭 중에 시장이 아직 덜 반영했던 후자에 대해서 안도감을 줬다고 판단. 시장은 올해보다 내년 점도표에 더 초점을 맞출 것
 		- [[0.DAILY Invest/과거/2024/9월/2024-09-13\|2024-09-13]], FOMC 구성원들의최근발언정리
-			- ![-](/img/user/attachments/Pasted%20image%2020240913133713.png)
+			- ![](/img/user/attachments/Pasted image 20240913133713.png)
