@@ -9,7 +9,13 @@ eleventyExcludeFromCollections: true
     {% if page.url and page.outputPath.endsWith(".html") %}
     <url>
       <loc>https://www.moneydiary.co.kr{{ page.url }}</loc>
-      <lastmod>{{ page.date | dateToZulu }}</lastmod>
+      <lastmod>
+        {% if page.date %}
+          {{ page.date | dateToZulu }}
+        {% else %}
+          {{ "now" | date | dateToZulu }}
+        {% endif %}
+      </lastmod>
     </url>
     {% endif %}
   {% endfor %}
