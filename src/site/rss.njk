@@ -11,7 +11,13 @@ eleventyExcludeFromCollections: true
     <link>https://www.moneydiary.co.kr</link>
     <description>돈의 흐름을 기록하고 분석하는 블로그</description>
     <language>ko</language>
-    <lastBuildDate>{{ posts[0].date | rssDate }}</lastBuildDate>
+    <lastBuildDate>
+      {% if posts.length and posts[0].date %}
+        {{ posts[0].date | rssDate }}
+      {% else %}
+        {{ "now" | date | rssDate }}
+      {% endif %}
+    </lastBuildDate>
     <generator>Eleventy</generator>
 
     {% for post in posts %}
@@ -19,7 +25,13 @@ eleventyExcludeFromCollections: true
       <title>{{ post.data.title | escape }}</title>
       <link>https://www.moneydiary.co.kr{{ post.url }}</link>
       <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url }}</guid>
-      <pubDate>{{ post.date | rssDate }}</pubDate>
+      <pubDate>
+        {% if post.date %}
+          {{ post.date | rssDate }}
+        {% else %}
+          {{ "now" | date | rssDate }}
+        {% endif %}
+      </pubDate>
       <description><![CDATA[{{ post.templateContent | safe }}]]></description>
     </item>
     {% endfor %}
