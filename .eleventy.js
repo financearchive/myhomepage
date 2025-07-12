@@ -39,7 +39,7 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     urlPath: "/img/optimized",
   };
 
-  // generate images, while this is async we don’t wait
+  // generate images, while this is async we don't wait
   if (process.env.ELEVENTY_ENV === "prod") Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
@@ -516,13 +516,15 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
+  // 수정된 부분: XML 파일들은 HTML 압축에서 제외
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
     if (
       (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
       outputPath &&
       outputPath.endsWith(".html") &&
-      !outputPath.endsWith("rss.xml") &&  // RSS 피드 제외
-      !outputPath.endsWith("sitemap.xml")  // 사이트맵 제외
+      !outputPath.includes("rss.xml") &&
+      !outputPath.includes("sitemap.xml") &&
+      !outputPath.includes("feed.xml")
     ) {
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
@@ -548,13 +550,26 @@ module.exports = function (eleventyConfig) {
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
   });
 
-
   eleventyConfig.addFilter("dateToZulu", function (date) {
     try {
       return new Date(date).toISOString("dd-MM-yyyyTHH:mm:ssZ");
     } catch {
       return "";
     }
+  });
+
+  // 추가된 부분: RSS 피드용 필터들
+  eleventyConfig.addFilter("dateToRfc822", function(date) {
+    return new Date(date).toUTCString();
+  });
+
+  eleventyConfig.addFilter("getNewestCollectionItemDate", function(collection) {
+    if (!collection || !collection.length) {
+      return new Date();
+    }
+    return new Date(Math.max(...collection.map(item => {
+      return item.date ? new Date(item.date).getTime() : 0;
+    })));
   });
   
   eleventyConfig.addFilter("jsonify", function (variable) {
