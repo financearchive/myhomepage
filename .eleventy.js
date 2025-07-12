@@ -520,7 +520,9 @@ module.exports = function (eleventyConfig) {
     if (
       (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
       outputPath &&
-      outputPath.endsWith(".html")
+      outputPath.endsWith(".html") &&
+      !outputPath.endsWith("rss.xml") &&  // RSS 피드 제외
+      !outputPath.endsWith("sitemap.xml")  // 사이트맵 제외
     ) {
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
