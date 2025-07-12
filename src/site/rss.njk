@@ -8,26 +8,26 @@ eleventyExcludeFromCollections: true
     <title>머니다이어리</title>
     <description>돈의 흐름을 기록하고 분석하는 머니다이어리</description>
     <link>https://www.moneydiary.co.kr</link>
-    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
     <lastBuildDate>{{ collections.post | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
     <generator>Eleventy</generator>
     
-    {% set posts = collections.post | reverse | slice(0, 20) -%}
-    {% for post in posts -%}
+    {%- set posts = collections.post | reverse | slice(0, 20) -%}
+    {%- for post in posts -%}
     <item>
       <title><![CDATA[{{ post.data.title }}]]></title>
       <link>https://www.moneydiary.co.kr{{ post.url }}?utm_source=rss&amp;utm_medium=feed</link>
       <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <description><![CDATA[{{ post.templateContent | safe }}]]></description>
-      {% if post.data.category %}<category>{{ post.data.category }}</category>{% endif %}
-      {% if post.data.tags %}
-        {% for tag in post.data.tags %}
-          {% if tag != "post" %}<category>{{ tag }}</category>{% endif %}
-        {% endfor %}
-      {% endif %}
+      {%- if post.data.category -%}<category>{{ post.data.category }}</category>{%- endif -%}
+      {%- if post.data.tags -%}
+        {%- for tag in post.data.tags -%}
+          {%- if tag != "post" -%}<category>{{ tag }}</category>{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
     </item>
-    {% endfor %}
+    {%- endfor -%}
   </channel>
 </rss>
