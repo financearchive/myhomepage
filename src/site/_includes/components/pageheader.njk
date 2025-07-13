@@ -1,4 +1,45 @@
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO 메타태그 -->
+<meta name="robots" content="index, follow">
+<meta name="author" content="머니다이어리">
+
+<!-- 자동 메타 디스크립션 생성 -->
+{% set autoDesc = content | autoMetaDescription %}
+{% if description %}
+  <meta name="description" content="{{ description }}">
+{% elif autoDesc %}
+  <meta name="description" content="{{ autoDesc }}">
+{% endif %}
+
+<!-- Open Graph / 소셜 미디어 메타태그 -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if title %}{{ title }} - 머니다이어리{% else %}{{ page.fileSlug }} - 머니다이어리{% endif %}">
+{% if description %}
+  <meta property="og:description" content="{{ description }}">
+{% elif autoDesc %}
+  <meta property="og:description" content="{{ autoDesc }}">
+{% endif %}
+<meta property="og:url" content="{{ meta.baseUrl }}{{ page.url }}">
+<meta property="og:site_name" content="머니다이어리">
+
+<!-- 트위터 카드 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title %}{{ title }} - 머니다이어리{% else %}{{ page.fileSlug }} - 머니다이어리{% endif %}">
+{% if description %}
+  <meta name="twitter:description" content="{{ description }}">
+{% elif autoDesc %}
+  <meta name="twitter:description" content="{{ autoDesc }}">
+{% endif %}
+
+<!-- 정규 URL -->
+<link rel="canonical" href="{{ meta.baseUrl }}{{ page.url }}">
+
+<!-- RSS 피드 -->
+<link rel="alternate" type="application/rss+xml" title="머니다이어리" href="{{ meta.baseUrl }}/rss.xml">
+
+<!-- 기존 스크립트들 -->
 <script async type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 </script>
