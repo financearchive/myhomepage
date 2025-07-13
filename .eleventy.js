@@ -339,6 +339,41 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // ===== 🚀 NEW: 자동 메타 디스크립션 생성 필터 추가 =====
+  eleventyConfig.addFilter("autoMetaDescription", function(content) {
+    if (!content) return "";
+    
+    // HTML 태그 및 마크다운 문법 제거
+    const cleaned = content
+      .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
+      .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
+      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
+      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
+      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
+      .replace(/\s+/g, ' ')  // 여러 공백을 하나로
+      .trim();
+    
+    // 첫 번째 문단만 사용
+    const firstParagraph = cleaned.split('\n\n')[0] || cleaned;
+    
+    // 160자로 제한
+    if (firstParagraph.length > 160) {
+      const words = firstParagraph.split(' ');
+      let result = '';
+      
+      for (const word of words) {
+        if ((result + word).length > 157) break;
+        result += word + ' ';
+      }
+      
+      return result.trim() + '...';
+    }
+    
+    return firstParagraph;
+  });
+  // ===== 🚀 NEW 끝 =====
+
   eleventyConfig.addTransform("dataview-js-links", function (str) {
     const parsed = parse(str);
     for (const dataViewJsLink of parsed.querySelectorAll("a[data-href].internal-link")) {
@@ -516,7 +551,6 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
-  // 수정된 부분: XML 파일들은 HTML 압축에서 제외
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
     if (
       (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
@@ -558,7 +592,6 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  // 추가된 부분: RSS 피드용 필터들
   eleventyConfig.addFilter("dateToRfc822", function(date) {
     return new Date(date).toUTCString();
   });
