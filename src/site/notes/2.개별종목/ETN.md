@@ -52,7 +52,7 @@ Eaton은 [[전력 관리 회사\|전력 관리 회사]]로, [[전기\|전기]], 
 - **제조**: Eaton의 다양한 부문에서 제품 제조.
     - **대표 회사**: Eaton 자체 제조 시설
 - **유통**: 전 세계 유통 네트워크를 통해 제품 공급.
-    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[FAST\|FAST]])
+    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[2.개별종목/FAST\|FAST]])
 - **소비자**: 최종 사용자에게 제품 제공.
     - **대표 회사**: Boeing (US, [[2.개별종목/BA\|BA]]), General Motors (US, [[2.개별종목/GM\|GM]])
 
