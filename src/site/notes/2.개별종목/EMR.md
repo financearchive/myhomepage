@@ -36,7 +36,7 @@ Emerson Electric Co.는 산업, 상업 및 소비자 시장을 위한 다양한 
 - **제조**: Emerson의 다양한 부문에서 제품 제조.
     - **대표 회사**: Emerson 자체 제조 시설
 - **유통**: 전 세계 유통 네트워크를 통해 제품 공급.
-    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[2.개별종목/FAST 1\|FAST 1]])
+    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[FAST 1\|FAST 1]])
 - **소비자**: 최종 사용자에게 제품 제공.
     - **대표 회사**: ExxonMobil (US, [[2.개별종목/XOM\|XOM]]), Chevron (US, [[2.개별종목/CVX\|CVX]])
 

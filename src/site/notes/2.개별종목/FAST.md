@@ -120,7 +120,7 @@ Fastenal Company는 1967년 설립된 북미 최대의 패스너(fastener) 유�
 
 **유통 단계:**
 
-- Fastenal(US, [[2.개별종목/FAST 1\|FAST 1]]): 북미 최대 패스너 유통업체
+- Fastenal(US, [[FAST 1\|FAST 1]]): 북미 최대 패스너 유통업체
 - Grainger(US, [[GWW\|GWW]]): 주요 경쟁사, MRO 전문
 
 **최종 고객 단계:**

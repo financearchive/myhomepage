@@ -33,7 +33,7 @@ Carrier Global Corporation은 난방, 환기 및 공기 조절(HVAC), 냉장, �
 - **제조**: Carrier의 다양한 부문에서 제품 제조.
     - **대표 회사**: Carrier 자체 제조 시설
 - **유통**: 전 세계 유통 네트워크를 통해 제품 공급.
-    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[2.개별종목/FAST 1\|FAST 1]])
+    - **대표 회사**: Grainger (US, [[GWW\|GWW]]), Fastenal (US, [[FAST 1\|FAST 1]])
 - **소비자**: 최종 사용자에게 제품 제공.
     - **대표 회사**: Lennox International (US, [[LII\|LII]]), Trane Technologies (US, [[TT\|TT]])
 
