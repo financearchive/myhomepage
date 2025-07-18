@@ -77,7 +77,7 @@ Atlassian Corporation(NASDAQ: TEAM)은 소프트웨어 개발자, IT 전문가 �
 
 - Microsoft(US, [[2.개별종목/MSFT\|MSFT]]): Azure DevOps, GitHub
 - GitLab(US, [[2.개별종목/GTLB\|GTLB]]): DevOps 플랫폼
-- Asana(US, [[ASAN\|ASAN]]): 프로젝트 관리 소프트웨어
+- Asana(US, [[2.개별종목/ASAN\|ASAN]]): 프로젝트 관리 소프트웨어
 - Monday.com(IL, [[2.개별종목/MNDY\|MNDY]]): 작업 관리 플랫폼
 - Smartsheet(US, [[SMAR\|SMAR]]): 협업 및 작업 관리 플랫폼
 

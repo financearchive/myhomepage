@@ -80,7 +80,7 @@ Canadian National Railway Co.(NYSE: CNI)는 [[북미 최대의 철도 운송 회
 
 - Union Pacific Corporation(US, [[2.개별종목/UNP\|UNP]]): 미국 서부 중심의 철도 운송 기업
 - CSX Corporation(US, [[CSX\|CSX]]): 미국 동부 중심의 철도 운송 기업
-- Norfolk Southern Corporation(US, [[NSC\|NSC]]): 미국 동부 및 중부 중심의 철도 운송 기업
+- Norfolk Southern Corporation(US, [[2.개별종목/NSC\|NSC]]): 미국 동부 및 중부 중심의 철도 운송 기업
 - Canadian Pacific Railway(CA, [[CP\|CP]]): 캐나다 중심의 철도 운송 기업
 - BNSF Railway(US): 미국 서부 및 중부 중심의 철도 운송 기업 (Berkshire Hathaway 소유)
 

@@ -152,7 +152,7 @@ Ramaco Resources Inc.는 미국 중부 애팔래치아 지역에서 메탈루지
 **가공 및 유통 단계:**
 
 - CSX Corp(US, [[CSX\|CSX]]): 철도 운송 서비스 (동부 지역 60% 점유)
-- Norfolk Southern(US, [[NSC\|NSC]]): 철도 운송 서비스 (애팔래치아 지역 40% 점유)
+- Norfolk Southern(US, [[2.개별종목/NSC\|NSC]]): 철도 운송 서비스 (애팔래치아 지역 40% 점유)
 
 **최종 고객 단계:**
 

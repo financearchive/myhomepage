@@ -54,7 +54,7 @@ Monday.com Ltd.(NASDAQ: MNDY)는 [[클라우드 기반의 작업 운영 체제(W
 ## 경쟁업체
 
 - Atlassian(US, [[2.개별종목/TEAM\|TEAM]]) - Jira, Trello
-- Asana(US, [[ASAN\|ASAN]]) - 작업 관리 플랫폼
+- Asana(US, [[2.개별종목/ASAN\|ASAN]]) - 작업 관리 플랫폼
 - Smartsheet(US, [[SMAR\|SMAR]]) - 협업 플랫폼
 - Notion(비상장) - 올인원 워크스페이스
 - ClickUp(비상장) - 생산성 플랫폼

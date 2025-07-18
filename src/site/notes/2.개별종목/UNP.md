@@ -107,7 +107,7 @@ Union Pacific Corp(NYSE: UNP)는 [[미국 최대의 화물 철도 운송 기업\
     
 2. CSX Corporation(US, [[CSX\|CSX]]): 미국 동부 중심 화물 철도
     
-3. Norfolk Southern(US, [[NSC\|NSC]]): 미국 동남부·중남부 철도
+3. Norfolk Southern(US, [[2.개별종목/NSC\|NSC]]): 미국 동남부·중남부 철도
     
 4. Canadian National Railway(CA, [[2.개별종목/CNI\|CNI]]): 캐나다~미국 연결
     
