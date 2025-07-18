@@ -1,4 +1,4 @@
-name: Smart Telegram Notification
+name: Smart Telegram Notification (Debug)
 
 on:
   push:
@@ -27,6 +27,11 @@ jobs:
         files: |
           src/site/notes/**
 
+    - name: Debug changed files
+      run: |
+        echo "📂 감지된 파일 목록:"
+        echo "${{ steps.changed-files.outputs.all_changed_files }}"
+
     - name: Process and send notification
       if: steps.changed-files.outputs.any_changed == 'true'
       run: |
@@ -38,17 +43,19 @@ jobs:
         CHANGED_FILES="${{ steps.changed-files.outputs.all_changed_files }}"
 
         for file in $CHANGED_FILES; do
+          echo "🔍 처리 중: $file"
+
           if [[ $file == *.md ]]; then
 
             if [[ $file == *"Home.md"* ]]; then
-              echo "Skipping Home.md file"
+              echo "⏩ Home.md 감지됨 - 스킵"
               continue
             fi
 
             FULL_PATH="./$file"
 
             if [[ ! -f "$FULL_PATH" ]]; then
-              echo "File not found: $FULL_PATH"
+              echo "⚠️ 파일 없음: $FULL_PATH"
               continue
             fi
 
@@ -94,15 +101,19 @@ jobs:
 
             MESSAGE+="<br><br>⏰ 업데이트: $(date '+%Y-%m-%d %H:%M:%S')"
 
+            echo "🚀 텔레그램 메시지 전송 준비"
+
             curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
               -H "Content-Type: application/json" \
               -d "$(jq -nc --arg chat_id "$TELEGRAM_CHAT_ID" \
                            --arg text "$MESSAGE" \
                            '{chat_id: $chat_id, text: $text, parse_mode: "HTML", disable_web_page_preview: false}')"
 
-            echo "✅ Sent Telegram notification for $file"
+            echo "✅ 텔레그램 전송 완료: $file"
 
             sleep 2
 
+          else
+            echo "ℹ️ md 파일이 아님 - 스킵: $file"
           fi
         done
