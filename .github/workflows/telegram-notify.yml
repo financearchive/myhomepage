@@ -1,4 +1,4 @@
-name: Smart Telegram Bulk Notification
+name: Smart Telegram Bulk Notification (UTF-8 Fix + 경로안전)
 
 on:
   push:
@@ -35,7 +35,8 @@ jobs:
           exit 1
         fi
 
-        changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'src/site/notes/**/*.md' | grep -v "Home.md" || true)
+        # 삭제된 파일 제외 (ACMRT만 포함)
+        changed_files=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.before }} ${{ github.sha }} -- 'src/site/notes/**/*.md' | grep -v "Home.md" || true)
 
         if [[ -z "$changed_files" ]]; then
           echo "ℹ️ 변경된 마크다운 파일이 없습니다."
@@ -52,20 +53,23 @@ jobs:
             continue
           fi
 
-          if [[ ! -f "$file" ]]; then
-            echo "⚠️ 파일 없음: $file (스킵)"
+          # 경로 정규화 (한글, 특수문자 경로 안전 처리)
+          normalized_file=$(echo "$file" | iconv -f utf-8 -t utf-8 || echo "$file")
+
+          if [[ ! -f "$normalized_file" ]]; then
+            echo "⚠️ 파일 없음: $normalized_file (스킵)"
             continue
           fi
 
-          filename=$(basename "$file" .md)
+          filename=$(basename "$normalized_file" .md)
 
-          if [[ $file == *"0.DAILY Invest"* ]]; then
+          if [[ $normalized_file == *"0.DAILY Invest"* ]]; then
             EMOJI="📈"
             CATEGORY="시황분석"
-          elif [[ $file == *"2.개별종목"* ]]; then
+          elif [[ $normalized_file == *"2.개별종목"* ]]; then
             EMOJI="📊"
             CATEGORY="종목분석"
-          elif [[ $file == *"1.Study"* ]]; then
+          elif [[ $normalized_file == *"1.Study"* ]]; then
             EMOJI="⚡"
             CATEGORY="산업분석"
           else
@@ -73,12 +77,12 @@ jobs:
             CATEGORY="기타"
           fi
 
-          CONTENT_TITLE=$(head -20 "$file" | grep -E "^# " | head -1 | sed 's/^# //' | sed 's/📊 //g' | sed 's/🔍 //g' | sed 's/🏭 //g' || true)
+          CONTENT_TITLE=$(head -20 "$normalized_file" | grep -E "^# " | head -1 | sed 's/^# //' | sed 's/📊 //g' | sed 's/🔍 //g' | sed 's/🏭 //g' || true)
           if [[ -z "$CONTENT_TITLE" ]]; then
             CONTENT_TITLE="$filename"
           fi
 
-          CONTENT_SUMMARY=$(head -15 "$file" | grep -v "^#" | grep -v "^---" | grep -v "^$" | head -3 | tr '\n' ' ' | sed 's/\*\*//g' | sed 's/\*//g' | cut -c1-200 || true)
+          CONTENT_SUMMARY=$(head -15 "$normalized_file" | grep -v "^#" | grep -v "^---" | grep -v "^$" | head -3 | tr '\n' ' ' | sed 's/\*\*//g' | sed 's/\*//g' | cut -c1-200 || true)
 
           MESSAGE="$MESSAGE$EMOJI <b>$CONTENT_TITLE</b>\n"
           MESSAGE="$MESSAGE📋 <i>$CATEGORY</i>\n"
@@ -92,7 +96,7 @@ jobs:
 
         MESSAGE="$MESSAGE⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
 
-        # JSON 전송용 파일 생성
+        # JSON 파일 생성 (줄바꿈 안전 처리)
         echo "{" > /tmp/message.json
         echo "  \"chat_id\": \"$TELEGRAM_CHAT_ID\"," >> /tmp/message.json
         echo "  \"parse_mode\": \"HTML\"," >> /tmp/message.json
