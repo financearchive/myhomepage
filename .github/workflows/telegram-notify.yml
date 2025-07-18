@@ -1,4 +1,4 @@
-name: Smart Telegram Bulk Notification (UTF-8 Fix + 경로안전)
+name: Smart Telegram Bulk Notification (UTF-8 Fix + 경로안전 + 에러무시)
 
 on:
   push:
@@ -48,12 +48,14 @@ jobs:
 
         MESSAGE="📢 <b>머니다이어리 업데이트 알림</b>\n\n🔗 <a href=\"https://moneydiary.co.kr\">moneydiary.co.kr</a>\n\n"
 
+        # 에러 무시 설정
+        set +e
+
         echo "$changed_files" | while IFS= read -r file; do
           if [[ -z "$file" ]]; then
             continue
           fi
 
-          # 경로 정규화 (한글, 특수문자 경로 안전 처리)
           normalized_file=$(echo "$file" | iconv -f utf-8 -t utf-8 || echo "$file")
 
           if [[ ! -f "$normalized_file" ]]; then
@@ -93,6 +95,9 @@ jobs:
 
           MESSAGE="$MESSAGE\n"
         done
+
+        # 에러 다시 활성화
+        set -e
 
         MESSAGE="$MESSAGE⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
 
