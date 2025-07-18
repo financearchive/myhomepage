@@ -1,4 +1,4 @@
-name: Smart Telegram Notification (Debug)
+name: Smart Telegram Notification (Final)
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        fetch-depth: 2
+        fetch-depth: 0   # 🔧 전체 git 히스토리 가져오기 (Shallow 문제 해결)
 
     - name: Get changed files
       id: changed-files
