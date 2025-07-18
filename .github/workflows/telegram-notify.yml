@@ -26,105 +26,74 @@ jobs:
     - name: Process and send notification
       if: steps.changed-files.outputs.any_changed == 'true'
       run: |
-        # 변경된 파일들 처리
         CHANGED_FILES="${{ steps.changed-files.outputs.all_changed_files }}"
         
         for file in $CHANGED_FILES; do
           if [[ $file == *.md ]]; then
             echo "Processing file: $file"
             
-            # Home.md 파일은 제외
             if [[ $file == *"Home.md"* ]]; then
               echo "Skipping Home.md file"
               continue
             fi
             
-            # 파일이 존재하는지 확인
             if [[ ! -f "$file" ]]; then
               echo "File not found: $file"
               continue
             fi
             
-            # 파일 이름 추출 (확장자 제거)
             filename=$(basename "$file" .md)
             
-            # 폴더 경로로 카테고리 판단
             if [[ $file == *"0.DAILY Invest"* ]]; then
               TITLE="📊 오늘의 미국 주식 시장 시황($filename)"
               EMOJI="📈"
               CATEGORY="시황분석"
-              
             elif [[ $file == *"2.개별종목"* ]]; then
               TITLE="🔍 개별종목 분석: $filename"
               EMOJI="📊"
               CATEGORY="종목분석"
-              
             elif [[ $file == *"1.Study"* ]]; then
               TITLE="🏭 산업 분석: $filename"
               EMOJI="⚡"
               CATEGORY="산업분석"
-              
             else
               TITLE="📝 새 글 업데이트: $filename"
               EMOJI="📄"
               CATEGORY="기타"
             fi
             
-            # 파일 내용에서 실제 제목 추출
             CONTENT_TITLE=""
             if [[ -f "$file" ]]; then
               CONTENT_TITLE=$(head -20 "$file" | grep -E "^# " | head -1 | sed 's/^# //' | sed 's/📊 //g' | sed 's/🔍 //g' | sed 's/🏭 //g' || echo "")
             fi
             
-            # 파일 내용 요약
             CONTENT_SUMMARY=""
             if [[ -f "$file" ]]; then
               CONTENT_SUMMARY=$(head -15 "$file" | grep -v "^#" | grep -v "^---" | grep -v "^$" | head -3 | tr '\n' ' ' | sed 's/\*\*//g' | sed 's/\*//g' | cut -c1-200)
             fi
             
-            # 메시지 구성
-            MESSAGE="$EMOJI $TITLE
-
-🔗 moneydiary.co.kr
-
-📋 카테고리: $CATEGORY"
+            echo "{" > /tmp/telegram_message.json
+            echo "  \"chat_id\": \"${{ secrets.TELEGRAM_CHAT_ID }}\"," >> /tmp/telegram_message.json
+            echo -n "  \"text\": \"$EMOJI $TITLE\\n\\n🔗 moneydiary.co.kr\\n\\n📋 카테고리: $CATEGORY" >> /tmp/telegram_message.json
             
-            # 실제 제목이 있으면 추가
             if [[ -n "$CONTENT_TITLE" ]]; then
-              MESSAGE="$MESSAGE
-
-📌 원문 제목: $CONTENT_TITLE"
+              echo -n "\\n\\n📌 원문 제목: $CONTENT_TITLE" >> /tmp/telegram_message.json
             fi
             
-            # 요약 내용 추가
             if [[ -n "$CONTENT_SUMMARY" ]]; then
-              MESSAGE="$MESSAGE
-
-💭 내용 요약: 
-${CONTENT_SUMMARY}..."
+              echo -n "\\n\\n💭 내용 요약:\\n${CONTENT_SUMMARY}..." >> /tmp/telegram_message.json
             fi
             
-            MESSAGE="$MESSAGE
-
-⏰ 업데이트: $(date '+%Y-%m-%d %H:%M:%S')"
+            echo -n "\\n\\n⏰ 업데이트: $(date '+%Y-%m-%d %H:%M:%S')\"," >> /tmp/telegram_message.json
+            echo "  \"parse_mode\": \"HTML\"," >> /tmp/telegram_message.json
+            echo "  \"disable_web_page_preview\": false" >> /tmp/telegram_message.json
+            echo "}" >> /tmp/telegram_message.json
             
-            # 텔레그램 봇 토큰과 채팅 ID 확인
             if [[ -z "${{ secrets.TELEGRAM_BOT_TOKEN }}" ]] || [[ -z "${{ secrets.TELEGRAM_CHAT_ID }}" ]]; then
               echo "Error: Telegram bot token or chat ID not set"
               continue
             fi
             
-            # 텔레그램으로 전송 (파일로 임시 저장 후 전송)
-            cat > /tmp/telegram_message.json << EOF
-{
-  "chat_id": "${{ secrets.TELEGRAM_CHAT_ID }}",
-  "text": "$MESSAGE",
-  "parse_mode": "HTML",
-  "disable_web_page_preview": false
-}
-EOF
-            
-            # curl로 전송
             response=$(curl -s -w "%{http_code}" -X POST \
               "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
               -H "Content-Type: application/json" \
@@ -139,10 +108,7 @@ EOF
               echo "Response: $response"
             fi
             
-            # 임시 파일 삭제
             rm -f /tmp/telegram_message.json
-            
-            # 각 파일마다 2초 대기 (연속 전송 방지)
             sleep 2
             
           fi
