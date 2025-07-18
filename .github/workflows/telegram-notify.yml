@@ -71,31 +71,23 @@ jobs:
             # 파일 내용 요약 (처음 300자, 마크다운 제거)
             CONTENT_SUMMARY=$(head -15 "$file" | grep -v "^#" | grep -v "^---" | grep -v "^$" | head -5 | tr '\n' ' ' | sed 's/\*\*//g' | sed 's/\*//g' | cut -c1-300)
             
-            # 메시지 구성
-            MESSAGE="$EMOJI <b>$TITLE</b>
-            
-🔗 <a href=\"https://moneydiary.co.kr\">moneydiary.co.kr</a>
-            
-📋 <b>카테고리</b>: $CATEGORY"
+            # 메시지 구성 (JSON 이스케이프 처리)
+            MESSAGE="$EMOJI <b>$TITLE</b>\n\n🔗 <a href=\"https://moneydiary.co.kr\">moneydiary.co.kr</a>\n\n📋 <b>카테고리</b>: $CATEGORY"
             
             # 실제 제목이 있으면 추가
             if [[ -n "$CONTENT_TITLE" ]]; then
-              MESSAGE="$MESSAGE
-              
-📌 <b>원문 제목</b>: $CONTENT_TITLE"
+              MESSAGE="$MESSAGE\n\n📌 <b>원문 제목</b>: $CONTENT_TITLE"
             fi
             
             # 요약 내용 추가
             if [[ -n "$CONTENT_SUMMARY" ]]; then
-              MESSAGE="$MESSAGE
-              
-💭 <b>내용 요약</b>: 
-${CONTENT_SUMMARY}..."
+              MESSAGE="$MESSAGE\n\n💭 <b>내용 요약</b>:\n${CONTENT_SUMMARY}..."
             fi
             
-            MESSAGE="$MESSAGE
+            MESSAGE="$MESSAGE\n\n⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
             
-⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
+            # JSON 이스케이프 처리
+            MESSAGE=$(echo "$MESSAGE" | sed 's/"/\\"/g' | sed 's/\n/\\n/g')
             
             # 텔레그램으로 전송
             curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
@@ -106,6 +98,8 @@ ${CONTENT_SUMMARY}..."
                 \"parse_mode\": \"HTML\",
                 \"disable_web_page_preview\": false
               }"
+            
+            echo "Message sent for: $file"
             
             # 각 파일마다 1초 대기 (연속 전송 방지)
             sleep 1
