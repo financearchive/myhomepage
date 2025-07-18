@@ -1,4 +1,4 @@
-name: Smart Telegram Notification (UTF-8 Fixed)
+name: Smart Telegram Notification (UTF-8 + 안전 인코딩 완전버전)
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
           exit 1
         fi
         
-        # 변경된 파일들 가져오기 (HEAD~1과 비교)
+        # 변경된 파일들 가져오기
         changed_files=$(git diff --name-only HEAD~1 HEAD -- 'src/site/notes/**/*.md' | grep -v "Home.md" || true)
         
         if [[ -z "$changed_files" ]]; then
@@ -111,17 +111,19 @@ jobs:
   "disable_web_page_preview": false
 }
 EOF
-          
-          # 플레이스홀더 교체
+
+          # CHAT_ID 교체
           sed -i "s/CHAT_ID_PLACEHOLDER/$TELEGRAM_CHAT_ID/g" /tmp/message.json
           
           # 메시지 내용을 JSON 안전하게 인코딩
-          MESSAGE_ENCODED=$(echo -e "$MESSAGE" | python3 -c "
+          MESSAGE_ENCODED=$(python3 -c <<EOF
 import sys, json
-content = sys.stdin.read()
-print(json.dumps(content)[1:-1])
-")
+message = sys.stdin.read()
+print(json.dumps(message)[1:-1])
+EOF
+          ) <<< "$(echo -e "$MESSAGE")"
           
+          # MESSAGE_PLACEHOLDER 교체
           sed -i "s/MESSAGE_PLACEHOLDER/$MESSAGE_ENCODED/g" /tmp/message.json
           
           # 텔레그램 전송
@@ -139,9 +141,6 @@ print(json.dumps(content)[1:-1])
             echo "Response: ${response%???}"
           fi
           
-          # 임시 파일 삭제
           rm -f /tmp/message.json
-          
-          # 전송 간격
           sleep 2
         done
