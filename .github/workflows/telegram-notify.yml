@@ -1,4 +1,4 @@
-name: Telegram Notify via git diff (UTF-8 safe)
+name: Telegram Notify via git diff (완전 해결 버전)
 
 on:
   push:
@@ -20,12 +20,12 @@ jobs:
       with:
         fetch-depth: 0   # 모든 git 히스토리 가져오기
 
-    - name: Get changed files via git diff (UTF-8 safe)
+    - name: Get changed files via git diff (UTF-8 + quotePath OFF)
       id: get-diff
       run: |
-        echo "📂 변경 파일 추출 중 (git diff 사용 - UTF-8 출력 강제)"
+        echo "📂 변경 파일 추출 중 (git diff 사용 - UTF-8 + quotePath off)"
 
-        export LANG=C.UTF-8
+        git config --global core.quotepath false   # ✅ 유니코드 경로 정상 출력
 
         git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed_files.txt
 
@@ -43,7 +43,7 @@ jobs:
         for file in ${{ env.changed_files }}; do
           echo "🔍 감지된 파일: $file"
 
-          if [[ "$file" == src/site/notes/*.md || "$file" == src/site/notes/**/*.md || "$file" == src/site/notes/*/*.md || "$file" == src/site/notes/*/*/*.md ]]; then
+          if [[ "$file" == src/site/notes/*.md || "$file" == src/site/notes/*/*.md || "$file" == src/site/notes/*/*/*.md || "$file" == src/site/notes/*/*/*/*.md ]]; then
 
             if [[ $file == *"Home.md"* ]]; then
               echo "⏩ Home.md 감지됨 - 스킵"
