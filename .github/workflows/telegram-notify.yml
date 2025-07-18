@@ -1,4 +1,4 @@
-name: Smart Telegram Notification (UTF-8 Fixed)
+name: Smart Telegram Bulk Notification
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: Get changed files and send notification
+    - name: Notify Telegram with bulk message
       run: |
         export LC_ALL=C.UTF-8
         export LANG=C.UTF-8
@@ -35,7 +35,7 @@ jobs:
           exit 1
         fi
 
-        changed_files=$(git diff --name-only HEAD~1 HEAD -- 'src/site/notes/**/*.md' | grep -v "Home.md" || true)
+        changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'src/site/notes/**/*.md' | grep -v "Home.md" || true)
 
         if [[ -z "$changed_files" ]]; then
           echo "ℹ️ 변경된 마크다운 파일이 없습니다."
@@ -45,12 +45,12 @@ jobs:
         echo "🔍 감지된 파일들:"
         echo "$changed_files"
 
+        MESSAGE="📢 <b>머니다이어리 업데이트 알림</b>\n\n🔗 <a href=\"https://moneydiary.co.kr\">moneydiary.co.kr</a>\n\n"
+
         echo "$changed_files" | while IFS= read -r file; do
           if [[ -z "$file" ]]; then
             continue
           fi
-
-          echo "📄 처리 중: $file"
 
           if [[ ! -f "$file" ]]; then
             echo "⚠️ 파일 없음: $file"
@@ -59,64 +59,60 @@ jobs:
 
           filename=$(basename "$file" .md)
 
+          # 카테고리 구분
           if [[ $file == *"0.DAILY Invest"* ]]; then
-            TITLE="📊 오늘의 미국 주식 시장 시황($filename)"
             EMOJI="📈"
             CATEGORY="시황분석"
           elif [[ $file == *"2.개별종목"* ]]; then
-            TITLE="🔍 개별종목 분석: $filename"
             EMOJI="📊"
             CATEGORY="종목분석"
           elif [[ $file == *"1.Study"* ]]; then
-            TITLE="🏭 산업 분석: $filename"
             EMOJI="⚡"
             CATEGORY="산업분석"
           else
-            TITLE="📝 새 글 업데이트: $filename"
-            EMOJI="📄"
+            EMOJI="📝"
             CATEGORY="기타"
           fi
 
-          CONTENT_TITLE=$(head -20 "$file" | grep -E "^# " | head -1 | sed 's/^# //' | sed 's/📊 //g' | sed 's/🔍 //g' | sed 's/🏭 //g' || echo "")
+          # 내용 추출
+          CONTENT_TITLE=$(head -20 "$file" | grep -E "^# " | head -1 | sed 's/^# //' | sed 's/📊 //g' | sed 's/🔍 //g' | sed 's/🏭 //g' || echo "$filename")
           CONTENT_SUMMARY=$(head -15 "$file" | grep -v "^#" | grep -v "^---" | grep -v "^$" | head -3 | tr '\n' ' ' | sed 's/\*\*//g' | sed 's/\*//g' | cut -c1-200)
 
-          MESSAGE="$EMOJI <b>$TITLE</b>\\n\\n🔗 <a href=\"https://moneydiary.co.kr\">moneydiary.co.kr</a>\\n\\n📋 <b>카테고리</b>: $CATEGORY"
-
-          if [[ -n "$CONTENT_TITLE" ]]; then
-            MESSAGE="$MESSAGE\\n\\n📌 <b>원문 제목</b>: $CONTENT_TITLE"
-          fi
+          MESSAGE="$MESSAGE$EMOJI <b>$CONTENT_TITLE</b>\n"
+          MESSAGE="$MESSAGE📋 <i>$CATEGORY</i>\n"
 
           if [[ -n "$CONTENT_SUMMARY" ]]; then
-            MESSAGE="$MESSAGE\\n\\n💭 <b>내용 요약</b>:\\n$CONTENT_SUMMARY..."
+            MESSAGE="$MESSAGE💭 $CONTENT_SUMMARY...\n"
           fi
 
-          MESSAGE="$MESSAGE\\n\\n⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
-
-          # JSON 파일 생성
-          echo "{" > /tmp/message.json
-          echo "  \"chat_id\": \"$TELEGRAM_CHAT_ID\"," >> /tmp/message.json
-          echo "  \"parse_mode\": \"HTML\"," >> /tmp/message.json
-          echo "  \"disable_web_page_preview\": false," >> /tmp/message.json
-          echo -n "  \"text\": \"" >> /tmp/message.json
-          echo -n "$MESSAGE" | sed 's/"/\\"/g' >> /tmp/message.json
-          echo "\"" >> /tmp/message.json
-          echo "}" >> /tmp/message.json
-
-          # 텔레그램 전송
-          response=$(curl -s -w "%{http_code}" -X POST \
-            "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-            -H "Content-Type: application/json" \
-            -d @/tmp/message.json)
-
-          http_code="${response: -3}"
-
-          if [[ "$http_code" == "200" ]]; then
-            echo "✅ 텔레그램 전송 성공: $file"
-          else
-            echo "❌ 텔레그램 전송 실패: $file (HTTP: $http_code)"
-            echo "Response: ${response%???}"
-          fi
-
-          rm -f /tmp/message.json
-          sleep 2
+          MESSAGE="$MESSAGE\n"
         done
+
+        MESSAGE="$MESSAGE⏰ <i>업데이트: $(date '+%Y-%m-%d %H:%M:%S')</i>"
+
+        # JSON 전송용 파일 생성
+        echo "{" > /tmp/message.json
+        echo "  \"chat_id\": \"$TELEGRAM_CHAT_ID\"," >> /tmp/message.json
+        echo "  \"parse_mode\": \"HTML\"," >> /tmp/message.json
+        echo "  \"disable_web_page_preview\": false," >> /tmp/message.json
+        echo -n "  \"text\": \"" >> /tmp/message.json
+        echo -e "$MESSAGE" | sed 's/"/\\"/g' | sed ':a;N;$!ba;s/\n/\\n/g' >> /tmp/message.json
+        echo "\"" >> /tmp/message.json
+        echo "}" >> /tmp/message.json
+
+        # 텔레그램 전송
+        response=$(curl -s -w "%{http_code}" -X POST \
+          "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+          -H "Content-Type: application/json" \
+          -d @/tmp/message.json)
+
+        http_code="${response: -3}"
+
+        if [[ "$http_code" == "200" ]]; then
+          echo "✅ 텔레그램 전송 성공"
+        else
+          echo "❌ 텔레그램 전송 실패 (HTTP: $http_code)"
+          echo "Response: ${response%???}"
+        fi
+
+        rm -f /tmp/message.json
