@@ -34,7 +34,7 @@ SoundHound AI의 핵심 경쟁력은 다음과 같습니다:
 전방산업:
 
 - 자동차 제조: Hyundai(KR, [[005380\|005380]]), Mercedes-Benz(DE, [[MBG\|MBG]]), Honda(JP, [[7267\|7267]])
-- 레스토랑 체인: White Castle, Jersey Mike's Subs, Chipotle(US, [[CMG\|CMG]])
+- 레스토랑 체인: White Castle, Jersey Mike's Subs, Chipotle(US, [[2.개별종목/CMG\|CMG]])
 - 스마트 기기 제조: Samsung Electronics(KR, [[005930\|005930]]), LG Electronics(KR, [[066570\|066570]])
 
 후방산업:
@@ -58,7 +58,7 @@ SoundHound AI의 핵심 경쟁력은 다음과 같습니다:
 - Honda(JP, [[7267\|7267]]) - 차량 인포테인먼트 시스템
 - White Castle - AI 주문 시스템
 - Jersey Mike's Subs - 음성 AI 주문 솔루션
-- Chipotle(US, [[CMG\|CMG]]) - 음성 주문 기술
+- Chipotle(US, [[2.개별종목/CMG\|CMG]]) - 음성 주문 기술
 - Pandora(US, [[P\|P]]) - 음악 검색 및 추천 기능
 
 ## 주요 판매국가

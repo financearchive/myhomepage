@@ -19,12 +19,12 @@ US Foods Holding Corp.는 신선, 냉동, 건조 식품 및 비식품 제품을 
     - **식품 서비스**: 레스토랑, 호텔, 병원 등에서 식품을 제공하는 산업. 주요 기업: McDonald’s (미국, [[2.개별종목/MCD\|MCD]]), Marriott International (미국, [[2.개별종목/MAR\|MAR]]).
     - **소매 유통**: 식품 및 비식품 제품을 소비자에게 판매하는 산업. 주요 기업: Walmart (미국, [[2.개별종목/WMT\|WMT]]), Kroger (미국, [[2.개별종목/KR\|KR]]).
 - **후방산업**:
-    - **식품 제조**: 식품을 생산하고 가공하는 산업. 주요 기업: Tyson Foods (미국, [[2.개별종목/TSN\|TSN]]), Conagra Brands (미국, [[CAG\|CAG]]).
+    - **식품 제조**: 식품을 생산하고 가공하는 산업. 주요 기업: Tyson Foods (미국, [[2.개별종목/TSN\|TSN]]), Conagra Brands (미국, [[2.개별종목/CAG\|CAG]]).
     - **포장 및 물류**: 식품 및 비식품 제품의 포장 및 유통을 담당하는 산업. 주요 기업: UPS (미국, [[2.개별종목/UPS\|UPS]]), FedEx (미국, [[2.개별종목/FDX\|FDX]]).
 
 ### 밸류체인
 
-- **식품 제조**: 식품을 생산하고 가공. 대표 기업: Tyson Foods (미국, [[2.개별종목/TSN\|TSN]]), Conagra Brands (미국, [[CAG\|CAG]]).
+- **식품 제조**: 식품을 생산하고 가공. 대표 기업: Tyson Foods (미국, [[2.개별종목/TSN\|TSN]]), Conagra Brands (미국, [[2.개별종목/CAG\|CAG]]).
 - **포장 및 물류**: 제품의 포장 및 유통. 대표 기업: UPS (미국, [[2.개별종목/UPS\|UPS]]), FedEx (미국, [[2.개별종목/FDX\|FDX]]).
 - **유통 및 판매**: 식품 및 비식품 제품의 유통 및 판매. 대표 기업: US Foods Holding Corp. (미국, [[2.개별종목/USFD\|USFD]]), Sysco Corporation (미국, [[2.개별종목/SYY\|SYY]]).
 - **소비자 서비스**: 최종 소비자에게 제품 제공. 대표 기업: Walmart (미국, [[2.개별종목/WMT\|WMT]]), Kroger (미국, [[2.개별종목/KR\|KR]]).

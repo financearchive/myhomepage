@@ -32,7 +32,7 @@ Shake Shack Inc는 [[프리미엄 패스트 캐주얼 레스토랑\|프리미엄
 
 전방산업:
 
-- 외식산업: 최종 소비자에게 식사 제공 (McDonald's(US, [[2.개별종목/MCD\|MCD]]), Chipotle(US, [[CMG\|CMG]]))
+- 외식산업: 최종 소비자에게 식사 제공 (McDonald's(US, [[2.개별종목/MCD\|MCD]]), Chipotle(US, [[2.개별종목/CMG\|CMG]]))
     
 - 배달 서비스: 음식 배달 플랫폼 (Uber Eats(US, [[2.개별종목/UBER\|UBER]]), DoorDash(US, [[2.개별종목/DASH\|DASH]]))
     

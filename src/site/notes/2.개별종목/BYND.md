@@ -241,7 +241,7 @@ Beyond Meat은 식물성 원료 가공 및 조립 모델을 채택하여 제품 
 - Impossible Foods(US, [[2.개별종목/Impossible Foods\|Impossible Foods]]) - 식물성 버거 및 소시지, 식물성 고기 시장 2위
 - Oatly(SE, [[2.개별종목/OTLY\|OTLY]]) - 식물성 우유 및 식품, 식물성 식품 시장 경쟁
 - Kellogg Company(US, [[2.개별종목/K\|K]]) - MorningStar Farms 브랜드, 식물성 고기 대체재
-- Conagra Brands(US, [[CAG\|CAG]]) - Gardein 브랜드, 식물성 고기 제품
+- Conagra Brands(US, [[2.개별종목/CAG\|CAG]]) - Gardein 브랜드, 식물성 고기 제품
 - Tyson Foods(US, [[2.개별종목/TSN\|TSN]]) - 식물성 고기 제품 라인 진출
 - Hormel Foods(US, [[2.개별종목/HRL\|HRL]]) - 식물성 고기 대체재 개발
 - Nestlé(CH, [[2.개별종목/NESN\|NESN]]) - Garden Gourmet 브랜드, 식물성 고기 제품

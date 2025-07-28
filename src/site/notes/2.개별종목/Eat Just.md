@@ -128,7 +128,7 @@ Eat Just는 대체 단백질 전문 제조 기업으로서 혁신적인 생산 �
 **후방산업:**
 
 - 농업: 녹두 및 식물성 원료 공급 - 중국, 인도, 미얀마 등 녹두 생산 농가
-- 식품 첨가물: 강황, 식물성 오일, 안정제 등 - Cargill(US, [[CAG\|CAG]]), ADM(US, [[ADM\|ADM]])
+- 식품 첨가물: 강황, 식물성 오일, 안정제 등 - Cargill(US, [[2.개별종목/CAG\|CAG]]), ADM(US, [[ADM\|ADM]])
 - 포장재: 플라스틱 용기, 라벨 등 - Sealed Air(US, [[SEE\|SEE]]), Crown Holdings(US, [[CCK\|CCK]])
 - 바이오테크: 세포 배양 기술 및 장비 - Thermo Fisher Scientific(US, [[2.개별종목/TMO\|TMO]]), Merck(US, [[2.개별종목/MRK\|MRK]])
 
@@ -140,7 +140,7 @@ Eat Just는 대체 단백질 전문 제조 기업으로서 혁신적인 생산 �
 
 - 중국 녹두 농가(CN, [[중국 녹두 농가\|중국 녹두 농가]]) - 주요 녹두 원료 공급
 - 인도 녹두 농가(IN, [[인도 녹두 농가\|인도 녹두 농가]]) - 녹두 원료 공급
-- Cargill(US, [[CAG\|CAG]]) - 식물성 오일 및 첨가물 공급
+- Cargill(US, [[2.개별종목/CAG\|CAG]]) - 식물성 오일 및 첨가물 공급
 - ADM(US, [[ADM\|ADM]]) - 식물성 단백질 및 첨가물 공급
 
 **제조 및 가공 단계:** 단백질 추출 및 제품 생산
@@ -182,7 +182,7 @@ Eat Just는 대체 단백질 전문 제조 기업으로서 혁신적인 생산 �
 
 - 사용처: Just Egg의 지방 성분 및 질감 개선
 - 주요 공급 지역: 미국, 브라질, 아르헨티나
-- 주요 공급 업체: Cargill [[CAG\|CAG]], ADM [[ADM\|ADM]]
+- 주요 공급 업체: Cargill [[2.개별종목/CAG\|CAG]], ADM [[ADM\|ADM]]
 
 **강황 (Turmeric):**
 

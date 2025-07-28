@@ -27,7 +27,7 @@ Darden Restaurants, Inc.는 다양한 레스토랑 브랜드를 운영하며, �
 - **농산물 생산:** 농산물 재배 및 수확
     - **대표 회사:** Tyson Foods (미국, [[2.개별종목/TSN\|TSN]]), [[Cargill\|Cargill]] (비상장)
 - **식품 가공:** 원재료 가공 및 포장
-    - **대표 회사:** Archer Daniels Midland (미국, [[ADM\|ADM]]), Conagra Brands (미국, [[CAG\|CAG]])
+    - **대표 회사:** Archer Daniels Midland (미국, [[ADM\|ADM]]), Conagra Brands (미국, [[2.개별종목/CAG\|CAG]])
 - **유통 및 물류:** 식품 유통 및 물류 관리
     - **대표 회사:** Sysco Corporation (미국, [[2.개별종목/SYY\|SYY]]), US Foods Holding Corp. (미국, [[2.개별종목/USFD\|USFD]])
 - **레스토랑 운영:** 최종 소비자에게 식사 제공

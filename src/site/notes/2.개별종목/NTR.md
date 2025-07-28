@@ -17,7 +17,7 @@ Nutrien Ltd.는 농업 투입재 및 서비스를 제공하는 회사로, 주요
 
 - **전방산업**:
     - **농업**: 농부 및 농업 생산자 (예: Archer Daniels Midland (US, [[ADM\|ADM]]), Bunge Limited (US, [[BG\|BG]]))
-    - **식품 가공**: 식품 가공업체 (예: Tyson Foods (US, [[2.개별종목/TSN\|TSN]]), Conagra Brands (US, [[CAG\|CAG]]))
+    - **식품 가공**: 식품 가공업체 (예: Tyson Foods (US, [[2.개별종목/TSN\|TSN]]), Conagra Brands (US, [[2.개별종목/CAG\|CAG]]))
       
 - **후방산업**:
     - **화학**: 원료 공급업체 (예: BASF (DE, [[BAS\|BAS]]), Dow Inc. (US, [[2.개별종목/DOW\|DOW]]))
