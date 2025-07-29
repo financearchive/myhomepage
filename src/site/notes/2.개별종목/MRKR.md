@@ -178,7 +178,7 @@ Marker Therapeutics는 2015년 설립된 임상단계 [[면역항암치료\|면�
 
 **간접 경쟁사:**
 
-- Adaptimmune (US, [[ADAP\|ADAP]]) - T세포 치료 전문업체
+- Adaptimmune (US, [[2.개별종목/ADAP\|ADAP]]) - T세포 치료 전문업체
 - Immunocore (US, [[IMCR\|IMCR]]) - T세포 수용체 기반 치료제
 - Iovance Biotherapeutics (US, [[IOVA\|IOVA]]) - 종양침윤림프구 치료제
 

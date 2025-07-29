@@ -40,7 +40,7 @@ EHang은 특히 EH216-S 모델로 중국 최초로 유인 eVTOL 항공기에 대
     
     - 배터리 제조: [[2.개별종목/CATL\|CATL]], [[2.개별종목/BYD\|BYD]]
     - 항공 전자장비: Honeywell (US, [[2.개별종목/HON\|HON]])
-    - 복합소재: Hexcel (US, [[HXL\|HXL]])
+    - 복합소재: Hexcel (US, [[2.개별종목/HXL\|HXL]])
     
 2. 전방산업:
     

@@ -28,7 +28,7 @@ Redwire는 [[우주 인프라 기술\|우주 인프라 기술]] 및 솔루션을
     
     - 핵심 산업: 전자 부품, 소재 과학
     - 역할: Redwire 제품 제조에 필요한 부품 및 소재 공급
-    - 주요 기업: Honeywell (미국, [[2.개별종목/HON\|HON]]), Hexcel Corporation (미국, [[HXL\|HXL]])
+    - 주요 기업: Honeywell (미국, [[2.개별종목/HON\|HON]]), Hexcel Corporation (미국, [[2.개별종목/HXL\|HXL]])
     
 
 ## 밸류체인

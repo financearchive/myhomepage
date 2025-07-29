@@ -138,7 +138,7 @@ Northrop Grumman은 고도의 정밀도와 보안이 요구되는 첨단 방위�
 
 - Alcoa(US, [[2.개별종목/AA\|AA]]) - 항공기 구조재용 알루미늄 합금
 - Howmet Aerospace(US, [[2.개별종목/HWM\|HWM]]) - 엔진 부품용 고온 합금
-- Hexcel(US, [[HXL\|HXL]]) - 항공기 구조재용 복합재
+- Hexcel(US, [[2.개별종목/HXL\|HXL]]) - 항공기 구조재용 복합재
 - Analog Devices(US, [[2.개별종목/ADI\|ADI]]) - 레이더 및 센서용 반도체
 - Intel(US, [[2.개별종목/INTC\|INTC]]) - 처리 장치용 반도체
 
@@ -190,7 +190,7 @@ Northrop Grumman은 고도의 정밀도와 보안이 요구되는 첨단 방위�
 
 - 사용처: 항공기 구조재, 스텔스 코팅, 경량화 부품
 - 주요 공급 지역: 미국, 일본, 독일
-- 주요 공급 업체: Hexcel ([[HXL\|HXL]]), Toray ([[3402\|3402]])
+- 주요 공급 업체: Hexcel ([[2.개별종목/HXL\|HXL]]), Toray ([[3402\|3402]])
 
 **희토류 금속:**
 

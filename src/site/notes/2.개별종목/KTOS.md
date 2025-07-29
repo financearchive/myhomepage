@@ -121,7 +121,7 @@ Kratos는 설계 중심의 시스템 통합업체로 대부분의 제조를 외�
 
 **후방산업:**
 
-- 항공우주 소재업: Hexcel(US, [[HXL\|HXL]]), Toray(JP, [[Toray\|Toray]]) - 탄소섬유 및 복합재 공급
+- 항공우주 소재업: Hexcel(US, [[2.개별종목/HXL\|HXL]]), Toray(JP, [[Toray\|Toray]]) - 탄소섬유 및 복합재 공급
 - 반도체 제조업: Intel(US, [[2.개별종목/INTC\|INTC]]), Xilinx(US, [[XLNX\|XLNX]]) - 전자부품 및 프로세서 공급
 - 엔진 제조업: Pratt & Whitney(US, [[2.개별종목/RTX\|RTX]]), General Electric(US, [[2.개별종목/GE\|GE]]) - 엔진 부품 공급
 - 전자부품 제조업: Northrop Grumman(US, [[2.개별종목/NOC\|NOC]]), Raytheon(US, [[2.개별종목/RTX\|RTX]]) - 전자전 시스템 공급
@@ -138,7 +138,7 @@ Kratos는 설계 중심의 시스템 통합업체로 대부분의 제조를 외�
 
 **부품 공급 단계:** 핵심 부품 및 소재 공급
 
-- Hexcel(US, [[HXL\|HXL]]) - 탄소섬유 복합재 공급
+- Hexcel(US, [[2.개별종목/HXL\|HXL]]) - 탄소섬유 복합재 공급
 - Intel(US, [[2.개별종목/INTC\|INTC]]) - 프로세서 및 반도체 공급
 - Honeywell(US, [[2.개별종목/HON\|HON]]) - 항공전자 장비 공급
 - Collins Aerospace(US, [[2.개별종목/RTX\|RTX]]) - 통신 시스템 공급
@@ -184,7 +184,7 @@ Kratos는 설계 중심의 시스템 통합업체로 대부분의 제조를 외�
 
 - 사용처: 무인항공기 동체 및 날개 구조재
 - 주요 공급 지역: 미국, 일본, 독일
-- 주요 공급 업체: Hexcel [[HXL\|HXL]], Toray [[Toray\|Toray]]
+- 주요 공급 업체: Hexcel [[2.개별종목/HXL\|HXL]], Toray [[Toray\|Toray]]
 
 **반도체:**
 

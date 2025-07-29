@@ -106,7 +106,7 @@ AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산�
 - 반도체: Intel (US, [[2.개별종목/INTC\|INTC]]), Qualcomm (US, [[2.개별종목/QCOM\|QCOM]])
 - 배터리: Panasonic (JP, [[Panasonic\|Panasonic]]), LG Chem (KR, [[LG Chem\|LG Chem]])
 - 센서: Flir Systems (US, [[FLIR\|FLIR]]), Raytheon (US, [[2.개별종목/RTX\|RTX]])
-- 복합재료: Hexcel (US, [[HXL\|HXL]]), Toray (JP, [[Toray\|Toray]])
+- 복합재료: Hexcel (US, [[2.개별종목/HXL\|HXL]]), Toray (JP, [[Toray\|Toray]])
 
 ---
 
@@ -150,7 +150,7 @@ AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산�
 
 **반도체칩:** 비행제어 및 영상처리, 대만/한국, TSMC (TW, [[2.개별종목/TSM\|TSM]]), Samsung (KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
 
-**복합재료:** 기체 제작, 미국/일본, Hexcel (US, [[HXL\|HXL]]), Toray (JP, [[Toray\|Toray]])
+**복합재료:** 기체 제작, 미국/일본, Hexcel (US, [[2.개별종목/HXL\|HXL]]), Toray (JP, [[Toray\|Toray]])
 
 **정밀센서:** 항법 및 목표 탐지, 미국/독일, Honeywell (US, [[2.개별종목/HON\|HON]]), Bosch (DE, [[Bosch\|Bosch]])
 

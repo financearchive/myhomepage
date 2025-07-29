@@ -49,7 +49,7 @@ TPI Composites Inc.(NASDAQ: TPIC)는 미국 애리조나주 스코츠데일에 �
 
 ## 후방산업
 
-- **복합 소재 공급업체**: Hexcel Corporation(US, [[HXL\|HXL]]), Toray Industries(JP)
+- **복합 소재 공급업체**: Hexcel Corporation(US, [[2.개별종목/HXL\|HXL]]), Toray Industries(JP)
     
 - **제조 장비 공급업체**: Siemens(DE), ABB(CH)
     
