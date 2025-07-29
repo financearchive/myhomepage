@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 테마/VR,AR,MR/XR/","created":"2024-11-20T21:02:29.917+09:00","updated":"2025-07-10T10:44:22.050+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 테마/VR,AR,MR/XR/","created":"2023-06-06T19:53:25.849+09:00","updated":"2025-07-10T10:44:22.050+09:00"}
 ---
 
 #VR #AR #XR

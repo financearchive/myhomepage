@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/SPP/","created":"2024-11-20T21:02:29.245+09:00","updated":"2025-06-03T20:07:21.893+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/SPP/","created":"2024-09-03T17:06:51.529+09:00","updated":"2025-06-03T20:07:21.893+09:00"}
 ---
 
 #전력 #중남부 #RTO

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CMO/","created":"2024-11-20T21:02:29.724+09:00","updated":"2025-06-26T17:18:22.322+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CMO/","created":"2024-09-11T09:48:56.919+09:00","updated":"2025-06-26T17:18:22.322+09:00"}
 ---
 
 #헬스케어  #CMO

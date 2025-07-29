@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/☆ 금리/ECB/ECB/","created":"2024-11-20T21:02:27.157+09:00","updated":"2025-06-03T20:07:19.735+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/☆ 금리/ECB/ECB/","created":"2024-09-13T09:35:41.783+09:00","updated":"2025-06-03T20:07:19.735+09:00"}
 ---
 
 #금리 #EU #통화정책 #ECB
