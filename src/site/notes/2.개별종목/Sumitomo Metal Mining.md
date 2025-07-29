@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Sumitomo Metal Mining/","created":"2023-06-04T17:05:23.637+09:00","updated":"2025-06-03T20:06:01.408+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Sumitomo Metal Mining/","created":"2023-06-04T17:05:23.637+09:00","updated":"2025-07-29T21:37:05.237+09:00"}
 ---
 
 #비철금속 #리사이클링 #양극재 #광산 #정제련업 #니켈파우더 #금속및광업 #소재
