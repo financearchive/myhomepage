@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/♠ 외환/INFO_외환/DXY/","created":"2024-08-21T11:43:29.349+09:00","updated":"2025-06-03T20:07:19.844+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/♠ 외환/INFO_외환/DXY/","created":"2024-11-20T21:02:27.346+09:00","updated":"2025-06-03T20:07:19.844+09:00"}
 ---
 
 #환율 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/로봇 산업/INFO_로봇/Raas/","created":"2023-06-29T12:45:21.509+09:00","updated":"2025-06-03T20:07:20.100+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/로봇 산업/INFO_로봇/Raas/","created":"2024-11-20T21:02:28.012+09:00","updated":"2025-06-03T20:07:20.100+09:00"}
 ---
 
 #로봇 #렌탈 

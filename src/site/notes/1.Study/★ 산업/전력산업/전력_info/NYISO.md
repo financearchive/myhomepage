@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/NYISO/","created":"2024-09-03T16:46:56.044+09:00","updated":"2025-06-03T20:07:21.877+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/NYISO/","created":"2024-11-20T21:02:29.232+09:00","updated":"2025-06-03T20:07:21.877+09:00"}
 ---
 
 #전력 #뉴욕 #비영리독립시스템운영자 #ISO

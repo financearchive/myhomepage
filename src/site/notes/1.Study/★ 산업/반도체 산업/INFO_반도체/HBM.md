@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/반도체 산업/INFO_반도체/HBM/","created":"2023-06-08T16:23:25.583+09:00","updated":"2025-07-10T10:44:21.972+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/반도체 산업/INFO_반도체/HBM/","created":"2024-11-20T21:02:28.103+09:00","updated":"2025-07-10T10:44:21.972+09:00"}
 ---
 
 #반도체 #DRAM

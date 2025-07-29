@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/MISO/","created":"2024-09-03T16:46:54.186+09:00","updated":"2025-06-03T20:07:21.872+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/전력산업/전력_info/MISO/","created":"2024-11-20T21:02:29.230+09:00","updated":"2025-06-03T20:07:21.872+09:00"}
 ---
 
 #전력 #중서부 #남부 #ISO #RTO 

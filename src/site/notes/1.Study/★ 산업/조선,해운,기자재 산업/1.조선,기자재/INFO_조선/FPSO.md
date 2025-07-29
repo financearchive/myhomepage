@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/조선,해운,기자재 산업/1.조선,기자재/INFO_조선/FPSO/","created":"2023-05-24T12:41:24.567+09:00","updated":"2025-06-26T17:01:04.917+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/조선,해운,기자재 산업/1.조선,기자재/INFO_조선/FPSO/","created":"2024-11-20T21:02:29.271+09:00","updated":"2025-06-26T17:01:04.917+09:00"}
 ---
 
 #FPSO #LNG

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/게임산업/Info_게임/Freemium/","created":"2023-07-13T23:09:44.748+09:00","updated":"2025-06-03T20:07:19.995+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/게임산업/Info_게임/Freemium/","created":"2024-11-20T21:02:27.782+09:00","updated":"2025-06-03T20:07:19.995+09:00"}
 ---
 
 - 관련테마: [[1.Study/★ 산업/게임산업/게임산업\|게임산업]]

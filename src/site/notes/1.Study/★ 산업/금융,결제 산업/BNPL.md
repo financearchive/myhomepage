@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 산업/금융,결제 산업/BNPL/","created":"2024-08-29T21:57:05.890+09:00","updated":"2025-06-25T13:28:40.174+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 산업/금융,결제 산업/BNPL/","created":"2024-11-20T21:02:27.860+09:00","updated":"2025-06-25T13:28:40.174+09:00"}
 ---
 
 #금융 

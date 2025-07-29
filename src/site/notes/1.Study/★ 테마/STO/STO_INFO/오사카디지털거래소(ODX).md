@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 테마/STO/STO_INFO/오사카디지털거래소(ODX)/","created":"2023-12-06T09:23:56.375+09:00","updated":"2025-06-03T20:07:22.227+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 테마/STO/STO_INFO/오사카디지털거래소(ODX)/","created":"2024-11-20T21:02:29.889+09:00","updated":"2025-06-03T20:07:22.227+09:00"}
 ---
 
 #코인  #STO

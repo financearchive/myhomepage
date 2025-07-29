@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 테마/STO/STO/","created":"2023-12-06T09:16:28.877+09:00","updated":"2025-06-26T17:39:57.648+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 테마/STO/STO/","created":"2024-11-20T21:02:29.885+09:00","updated":"2025-06-26T17:39:57.648+09:00"}
 ---
 
 #코인 #STO #증권형토큰

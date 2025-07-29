@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/INFO_기타매크로/LGFV/","created":"2023-05-24T13:54:12.760+09:00","updated":"2025-06-03T20:07:19.578+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/★ 경제/★ 매크로/INFO_기타매크로/LGFV/","created":"2024-11-20T21:02:26.857+09:00","updated":"2025-06-03T20:07:19.578+09:00"}
 ---
 
 #중국 #그림자금융
