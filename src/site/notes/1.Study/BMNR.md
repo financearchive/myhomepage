@@ -237,7 +237,7 @@ BitMine은 제조업체가 아닌 마이닝 서비스 및 자산 관리 모델�
 - CleanSpark(US, [[2.개별종목/CLSK\|CLSK]]) - 고효율 마이닝 전문업체, 청정 에너지 활용
 - Core Scientific(US, [[2.개별종목/CORZ\|CORZ]]) - 마이닝 호스팅 서비스 제공업체
 - Cipher Mining(US, [[CIFR\|CIFR]]) - 비트코인 마이닝 및 호스팅 서비스
-- IREN(US, [[IREN\|IREN]]) - 재생 에너지 기반 마이닝 업체
+- IREN(US, [[2.개별종목/IREN\|IREN]]) - 재생 에너지 기반 마이닝 업체
 - Bitfarms(CA, [[BITF\|BITF]]) - 캐나다 기반 마이닝 업체
 - Hut 8(CA, [[2.개별종목/HUT\|HUT]]) - 캐나다 대형 마이닝 업체
 - Stronghold Digital Mining(US, [[SDIG\|SDIG]]) - 폐석탄 발전소 활용 마이닝
