@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Impossible Foods/","created":"2023-07-15T11:50:41.997+09:00","updated":"2025-07-29T21:37:04.761+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Impossible Foods/","created":"2023-07-15T11:50:41.997+09:00","updated":"2025-06-25T11:20:16.163+09:00"}
 ---
 
  #포장식품 #대체육 #소비자방어주
