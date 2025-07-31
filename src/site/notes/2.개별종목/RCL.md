@@ -145,7 +145,7 @@ Meyer Turku, Chantiers de l'Atlantique 등 전문 조선소와 계약하여 선�
 **Norwegian Cruise Line Holdings(US, [[2.개별종목/NCLH\|NCLH]])** - 3위 크루즈 기업, 시장점유율 약 15% 
 **MSC Cruises(CH, [[MSC Cruises\|MSC Cruises]])** - 유럽 최대 크루즈 기업, 시장점유율 약 12% 
 **Disney Cruise Line(US, [[2.개별종목/DIS\|DIS]])** - 프리미엄 패밀리 크루즈, 시장점유율 약 3% 
-**Virgin Voyages(US, [[Virgin Voyages\|Virgin Voyages]])** - 성인 전용 크루즈, 신규 경쟁사
+**Virgin Voyages(US, [[2.개별종목/Virgin Voyages\|Virgin Voyages]])** - 성인 전용 크루즈, 신규 경쟁사
 
 ---
 
