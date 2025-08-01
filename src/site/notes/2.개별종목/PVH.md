@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/PVH/","created":"2024-12-06T21:23:49.709+09:00","updated":"2025-06-03T20:06:00.827+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/PVH/","created":"2024-12-06T21:23:49.709+09:00","updated":"2025-07-29T21:37:05.089+09:00"}
 ---
 
 #임의소비재 #의류 #사치품 #향수 #TommyHilfiger #CalvinKlein

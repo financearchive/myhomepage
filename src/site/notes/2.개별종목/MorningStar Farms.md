@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MorningStar Farms/","created":"2024-08-31T21:07:23.431+09:00","updated":"2025-06-25T11:20:16.199+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/MorningStar Farms/","created":"2024-08-31T21:07:23.431+09:00","updated":"2025-07-29T21:37:04.934+09:00"}
 ---
 
 #포장식품 #소비자방어주 #대체육 #채식식품 #비건
