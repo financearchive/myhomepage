@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MoMo/","created":"2025-03-04T14:04:32.067+09:00","updated":"2025-07-29T21:37:04.932+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/MoMo/","created":"2025-03-04T14:04:32.067+09:00","updated":"2025-06-03T20:06:00.169+09:00"}
 ---
 
 #BNPL #핀테크 
