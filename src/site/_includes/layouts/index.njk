@@ -20,6 +20,20 @@
     {% if settings.dgEnableSearch === true %}
       {%include "components/searchContainer.njk"%}
     {% endif %}
+
+    <!-- 🚀 RSS 구독 버튼 추가 - 여기부터 -->
+    <div class="rss-subscribe-container">
+      <div class="rss-subscribe">
+        <a href="/rss.xml" class="rss-button" target="_blank">
+          📡 RSS 구독
+        </a>
+        <a href="/feed.xml" class="feed-button" target="_blank">
+          📰 피드 구독
+        </a>
+      </div>
+    </div>
+    <!-- RSS 구독 버튼 끝 - 여기까지 -->
+
     <main class="content cm-s-obsidian {{contentClasses}}">
       <header>
       {% if settings.dgShowInlineTitle === true %}
