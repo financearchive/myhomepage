@@ -25,7 +25,7 @@
             return null;
         }
         // 🚀 개선된 디버깅 + URL 매칭 로직
-        let currentLink = decodeURI(window.location.pathname);
+        let currentLink = decodeURI(window.location.pathname).replace(/\/$/, ''); // trailing slash 제거
         console.log("=== GRAPH DEBUG ===");
         console.log("Current URL:", currentLink);
         console.log("Available nodes:", Object.keys(graphData.nodes).slice(0, 5));
@@ -36,25 +36,32 @@
         
         // 2차: 매칭 실패시 제목으로 찾기
         if (!currentNode) {
-            const pageTitle = document.title;
+            const pageTitle = document.title.trim().toLowerCase();
             console.log("페이지 제목:", pageTitle);
             
             currentNode = Object.values(graphData.nodes).find(node => 
-                node.title === pageTitle || 
-                currentLink.includes(node.title) ||
-                node.url.includes(currentLink.split('/').pop()) ||
-                pageTitle.includes(node.title)
+                node.title.trim().toLowerCase() === pageTitle || 
+                currentLink.includes(node.title.trim()) ||
+                node.url.replace(/\/$/, '').includes(currentLink.split('/').pop()) ||
+                pageTitle.includes(node.title.trim().toLowerCase())
             );
             console.log("2차 매칭 결과:", currentNode);
         }
         
         // 3차: 여전히 못찾으면 홈으로
         if (!currentNode) {
+            console.warn("매칭되는 노드가 없어 홈 노드로 fallback합니다.");
             currentNode = Object.values(graphData.nodes).find((v) => v.home);
             console.log("3차 홈으로 fallback:", currentNode);
         }
         
-        console.log("최종 currentNode:", currentNode);
+        if (!currentNode) {
+            console.error("홈 노드도 찾을 수 없습니다.");
+        } else {
+            console.log("최종 currentNode:", currentNode);
+            // 여기서 그래프 렌더링 호출 (예: renderLocalGraph)
+            renderLocalGraph(graphData, 1, false);
+        }
         // 🚀 개선된 로직 끝
         let remaining = JSON.parse(JSON.stringify(graphData.nodes));
         let links = JSON.parse(JSON.stringify(graphData.links));
