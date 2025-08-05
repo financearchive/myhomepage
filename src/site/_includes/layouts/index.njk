@@ -11,6 +11,16 @@
     {% for imp in dynamics.index.head %}
       {% include imp %}
     {% endfor %}
+    <!-- OneSignal 푸시 알림 -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "73e23f78-5f85-4b81-8465-fc97e092ad10",
+        });
+      });
+    </script>
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
     {%include "components/notegrowthhistory.njk"%}
