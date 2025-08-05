@@ -38,7 +38,7 @@
         - **불이익**: [NEM 2.0에 비해 초과 전력에 대한 보상이 줄어들어 경제적 이익이 감소]할 수 있습니다.
           
 2. **전력회사**
-    - **Pacific Gas and Electric Company (US, [[PCG\|PCG]])**: 캘리포니아의 주요 전력 공급 업체 중 하나
+    - **Pacific Gas and Electric Company (US, [[2.개별종목/PCG\|PCG]])**: 캘리포니아의 주요 전력 공급 업체 중 하나
     - **Southern California Edison (US, [[2.개별종목/EIX\|EIX]])**: 캘리포니아 남부 지역의 주요 전력 공급 업체
     - **Sempra (US, [[2.개별종목/SRE\|SRE]])**: 캘리포니아 남부 지역의 전력 및 가스 공급 업체.
       

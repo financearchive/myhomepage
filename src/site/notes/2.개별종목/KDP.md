@@ -36,7 +36,7 @@ Keurig Dr Pepper Inc.(NASDAQ: KDP)는 미국의 주요 [[음료 제조\|음료 �
 
 - 소매업: Walmart(US, [[2.개별종목/WMT\|WMT]]), Kroger(US, [[2.개별종목/KR\|KR]])
 - 식품 서비스: McDonald's(US, [[2.개별종목/MCD\|MCD]]), Starbucks(US, [[2.개별종목/SBUX\|SBUX]])
-- 전자상거래: Amazon(US, [[2.개별종목/AMZN\|AMZN]]), Wayfair(US, [[W\|W]])
+- 전자상거래: Amazon(US, [[2.개별종목/AMZN\|AMZN]]), Wayfair(US, [[2.개별종목/W\|W]])
 
 후방산업:
 

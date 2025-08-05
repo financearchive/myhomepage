@@ -43,7 +43,7 @@ Consolidated Edison(Con Edison 또는 ConEd)은 [[전기\|전기]], [[1.Study/�
 - NextEra Energy(US, [[2.개별종목/NEE\|NEE]])
 - Duke Energy(US, [[2.개별종목/DUK\|DUK]])
 - Southern Company(US, [[2.개별종목/SO\|SO]])
-- PG&E Corporation(US, [[PCG\|PCG]])
+- PG&E Corporation(US, [[2.개별종목/PCG\|PCG]])
 
 ## 산업 내 글로벌 시장 점유율
 

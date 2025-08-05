@@ -129,7 +129,7 @@ Enphase Energy는 fabless 모델을 채택하여 설계와 소프트웨어 개�
 
 - 주거용 태양광 설치업체: 개인 주택 태양광 시스템 설치 - Tesla Energy(US, [[2.개별종목/TSLA\|TSLA]]), Sunrun(US, [[2.개별종목/RUN\|RUN]])
 - 상업용 태양광 개발업체: 소규모 상업시설 태양광 - SunPower(US, [[2.개별종목/SPWR\|SPWR]]), Canadian Solar(CA, [[2.개별종목/CSIQ\|CSIQ]])
-- 전력 유틸리티: 분산형 에너지 자원 관리 - Pacific Gas & Electric(US, [[PCG\|PCG]]), Southern Company(US, [[2.개별종목/SO\|SO]])
+- 전력 유틸리티: 분산형 에너지 자원 관리 - Pacific Gas & Electric(US, [[2.개별종목/PCG\|PCG]]), Southern Company(US, [[2.개별종목/SO\|SO]])
 - 에너지 서비스 업체: 에너지 관리 및 최적화 서비스 - Stem Inc.(US, [[STEM\|STEM]]), Sunnova(US, [[NOVA\|NOVA]])
 
 **후방산업:**

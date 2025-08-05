@@ -70,7 +70,7 @@ H&E Equipment Services의 핵심 경쟁력은 다음과 같습니다:
 
 - 건설 회사: Turner Construction, Bechtel Corporation
 - 산업 제조업체: General Electric(US, [[2.개별종목/GE\|GE]]), Boeing(US, [[2.개별종목/BA\|BA]])
-- 유틸리티 기업: Duke Energy(US, [[2.개별종목/DUK\|DUK]]), PG&E Corporation(US, [[PCG\|PCG]])
+- 유틸리티 기업: Duke Energy(US, [[2.개별종목/DUK\|DUK]]), PG&E Corporation(US, [[2.개별종목/PCG\|PCG]])
 - 정부 및 지방자치단체
 - 상업 및 주거 건설업체: DR Horton(US, [[2.개별종목/DHI\|DHI]]), Lennar Corporation(US, [[2.개별종목/LEN\|LEN]])
 

@@ -57,7 +57,7 @@ Edison International(NYSE: EIX)은 [[미국 최대 전력 유틸리티 기업\|�
 
 ## 경쟁업체
 
-- Pacific Gas and Electric(US, [[PCG\|PCG]]) - 캘리포니아 북부 전력 공급
+- Pacific Gas and Electric(US, [[2.개별종목/PCG\|PCG]]) - 캘리포니아 북부 전력 공급
 - Sempra Energy(US, [[2.개별종목/SRE\|SRE]]) - 캘리포니아 남부 가스 및 전력 공급
 - NextEra Energy(US, [[2.개별종목/NEE\|NEE]]) - 재생에너지 발전
 - Duke Energy(US, [[2.개별종목/DUK\|DUK]]) - 다지역 전력 유틸리티

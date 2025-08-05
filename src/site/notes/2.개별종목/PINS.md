@@ -54,7 +54,7 @@ Pinterest Inc.(NYSE: PINS)는 이미지 기반의 [[소셜 미디어 플랫폼\|
 ## 주요 고객
 
 - 광고주: Procter & Gamble(US, [[2.개별종목/PG\|PG]]), L'Oréal(FR, [[OR\|OR]])
-- 소매업체: Target(US, [[2.개별종목/TGT\|TGT]]), Wayfair(US, [[W\|W]])
+- 소매업체: Target(US, [[2.개별종목/TGT\|TGT]]), Wayfair(US, [[2.개별종목/W\|W]])
 - 브랜드: Nike(US, [[2.개별종목/NKE\|NKE]]), IKEA
 - 중소기업 및 개인 크리에이터
 

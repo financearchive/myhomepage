@@ -73,7 +73,7 @@ FREYR Battery의 주요 판매국가는 유럽과 북미입니다.
 2. Solid Power(US, [[SLDP\|SLDP]]) - 고체 배터리
 3. QuantumScape(US, [[2.개별종목/QS\|QS]]) - 고체 배터리
 4. Microvast(US, [[MVST\|MVST]]) - 리튬이온 배터리
-5. Eos Energy Enterprises(US, [[EOSE\|EOSE]]) - 에너지 저장 시스템
+5. Eos Energy Enterprises(US, [[2.개별종목/EOSE\|EOSE]]) - 에너지 저장 시스템
 
 ## 산업 내 글로벌 시장 점유율
 
