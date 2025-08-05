@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/DKNG/","created":"2025-04-29T18:46:48.747+09:00","updated":"2025-06-03T20:05:58.746+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/DKNG/","created":"2025-04-29T18:46:48.747+09:00","updated":"2025-07-29T21:37:04.572+09:00"}
 ---
 
 ## DraftKings Inc. (NASDAQ: DKNG) 기업 분석 보고서

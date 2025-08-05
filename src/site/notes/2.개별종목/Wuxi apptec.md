@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Wuxi apptec/","created":"2024-09-11T10:53:20.961+09:00","updated":"2025-06-03T20:06:02.177+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Wuxi apptec/","created":"2024-09-11T10:53:20.961+09:00","updated":"2025-07-29T21:37:05.408+09:00"}
 ---
 
 #바이오테크 #헬스케어 #CDMO #중국 

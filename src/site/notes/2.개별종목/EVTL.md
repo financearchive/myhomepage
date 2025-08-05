@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/EVTL/","created":"2024-12-03T21:56:14.970+09:00","updated":"2025-06-03T20:05:58.997+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/EVTL/","created":"2024-12-03T21:56:14.970+09:00","updated":"2025-07-29T21:37:04.639+09:00"}
 ---
 
 #산업재 #항공우주및방위 #eVTOL #UAM

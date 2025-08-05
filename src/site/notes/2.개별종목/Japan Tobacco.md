@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Japan Tobacco/","created":"2024-08-30T13:56:14.322+09:00","updated":"2025-06-03T20:05:59.628+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Japan Tobacco/","created":"2024-08-30T13:56:14.322+09:00","updated":"2025-07-29T21:37:04.782+09:00"}
 ---
 
 #담배 #전자담배 #소비자방어주
