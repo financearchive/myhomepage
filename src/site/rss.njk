@@ -10,24 +10,18 @@ eleventyExcludeFromCollections: true
     <link>https://www.moneydiary.co.kr</link>
     <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>{{ collections.post | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    <lastBuildDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S GMT" }}</lastBuildDate>
     <generator>Eleventy</generator>
     
-    {%- set posts = collections.post | reverse | slice(0, 20) -%}
-    {%- for post in posts -%}
+    {%- for post in collections.all | reverse | limit: 10 -%}
+    {%- if post.url != "/rss.xml" and post.url != "/feed.xml" -%}
     <item>
-      <title><![CDATA[{{ post.data.title }}]]></title>
-      <link>https://www.moneydiary.co.kr{{ post.url }}?utm_source=rss&amp;utm_medium=feed</link>
-      <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url }}</guid>
-      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-      <description><![CDATA[{{ post.templateContent | safe }}]]></description>
-      {%- if post.data.category -%}<category>{{ post.data.category }}</category>{%- endif -%}
-      {%- if post.data.tags -%}
-        {%- for tag in post.data.tags -%}
-          {%- if tag != "post" -%}<category>{{ tag }}</category>{%- endif -%}
-        {%- endfor -%}
-      {%- endif -%}
+      <title><![CDATA[{{ post.data.title or post.fileSlug }}]]></title>
+      <link>https://www.moneydiary.co.kr{{ post.url }}</link>
+      <guid>https://www.moneydiary.co.kr{{ post.url }}</guid>
+      <description><![CDATA[테스트 설명]]></description>
     </item>
+    {%- endif -%}
     {%- endfor -%}
   </channel>
 </rss>
