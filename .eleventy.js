@@ -641,7 +641,7 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
-    cacheDir: ".eleventy-cache"
+    cacheDir: ".eleventy-cache",
     // 빌드 최적화 설정 - 새로 추가됨
     useGitIgnore: false,
     watchThrottleWaitTime: 100,
