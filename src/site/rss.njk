@@ -12,16 +12,25 @@ eleventyExcludeFromCollections: true
     <language>ko-KR</language>
     <generator>Eleventy</generator>
     
+    {%- if collections.all.length == 0 -%}
+    <item>
+      <title><![CDATA[현재 게시물이 없습니다.]]></title>
+      <link>https://www.moneydiary.co.kr</link>
+      <guid isPermaLink="true">https://www.moneydiary.co.kr/no-posts</guid>
+      <description><![CDATA[새 글이 곧 추가될 예정입니다.]]></description>
+    </item>
+    {%- else -%}
     {%- for post in collections.all | slice(0, 10) -%}
     {%- if post.url and post.url != "/rss.xml" and post.url != "/feed.xml" -%}
     <item>
-      <title><![CDATA[{{ post.data.title | default(post.fileSlug) | safe }}]]></title>
+      <title><![CDATA[{{ post.data.title | default(post.fileSlug) | escapeXML }}]]></title>
       <link>https://www.moneydiary.co.kr{{ post.url | url }}</link>
       <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url | url }}</guid>
       <description><![CDATA[새 글입니다.]]></description>
     </item>
     {%- endif -%}
     {%- endfor -%}
+    {%- endif -%}
     
   </channel>
 </rss>
