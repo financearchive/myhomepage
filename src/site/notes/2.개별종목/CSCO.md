@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/CSCO/","created":"2024-11-15T21:27:19.602+09:00","updated":"2025-07-11T14:20:54.509+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/CSCO/","created":"2024-11-15T21:27:19.602+09:00","updated":"2025-07-29T21:37:04.529+09:00"}
 ---
 
 #네트워킹하드웨어및소프트웨어 #정보기술 #보안 #사이버보안 #데이터센터 #라우터 
@@ -146,7 +146,7 @@ Cisco는 제조업체가 아닌 fabless 모델을 채택하여 설계와 소프�
 
 - 반도체 제조업: 네트워킹 칩셋 및 프로세서 공급 - Broadcom(US, [[2.개별종목/AVGO\|AVGO]]), Marvell(US, [[2.개별종목/MRVL\|MRVL]])
 - 제조 서비스업: 위탁 제조 서비스 - Foxconn(TW, [[Foxconn\|Foxconn]]), Flex(US, [[FLEX\|FLEX]])
-- 광학 부품 제조업: 광 트랜시버 및 케이블 - Lumentum(US, [[LITE\|LITE]]), Finisar(US, [[FNSR\|FNSR]])
+- 광학 부품 제조업: 광 트랜시버 및 케이블 - Lumentum(US, [[2.개별종목/LITE\|LITE]]), Finisar(US, [[FNSR\|FNSR]])
 - 전자 부품 제조업: 메모리, 커넥터 등 - Micron(US, [[2.개별종목/MU\|MU]]), TE Connectivity(US, [[TEL\|TEL]])
 
 ---
@@ -159,7 +159,7 @@ Cisco는 제조업체가 아닌 fabless 모델을 채택하여 설계와 소프�
 - Marvell Technology(US, [[2.개별종목/MRVL\|MRVL]]) - 스위치 및 PHY 칩 공급
 - Intel(US, [[2.개별종목/INTC\|INTC]]) - 프로세서 및 네트워킹 칩 공급
 - Micron Technology(US, [[2.개별종목/MU\|MU]]) - 메모리 및 스토리지 공급
-- Lumentum(US, [[LITE\|LITE]]) - 광학 트랜시버 및 레이저 공급
+- Lumentum(US, [[2.개별종목/LITE\|LITE]]) - 광학 트랜시버 및 레이저 공급
 
 **제조 및 조립 단계:** 네트워킹 장비 제조
 
@@ -211,7 +211,7 @@ Cisco는 제조업체가 아닌 fabless 모델을 채택하여 설계와 소프�
 
 - 사용처: 고속 네트워킹 및 데이터 전송
 - 주요 공급 지역: 미국, 중국, 일본
-- 주요 공급 업체: Lumentum [[LITE\|LITE]], Coherent [[COHR\|COHR]], Sumitomo [[Sumitomo Electric\|Sumitomo Electric]]
+- 주요 공급 업체: Lumentum [[2.개별종목/LITE\|LITE]], Coherent [[COHR\|COHR]], Sumitomo [[Sumitomo Electric\|Sumitomo Electric]]
 
 **전자 부품:**
 

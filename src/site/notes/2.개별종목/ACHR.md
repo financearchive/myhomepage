@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/ACHR/","created":"2024-12-03T21:55:10.188+09:00","updated":"2025-06-03T20:05:57.372+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/ACHR/","created":"2024-12-03T21:55:10.188+09:00","updated":"2025-07-29T21:37:04.251+09:00"}
 ---
 
 #산업재 #항공우주및방위 #eVTOL #UAM

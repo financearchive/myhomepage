@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Nippon Steel/","created":"2024-09-23T13:49:43.995+09:00","updated":"2025-06-03T20:06:00.374+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Nippon Steel/","created":"2024-09-23T13:49:43.995+09:00","updated":"2025-07-29T21:37:04.972+09:00"}
 ---
 
 #철강 #기초소재 

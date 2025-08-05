@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Ganfeng Lithium/","created":"2024-09-12T11:33:24.897+09:00","updated":"2025-06-03T20:05:59.163+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Ganfeng Lithium/","created":"2024-09-12T11:33:24.897+09:00","updated":"2025-07-29T21:37:04.680+09:00"}
 ---
 
 #기초소재 #화학 #리튬 #배터리재활용 #중국 

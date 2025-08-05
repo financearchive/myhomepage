@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/LIDR/","created":"2025-01-14T20:46:31.521+09:00","updated":"2025-06-03T20:05:59.907+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/LIDR/","created":"2025-01-14T20:46:31.521+09:00","updated":"2025-07-29T21:37:04.849+09:00"}
 ---
 
 ## 핵심 키워드
@@ -39,7 +39,7 @@ AEye의 핵심 경쟁력은 독자적인 [[iDAR\|iDAR]] 기술에 있습니다. 
 후방산업:
 
 - 반도체 제조: TSMC(TW, [[2.개별종목/TSM\|TSM]]), Intel(US, [[2.개별종목/INTC\|INTC]])
-- 광학 부품: II-VI(US, [[IIVI\|IIVI]]), Lumentum(US, [[LITE\|LITE]])
+- 광학 부품: II-VI(US, [[IIVI\|IIVI]]), Lumentum(US, [[2.개별종목/LITE\|LITE]])
 - 소프트웨어 개발: NVIDIA(US, [[2.개별종목/NVDA\|NVDA]]), Ansys(US, [[2.개별종목/ANSS\|ANSS]])
 
 ## 밸류체인
