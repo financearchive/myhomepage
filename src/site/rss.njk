@@ -8,19 +8,17 @@ eleventyExcludeFromCollections: true
     <title>머니다이어리</title>
     <description>돈의 흐름을 기록하고 분석하는 머니다이어리</description>
     <link>https://www.moneydiary.co.kr</link>
-    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"></atom:link>
     <language>ko-KR</language>
-    <lastBuildDate>{{ collections.all | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
     <generator>Eleventy</generator>
     
-    {%- for post in collections.all | reverse -%}
-    {%- if post.url and post.url != "/rss.xml" and post.url != "/feed.xml" and loop.index <= 10 -%}
+    {%- for post in collections.all -%}
+    {%- if post.url and post.url != "/rss.xml" and loop.index <= 10 -%}
     <item>
       <title><![CDATA[{{ post.data.title or post.fileSlug }}]]></title>
       <link>https://www.moneydiary.co.kr{{ post.url }}</link>
-      <guid>https://www.moneydiary.co.kr{{ post.url }}</guid>
-      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-      <description><![CDATA[{{ post.templateContent | autoMetaDescription }}]]></description>
+      <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url }}</guid>
+      <description><![CDATA[새 글입니다.]]></description>
     </item>
     {%- endif -%}
     {%- endfor -%}
