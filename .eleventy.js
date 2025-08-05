@@ -109,6 +109,10 @@ function getAnchorAttributes(filePath, linkTitle) {
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
 module.exports = function (eleventyConfig) {
+    // 빌드 최적화 설정 - 새로 추가됨
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchThrottleWaitTime(100);
+  
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
@@ -638,5 +642,9 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
     cacheDir: ".eleventy-cache"
+    // 빌드 최적화 설정 - 새로 추가됨
+    useGitIgnore: false,
+    watchThrottleWaitTime: 100,
+    incrementalBuild: true
   };
 };
