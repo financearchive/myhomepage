@@ -10,16 +10,17 @@ eleventyExcludeFromCollections: true
     <link>https://www.moneydiary.co.kr</link>
     <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
-    <lastBuildDate>{{ "now" | date: "%a, %d %b %Y %H:%M:%S GMT" }}</lastBuildDate>
+    <lastBuildDate>{{ collections.all | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
     <generator>Eleventy</generator>
     
-    {%- for post in collections.all | reverse | limit: 10 -%}
-    {%- if post.url != "/rss.xml" and post.url != "/feed.xml" -%}
+    {%- for post in collections.all | reverse -%}
+    {%- if post.url and post.url != "/rss.xml" and post.url != "/feed.xml" and loop.index <= 10 -%}
     <item>
       <title><![CDATA[{{ post.data.title or post.fileSlug }}]]></title>
       <link>https://www.moneydiary.co.kr{{ post.url }}</link>
       <guid>https://www.moneydiary.co.kr{{ post.url }}</guid>
-      <description><![CDATA[테스트 설명]]></description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <description><![CDATA[{{ post.templateContent | autoMetaDescription }}]]></description>
     </item>
     {%- endif -%}
     {%- endfor -%}
