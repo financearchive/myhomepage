@@ -24,6 +24,15 @@
         if (graphData == null) {
             return null;
         }
+
+        // 🚀 디버깅 코드 추가
+        let currentLink = decodeURI(window.location.pathname);
+        console.log("=== GRAPH DEBUG ===");
+        console.log("Current URL:", currentLink);
+        console.log("Available nodes:", Object.keys(graphData.nodes));
+        console.log("Current node found:", graphData.nodes[currentLink]);
+        // 🚀 디버깅 코드 끝
+
         let remaining = JSON.parse(JSON.stringify(graphData.nodes));
         let links = JSON.parse(JSON.stringify(graphData.links));
         let currentLink = decodeURI(window.location.pathname);
