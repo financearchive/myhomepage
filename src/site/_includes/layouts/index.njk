@@ -3,6 +3,8 @@
   <head>
     <title>{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</title>
     {%include "components/pageheader.njk"%}
+    <!-- RSS 구독 버튼 CSS 추가 -->
+    <link rel="stylesheet" href="/styles/rss-subscribe.css">
     {% for imp in dynamics.common.head %}
       {% include imp %}
     {% endfor %}
