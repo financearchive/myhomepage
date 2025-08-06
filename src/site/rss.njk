@@ -8,29 +8,29 @@ eleventyExcludeFromCollections: true
     <title>머니다이어리</title>
     <description>돈의 흐름을 기록하고 분석하는 머니다이어리</description>
     <link>https://www.moneydiary.co.kr</link>
-    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.moneydiary.co.kr/rss.xml" rel="self" type="application/rss+xml"/>
     <language>ko-KR</language>
     <generator>Eleventy</generator>
-    
     {%- if collections.all.length == 0 -%}
     <item>
       <title><![CDATA[현재 게시물이 없습니다.]]></title>
       <link>https://www.moneydiary.co.kr</link>
       <guid isPermaLink="true">https://www.moneydiary.co.kr/no-posts</guid>
       <description><![CDATA[새 글이 곧 추가될 예정입니다.]]></description>
+      <pubDate>{{ "now" | dateToRfc822 }}</pubDate>
     </item>
     {%- else -%}
     {%- for post in collections.all | slice(0, 10) -%}
     {%- if post.url and post.url != "/rss.xml" and post.url != "/feed.xml" -%}
     <item>
       <title><![CDATA[{{ post.data.title | default(post.fileSlug) | escapeXML }}]]></title>
-      <link>https://www.moneydiary.co.kr{{ post.url | url }}</link>
-      <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url | url }}</guid>
+      <link>https://www.moneydiary.co.kr{{ post.url | url | escapeXML }}</link>
+      <guid isPermaLink="true">https://www.moneydiary.co.kr{{ post.url | url | escapeXML }}</guid>
       <description><![CDATA[새 글입니다.]]></description>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
     </item>
     {%- endif -%}
     {%- endfor -%}
     {%- endif -%}
-    
   </channel>
 </rss>
