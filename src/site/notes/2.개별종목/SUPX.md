@@ -85,7 +85,7 @@ Super X AI Technology Ltd는 AI 인프라 솔루션을 전문으로 하는 기�
 
 - 클라우드 서비스 제공업체: AWS(US, [[2.개별종목/AMZN\|AMZN]]), Microsoft Azure(US, [[2.개별종목/MSFT\|MSFT]]), Google Cloud(US, [[2.개별종목/GOOGL\|GOOGL]])
 - AI 연구 기관: 대학, 연구소, 기업 R&D 센터
-- 금융 서비스: Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]])
+- 금융 서비스: Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]])
 - 헬스케어: UnitedHealth Group(US, [[2.개별종목/UNH\|UNH]]), Johnson & Johnson(US, [[2.개별종목/JNJ\|JNJ]])
 - 제조업: General Electric(US, [[2.개별종목/GE\|GE]]), Siemens(DE, [[Siemens\|Siemens]])
 

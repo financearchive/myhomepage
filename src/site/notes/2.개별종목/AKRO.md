@@ -31,7 +31,7 @@ Akero Therapeutics, Inc.(NASDAQ: AKRO)는 [[심각한 대사 질환 치료제\|�
 
 ## 주요제품
 
-- [[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/Efruxifermin\|Efruxifermin]] (EFX): MASH 치료를 위한 FGF21 유사체, 3상 임상 진행 중
+- [[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/Efruxifermin\|Efruxifermin]] (EFX): MASH 치료를 위한 FGF21 유사체, 3상 임상 진행 중
 
 ## 주요 판매국가
 

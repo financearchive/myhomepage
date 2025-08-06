@@ -55,7 +55,7 @@ United Rentals의 핵심 경쟁력은 다음과 같습니다:
 3. 유지보수: United Rentals(US, [[2.개별종목/URI\|URI]]) (자체 정비 서비스)
 4. 렌탈 서비스: United Rentals(US, [[2.개별종목/URI\|URI]]) (다양한 장비 렌탈)
 5. 고객 지원: United Rentals(US, [[2.개별종목/URI\|URI]]) (안전 교육 및 기술 지원)
-6. 중고 장비 판매: Ritchie Bros. Auctioneers(CA, [[1.Study/★ 경제/★ 매크로/☆ 금리/RBA/RBA\|RBA]]) (장비 경매)
+6. 중고 장비 판매: Ritchie Bros. Auctioneers(CA, [[1.Study/1.경제/매크로/3.금리/RBA/RBA\|RBA]]) (장비 경매)
 
 ## 주요제품
 

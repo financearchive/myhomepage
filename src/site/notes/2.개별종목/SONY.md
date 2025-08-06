@@ -26,7 +26,7 @@ Sony는 [[전자제품\|전자제품]], [[게임\|게임]], [[엔터테인먼트
 
 ## 경쟁업체
 
-- [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]](한국, 005930.KS)
+- [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]](한국, 005930.KS)
 - [[LG전자\|LG전자]](한국, 066570.KS)
 - Microsoft(US, [[2.개별종목/MSFT\|MSFT]])
 - Apple(US, [[2.개별종목/AAPL\|AAPL]])

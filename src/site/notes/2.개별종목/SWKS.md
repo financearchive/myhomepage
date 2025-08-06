@@ -7,7 +7,7 @@
 ## 산업 섹터
 
 - **Sector(산업섹터)**: Information Technology([[정보기술\|정보기술]])
-- **Industry(산업)**: Semiconductors([[1.Study/★ 산업/반도체 산업/반도체\|반도체]])
+- **Industry(산업)**: Semiconductors([[1.Study/2.산업/반도체 산업/반도체\|반도체]])
 
 ## 영위 사업
 

@@ -44,8 +44,8 @@ Amgen은 전 세계적으로 인간 치료제를 발견, 개발, 제조 및 제�
 - **[[Otezla\|Otezla]] ([[아프레밀라스트\|아프레밀라스트]])**: 판상 건선 및 건선성 관절염 치료 (2023년 매출 비중: 약 8%)
 - **[[XGEVA\|XGEVA]] ([[데노수맙\|데노수맙]])**: 골격 관련 사건 예방 (2023년 매출 비중: 약 7%)
 
- - [[MariTide\|MariTide]](이전 명칭 AMG 133, [[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/비만 치료제\|비만 치료제]]): 임상 시험 중. [이 약물은 월 1회 주사로 투여되며, 비만 쥐와 원숭이에서 체중 감소와 대사 마커 개선을 보여주었습니다](https://thehealthcaretechnologyreport.com/amgens-maritide-shows-promise-as-monthly-obesity-treatment-in-preclinical-trials/)[1](https://thehealthcaretechnologyreport.com/amgens-maritide-shows-promise-as-monthly-obesity-treatment-in-preclinical-trials/). 
- - [[AMG-786\|AMG-786]]이라는 다른 [[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/비만 치료제\|비만 치료제]]를 개발 중이며, 현재 임상 1상 단계에 있습니다
+ - [[MariTide\|MariTide]](이전 명칭 AMG 133, [[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/비만 치료제\|비만 치료제]]): 임상 시험 중. [이 약물은 월 1회 주사로 투여되며, 비만 쥐와 원숭이에서 체중 감소와 대사 마커 개선을 보여주었습니다](https://thehealthcaretechnologyreport.com/amgens-maritide-shows-promise-as-monthly-obesity-treatment-in-preclinical-trials/)[1](https://thehealthcaretechnologyreport.com/amgens-maritide-shows-promise-as-monthly-obesity-treatment-in-preclinical-trials/). 
+ - [[AMG-786\|AMG-786]]이라는 다른 [[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/비만 치료제\|비만 치료제]]를 개발 중이며, 현재 임상 1상 단계에 있습니다
 
 
 #### 경쟁업체

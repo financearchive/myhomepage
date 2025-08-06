@@ -7,8 +7,8 @@
 
 ## 산업섹터
 
-- **Sector**: Real Estate ([[1.Study/★ 산업/부동산/부동산\|부동산]])
-- **Industry**: Real Estate Investment Trusts (REITs) ([[1.Study/★ 산업/부동산/리츠\|리츠]])
+- **Sector**: Real Estate ([[1.Study/2.산업/부동산/부동산\|부동산]])
+- **Industry**: Real Estate Investment Trusts (REITs) ([[1.Study/2.산업/부동산/리츠\|리츠]])
 
 ## 영위사업
 

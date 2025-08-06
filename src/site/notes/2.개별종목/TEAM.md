@@ -106,4 +106,4 @@ Atlassian은 2024년 기준 글로벌 협업 소프트웨어 시장에서 약 15
 - First Trust Cloud Computing ETF - [[SKYY\|SKYY]]
 - Global X Cloud Computing ETF - [[CLOU\|CLOU]]
 - WisdomTree Cloud Computing Fund - [[WCLD\|WCLD]]
-- Invesco DWA Technology Momentum ETF - [[1.Study/★ 산업/항공,우주,방위 산업/1.항공/INFO-항공/PTF\|PTF]]
+- Invesco DWA Technology Momentum ETF - [[1.Study/2.산업/항공,우주,방위 산업/1.항공/INFO-항공/PTF\|PTF]]

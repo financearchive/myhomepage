@@ -32,7 +32,7 @@
     - **대표 회사:** Palantir Technologies (미국, [[2.개별종목/PLTR\|PLTR]]), Snowflake (미국, [[2.개별종목/SNOW\|SNOW]])
       
 - **운영 (Operations):** 금융 상품 개발 및 관리
-    - **대표 회사:** Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
+    - **대표 회사:** Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
       
 - **외부 물류 (Outbound Logistics):** 금융 상품 유통 및 판매
     - **대표 회사:** Charles Schwab (미국, [[2.개별종목/SCHW\|SCHW]]), TD Ameritrade (미국, [[2.개별종목/AMTD\|AMTD]])
@@ -62,7 +62,7 @@
 - **JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]):** 상업 및 투자 은행 서비스
 - **Wells Fargo (미국, [[2.개별종목/WFC\|WFC]]):** 소비자 및 상업 은행 서비스
 - **Citigroup (미국, [[2.개별종목/C\|C]]):** 글로벌 금융 서비스
-- **Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]):** 투자 은행 및 자산 관리
+- **Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]):** 투자 은행 및 자산 관리
 
 **산업 내 글로벌 시장 점유율 (Global Market Share in Industry)**
 

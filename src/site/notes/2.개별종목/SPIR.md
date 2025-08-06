@@ -7,7 +7,7 @@
 ## 산업 섹터
 
 - Sector: Information Technology([[정보기술\|정보기술]])
-- Industry: Aerospace & Defense([[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]])
+- Industry: Aerospace & Defense([[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]])
 
 ## 영위 사업
 

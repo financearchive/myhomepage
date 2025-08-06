@@ -9,13 +9,13 @@
 ## 산업 분류
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]]  
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]], [[드론\|드론]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]], [[드론\|드론]]
 
 ---
 
 ## 영위사업 (상세 서술)
 
-AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산업\|방위산업]] 전문업체로, 버지니아 알링턴에 본사를 두고 있습니다. 초기에는 인력 및 태양열 항공기 개발로 시작했으나, 현재는 무인항공기([[UAV\|UAV]]), 배회탄약, [[무인지상차량\|무인지상차량]](UGV) 등 다영역 [[1.Study/★ 산업/로봇 산업/로봇\|로봇]] 시스템 개발에 특화된 기업으로 성장했습니다.
+AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산업\|방위산업]] 전문업체로, 버지니아 알링턴에 본사를 두고 있습니다. 초기에는 인력 및 태양열 항공기 개발로 시작했으나, 현재는 무인항공기([[UAV\|UAV]]), 배회탄약, [[무인지상차량\|무인지상차량]](UGV) 등 다영역 [[1.Study/2.산업/로봇 산업/로봇\|로봇]] 시스템 개발에 특화된 기업으로 성장했습니다.
 
 회사는 [미군의 소형 드론 최대 공급업체]로, Raven, Switchblade, Wasp, Puma 등 다양한 무인 시스템을 제조하고 있습니다. 특히 Switchblade 배회탄약은 "[[자살 드론\|자살 드론]]"으로 불리며, 우크라이나 전쟁에서 그 효과가 입증되어 국제적 주목을 받고 있습니다.
 
@@ -148,7 +148,7 @@ AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산�
 
 **리튬배터리:** 드론 동력원, 중국/일본, Panasonic (JP, [[Panasonic\|Panasonic]]), CATL (CN, [[2.개별종목/CATL\|CATL]])
 
-**반도체칩:** 비행제어 및 영상처리, 대만/한국, TSMC (TW, [[2.개별종목/TSM\|TSM]]), Samsung (KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
+**반도체칩:** 비행제어 및 영상처리, 대만/한국, TSMC (TW, [[2.개별종목/TSM\|TSM]]), Samsung (KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]])
 
 **복합재료:** 기체 제작, 미국/일본, Hexcel (US, [[2.개별종목/HXL\|HXL]]), Toray (JP, [[Toray\|Toray]])
 
@@ -299,7 +299,7 @@ AeroVironment은 1971년 Dr. Paul MacCready가 설립한 미국의 [[방위산�
 
 - XAR - SPDR S&P Aerospace & Defense ETF [[XAR\|XAR]]
 - ITA - iShares U.S. Aerospace & Defense ETF [[ITA\|ITA]]
-- PPA - Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- PPA - Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 
 **드론 관련 ETF:**
 

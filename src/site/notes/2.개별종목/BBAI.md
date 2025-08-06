@@ -35,7 +35,7 @@ BigBear.ai Holdings Inc(NYSE: BBAI)는 인공지능([[AI\|AI]]) 및 [[머신러�
 
 - 국방 및 정보기관: Lockheed Martin(US, [[2.개별종목/LMT\|LMT]]), Northrop Grumman(US, [[2.개별종목/NOC\|NOC]])
 - 물류 및 공급망: FedEx(US, [[2.개별종목/FDX\|FDX]]), UPS(US, [[2.개별종목/UPS\|UPS]])
-- 금융 서비스: JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]]), Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
+- 금융 서비스: JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]]), Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
 
 후방산업:
 

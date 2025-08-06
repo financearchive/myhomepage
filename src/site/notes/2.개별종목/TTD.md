@@ -6,7 +6,7 @@
 
 - 주요 이슈
 	- 2023년
-		- [[0.DAILY Invest/과거/2023/7월/2023-07-14\|2023-07-14]]
+		- [[0.DAILY-Invest/과거/2023/7월/2023-07-14\|2023-07-14]]
 			- [[2.개별종목/TTD\|2.개별종목/TTD]] +2.96%, 나스닥은 Nasdaq-100 지수에 포함된 주식 목록에 The Trade Desk를 추가할 것이라고 말하면서 5% 상승하였으나, 이내 상승 흐름을 반납하며 +2%대 마감
 ---
 
@@ -174,7 +174,7 @@ The Trade Desk는 소프트웨어 기술 기업으로 제조업이 아닌 플랫
 - Disney(US, [[2.개별종목/DIS\|DIS]]) - 커넥티드 TV 광고 인벤토리
 - Netflix(US, [[2.개별종목/NFLX\|NFLX]]) - 스트리밍 광고 인벤토리
 - Roku(US, [[2.개별종목/ROKU\|ROKU]]) - CTV 플랫폼 및 광고 인벤토리
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 스마트 TV 광고 인벤토리
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 스마트 TV 광고 인벤토리
 - Nielsen(US, [[NLSN\|NLSN]]) - 광고 측정 및 데이터 서비스
 
 **서비스 제공 단계:** 고객 대상 플랫폼 서비스
@@ -191,7 +191,7 @@ The Trade Desk는 소프트웨어 기술 기업으로 제조업이 아닌 플랫
 
 **프로그래매틱 광고 플랫폼:** 수요측 플랫폼(DSP) 서비스, 매출 비중 100% (2024년 기준), 관련 경쟁사 [[2.개별종목/GOOGL\|GOOGL]], [[2.개별종목/AMZN\|AMZN]]
 
-**커넥티드 TV 광고:** CTV 광고 캠페인 관리, 매출 비중 약 40% (2024년 기준), 관련 경쟁사 [[2.개별종목/ROKU\|ROKU]], [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
+**커넥티드 TV 광고:** CTV 광고 캠페인 관리, 매출 비중 약 40% (2024년 기준), 관련 경쟁사 [[2.개별종목/ROKU\|ROKU]], [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]
 
 **데이터 관리 플랫폼:** DMP 및 데이터 분석 서비스, 매출 비중 약 20% (2024년 기준), 관련 경쟁사 [[2.개별종목/ADBE\|ADBE]], [[2.개별종목/ORCL\|ORCL]]
 
@@ -242,7 +242,7 @@ The Trade Desk는 소프트웨어 기술 기업으로 제조업이 아닌 플랫
 - McDonald's(US, [[2.개별종목/MCD\|MCD]]) - 패스트푸드 체인, 디지털 광고
 - Walmart(US, [[2.개별종목/WMT\|WMT]]) - 소매업체, 리테일 미디어 광고
 - Target(US, [[2.개별종목/TGT\|TGT]]) - 소매업체, 타겟팅 광고
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 브랜드, 글로벌 마케팅
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 브랜드, 글로벌 마케팅
 - Nike(US, [[2.개별종목/NKE\|NKE]]) - 스포츠 브랜드, 디지털 마케팅
 - BMW(DE, [[2.개별종목/BMW\|BMW]]) - 자동차 브랜드, 프리미엄 광고
 - L'Oréal(FR, [[L'Oréal\|L'Oréal]]) - 화장품 브랜드, 뷰티 마케팅
@@ -269,7 +269,7 @@ The Trade Desk는 전 세계적으로 서비스를 제공하며, 주요 시장�
 - Meta(US, [[2.개별종목/META\|META]]) - Facebook Ads Manager, 소셜 미디어 광고 플랫폼
 - Adobe(US, [[2.개별종목/ADBE\|ADBE]]) - Adobe Advertising Cloud, 통합 광고 플랫폼
 - Roku(US, [[2.개별종목/ROKU\|ROKU]]) - CTV 광고 플랫폼, 스트리밍 광고 전문
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Samsung Ads, 스마트 TV 광고 플랫폼
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Samsung Ads, 스마트 TV 광고 플랫폼
 - Magnite(US, [[2.개별종목/MGNI\|MGNI]]) - 공급측 플랫폼(SSP), 퍼블리셔 서비스
 - PubMatic(US, [[PUBM\|PUBM]]) - 프로그래매틱 광고 플랫폼
 - Viant Technology(US, [[VIANT\|VIANT]]) - DSP 및 광고 기술

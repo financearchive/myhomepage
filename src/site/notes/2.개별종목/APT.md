@@ -11,7 +11,7 @@ Industry: Credit Services ([[신용 서비스\|신용 서비스]])
 
 ## 영위사업
 
-Afterpay는 소비자에게 즉각적인 구매와 분할 결제를 제공하는 "구매 지금, 나중에 지불" (Buy Now, Pay Later, [[1.Study/★ 산업/금융,결제 산업/BNPL\|BNPL]]) 서비스를 운영하는 금융 기술 회사입니다.
+Afterpay는 소비자에게 즉각적인 구매와 분할 결제를 제공하는 "구매 지금, 나중에 지불" (Buy Now, Pay Later, [[1.Study/2.산업/금융,결제 산업/BNPL\|BNPL]]) 서비스를 운영하는 금융 기술 회사입니다.
 
 ## 전방/후방산업
 

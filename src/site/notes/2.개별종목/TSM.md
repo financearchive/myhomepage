@@ -7,7 +7,7 @@
 ## 산업섹터
 
 - **Sector**: Technology ([[테크\|테크]])
-- **Industry**: Semiconductors ([[1.Study/★ 산업/반도체 산업/반도체\|반도체]])
+- **Industry**: Semiconductors ([[1.Study/2.산업/반도체 산업/반도체\|반도체]])
 
 ## 영위사업
 
@@ -18,7 +18,7 @@ TSMC는 세계 최대의 반도체 [[파운드리\|파운드리]] 회사로, 고
 - **전방산업**:
     
     - **핵심 산업 및 역할**: 전자 제품 제조 및 판매
-    - **관련 기업**: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS)
+    - **관련 기업**: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS)
     
 - **후방산업**:
     
@@ -36,7 +36,7 @@ TSMC는 세계 최대의 반도체 [[파운드리\|파운드리]] 회사로, 고
 - **제조**: 반도체 칩의 대량 생산
     
     - **대표 회사**: GlobalFoundries (US, [[2.개별종목/GFS\|GFS]]) - 반도체 제조
-    - **대표 회사**: [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS) - 반도체 제조
+    - **대표 회사**: [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS) - 반도체 제조
     
 - **판매 및 유통**: 고객에게 반도체 제품 공급
     
@@ -55,7 +55,7 @@ TSMC는 전 세계적으로 운영되며, 주요 시장은 미국, 중국, 일�
 
 ## 경쟁업체
 
-- **[[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS)** - 반도체 제조 및 설계
+- **[[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930.KS)** - 반도체 제조 및 설계
 - **GlobalFoundries (US, [[2.개별종목/GFS\|GFS]])** - 반도체 제조
 - **Intel Corporation (US, [[2.개별종목/INTC\|INTC]])** - 반도체 설계 및 제조
 

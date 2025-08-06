@@ -8,7 +8,7 @@
 ## 산업섹터
 
 Sector: Technology ([[테크\|테크]])  
-Industry: Semiconductors ([[1.Study/★ 산업/반도체 산업/반도체\|반도체]])
+Industry: Semiconductors ([[1.Study/2.산업/반도체 산업/반도체\|반도체]])
 
 ## 영위사업
 
@@ -18,7 +18,7 @@ Analog Devices, Inc.는 고성능 아날로그, 혼합 신호, 디지털 신호 
 
 전방산업:
 
-- [[1.Study/★ 산업/자동차 산업/자동차\|자동차]]: Tesla (국가:US, [[2.개별종목/TSLA\|2.개별종목/TSLA]])
+- [[1.Study/2.산업/자동차 산업/자동차\|자동차]]: Tesla (국가:US, [[2.개별종목/TSLA\|2.개별종목/TSLA]])
 - [[통신장비\|통신장비]]: Cisco Systems (국가:US, [[2.개별종목/CSCO\|CSCO]])
 
 후방산업:

@@ -9,7 +9,7 @@
 - **Sector**: [[산업재\|산업재]] (Industrials)
 - **Industry**: [[항공사\|항공사]] (Airlines)
 
-**영위사업**: Frontier Group Holdings Inc.는 저비용 항공사([[1.Study/★ 산업/항공,우주,방위 산업/1.항공/INFO-항공/LCC\|LCC]])인 Frontier Airlines를 운영하며, 미국 및 일부 국제 목적지에 항공 서비스를 제공합니다. 주요 고객은 [[레저\|레저]] 여행객입니다.
+**영위사업**: Frontier Group Holdings Inc.는 저비용 항공사([[1.Study/2.산업/항공,우주,방위 산업/1.항공/INFO-항공/LCC\|LCC]])인 Frontier Airlines를 운영하며, 미국 및 일부 국제 목적지에 항공 서비스를 제공합니다. 주요 고객은 [[레저\|레저]] 여행객입니다.
 
 **전방/후방산업**:
 

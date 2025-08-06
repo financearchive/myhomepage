@@ -8,8 +8,8 @@
 
 ## 3. 산업 분류
 
-**섹터(Sector):** Real Estate - [[1.Study/★ 산업/부동산/부동산\|부동산]]  
-**산업(Industry):** REIT - Diversified - 다각화 [[1.Study/★ 산업/부동산/리츠\|리츠]]
+**섹터(Sector):** Real Estate - [[1.Study/2.산업/부동산/부동산\|부동산]]  
+**산업(Industry):** REIT - Diversified - 다각화 [[1.Study/2.산업/부동산/리츠\|리츠]]
 
 ---
 

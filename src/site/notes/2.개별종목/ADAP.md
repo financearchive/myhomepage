@@ -9,7 +9,7 @@
 ## 3. 산업 분류
 
 **섹터(Sector):** Healthcare - [[헬스케어\|헬스케어]]  
-**산업(Industry):** Biotechnology - [[1.Study/★ 산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]놀로지
+**산업(Industry):** Biotechnology - [[1.Study/2.산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]놀로지
 
 ---
 

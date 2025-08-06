@@ -114,7 +114,7 @@ AT&T는 제조업체가 아닌 서비스 제공업체로서 다음과 같은 서
 
 **후방산업 (장비/기술 공급업체):**
 
-- 네트워크 장비: Ericsson(SE, [[ERIC\|ERIC]]), Nokia(FI, [[NOK\|NOK]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
+- 네트워크 장비: Ericsson(SE, [[ERIC\|ERIC]]), Nokia(FI, [[NOK\|NOK]]), Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]])
 - 광섬유 케이블: Corning(US, [[2.개별종목/GLW\|GLW]]), Prysmian Group(IT, [[PRY\|PRY]])
 - 통신 타워: American Tower(US, [[2.개별종목/AMT\|AMT]]), Crown Castle(US, [[2.개별종목/CCI\|CCI]])
 - 반도체: Qualcomm(US, [[2.개별종목/QCOM\|QCOM]]), Intel(US, [[2.개별종목/INTC\|INTC]]), Broadcom(US, [[2.개별종목/AVGO\|AVGO]])
@@ -127,7 +127,7 @@ AT&T는 제조업체가 아닌 서비스 제공업체로서 다음과 같은 서
 
 - Ericsson(SE, [[ERIC\|ERIC]]): 5G 기지국 및 Open RAN 솔루션 (주요 파트너, 140억 달러 5년 계약)
 - Nokia(FI, [[NOK\|NOK]]): 광섬유 네트워크 장비 및 코어 네트워크 솔루션
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]): 5G 네트워크 장비 및 소형셀 솔루션
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]): 5G 네트워크 장비 및 소형셀 솔루션
 - Corning(US, [[2.개별종목/GLW\|GLW]]): 광섬유 케이블 및 연결 솔루션
 - Qualcomm(US, [[2.개별종목/QCOM\|QCOM]]): 5G 칩셋 및 무선 기술
 

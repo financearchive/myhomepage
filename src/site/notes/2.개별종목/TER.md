@@ -21,7 +21,7 @@
 
 Teradyne Inc.는 1960년 설립된 미국의 자동화 테스트 장비(ATE) 및 [[로보틱스\|로보틱스]] 전문 기업으로, 반도체 테스트 장비 분야에서 글로벌 리더십을 유지하고 있습니다. 회사는 반도체 제조업체가 칩의 품질과 성능을 검증하는 데 필요한 정밀 테스트 장비를 설계, 제조, 판매하고 있습니다.
 
-주요 사업부문으로는 [[1.Study/★ 산업/반도체 산업/반도체\|반도체]] 테스트(Semiconductor Test), 로보틱스(Robotics), 제품 테스트(Product Test)로 구성됩니다. 2024년 총 매출 28억 달러를 기록했으며, 반도체 테스트 부문이 전체 매출의 약 75%를 차지하는 반도체 테스트 중심 포트폴리오를 운영하고 있습니다.
+주요 사업부문으로는 [[1.Study/2.산업/반도체 산업/반도체\|반도체]] 테스트(Semiconductor Test), 로보틱스(Robotics), 제품 테스트(Product Test)로 구성됩니다. 2024년 총 매출 28억 달러를 기록했으며, 반도체 테스트 부문이 전체 매출의 약 75%를 차지하는 반도체 테스트 중심 포트폴리오를 운영하고 있습니다.
 
 비즈니스 모델 & 수익 모델 요약: 반도체 테스트 장비 판매를 통한 장비 매출과 애프터 서비스, 부품 교체 등을 통한 서비스 매출의 이중 구조입니다. 고객사의 신규 생산라인 구축 시 대량 주문을 받고, 기존 장비의 유지보수 및 업그레이드를 통해 지속적인 수익을 창출합니다.
 
@@ -44,7 +44,7 @@ Teradyne의 비즈니스 모델은 반도체 테스트 장비와 로보틱스 �
 
 **2. 로보틱스 부문 (매출 20% 비중):**
 
-- Universal Robots: [[1.Study/★ 산업/로봇 산업/INFO_로봇/협동 로봇\|협동 로봇]](Cobot) 제조 및 판매
+- Universal Robots: [[1.Study/2.산업/로봇 산업/INFO_로봇/협동 로봇\|협동 로봇]](Cobot) 제조 및 판매
 - Mobile Industrial Robots(MiR): [[자율주행 모바일 로봇\|자율주행 모바일 로봇]] 솔루션
 - [[산업 자동화\|산업 자동화]]: 조립, 포장, 머신 텐딩 등 제조 공정 자동화
 
@@ -118,7 +118,7 @@ Teradyne은 설계 중심의 fabless 모델을 기반으로 한 맞춤형 제조
 
 **전방산업:**
 
-- 반도체 제조업체: 웨이퍼 제조 및 칩 패키징 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
+- 반도체 제조업체: 웨이퍼 제조 및 칩 패키징 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]), Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]])
 - 팹리스 반도체 회사: 칩 설계 및 테스트 - Apple(US, [[2.개별종목/AAPL\|AAPL]]), Qualcomm(US, [[2.개별종목/QCOM\|QCOM]])
 - 메모리 제조업체: DRAM, NAND 플래시 테스트 - SK Hynix(KR, [[SK Hynix\|SK Hynix]]), Micron(US, [[2.개별종목/MU\|MU]])
 - 제조업체: 로봇 자동화 솔루션 - BMW(DE, [[2.개별종목/BMW\|BMW]]), Ford(US, [[2.개별종목/F\|F]])
@@ -145,7 +145,7 @@ Teradyne은 설계 중심의 fabless 모델을 기반으로 한 맞춤형 제조
 **반도체 제조 단계:** 웨이퍼 및 칩 레벨 테스트
 
 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]) - 세계 최대 파운드리, 주요 고객
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 메모리 및 파운드리 테스트
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 메모리 및 파운드리 테스트
 - GlobalFoundries(US, [[GlobalFoundries\|GlobalFoundries]]) - 파운드리 테스트 서비스
 - SK Hynix(KR, [[SK Hynix\|SK Hynix]]) - 메모리 반도체 테스트
 - Micron Technology(US, [[2.개별종목/MU\|MU]]) - DRAM 및 NAND 플래시 테스트
@@ -202,7 +202,7 @@ Teradyne은 설계 중심의 fabless 모델을 기반으로 한 맞춤형 제조
 
 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]) - 반도체 파운드리 서비스, 웨이퍼 테스트 장비
 - Apple(US, [[2.개별종목/AAPL\|AAPL]]) - 모바일 프로세서 테스트, 전체 매출의 12%
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 메모리 및 시스템 반도체 테스트 장비
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 메모리 및 시스템 반도체 테스트 장비
 - Qualcomm(US, [[2.개별종목/QCOM\|QCOM]]) - 5G 모뎀 및 스냅드래곤 프로세서 테스트
 - SK Hynix(KR, [[SK Hynix\|SK Hynix]]) - DRAM 및 NAND 플래시 메모리 테스트
 - Micron Technology(US, [[2.개별종목/MU\|MU]]) - 메모리 반도체 테스트 장비

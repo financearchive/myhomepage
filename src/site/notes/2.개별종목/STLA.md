@@ -11,7 +11,7 @@
 
 #### 영위사업
 
-Stellantis N.V.는 [[1.Study/★ 산업/자동차 산업/자동차\|자동차]] 및 경상용차의 설계, 엔지니어링, 제조, 유통 및 판매를 영위합니다. 주요 브랜드로는 Abarth, Alfa Romeo, Chrysler, Citroën, DS, Dodge, Fiat, Jeep, Maserati, Ram, Opel, Lancia, Vauxhall, Peugeot, Comau 등이 있습니다.
+Stellantis N.V.는 [[1.Study/2.산업/자동차 산업/자동차\|자동차]] 및 경상용차의 설계, 엔지니어링, 제조, 유통 및 판매를 영위합니다. 주요 브랜드로는 Abarth, Alfa Romeo, Chrysler, Citroën, DS, Dodge, Fiat, Jeep, Maserati, Ram, Opel, Lancia, Vauxhall, Peugeot, Comau 등이 있습니다.
 
 #### 전방/후방산업
 

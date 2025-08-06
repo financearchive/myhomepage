@@ -214,7 +214,7 @@ Spotify는 소프트웨어 기반 서비스 회사로 전통적인 제조공정�
 - Coca-Cola(US, [[2.개별종목/KO\|KO]]) - 음료 브랜드, 글로벌 마케팅 캠페인 및 스폰서십
 - McDonald's(US, [[2.개별종목/MCD\|MCD]]) - 글로벌 패스트푸드 체인, 브랜드 광고 및 매장 음악
 - Nike(US, [[2.개별종목/NKE\|NKE]]) - 스포츠 브랜드, 피트니스 플레이리스트 및 브랜드 콜라보
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자기기 제조사, 디바이스 통합 및 기술 파트너십
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자기기 제조사, 디바이스 통합 및 기술 파트너십
 - Mercedes-Benz(DE, [[Mercedes-Benz\|Mercedes-Benz]]) - 자동차 제조사, 차량 내 엔터테인먼트 시스템
 - BMW(DE, [[2.개별종목/BMW\|BMW]]) - 프리미엄 자동차, 차량 연동 서비스
 - Starbucks(US, [[2.개별종목/SBUX\|SBUX]]) - 글로벌 커피 체인, 매장 음악 플레이리스트

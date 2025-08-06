@@ -127,7 +127,7 @@ Apple은 제조업체가 아닌 fabless 모델을 채택하여 설계와 마케�
 
 **후방산업:**
 
-- 반도체 제조업: 칩셋 및 메모리 공급 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
+- 반도체 제조업: 칩셋 및 메모리 공급 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]), Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]])
 - 디스플레이 제조업: 화면 패널 공급 - Samsung Display(KR, [[Samsung Display\|Samsung Display]]), LG Display(KR, [[LG Display\|LG Display]])
 - 배터리 제조업: 리튬이온 배터리 공급 - CATL(CN, [[2.개별종목/CATL\|CATL]]), BYD(CN, [[2.개별종목/BYD\|BYD]])
 - 제조 서비스업: 위탁 제조 - Foxconn(TW, [[Foxconn\|Foxconn]]), Pegatron(TW, [[Pegatron\|Pegatron]])
@@ -139,7 +139,7 @@ Apple은 제조업체가 아닌 fabless 모델을 채택하여 설계와 마케�
 **부품 공급 단계:** 핵심 부품 제조 및 공급
 
 - Taiwan Semiconductor(TW, [[2.개별종목/TSM\|TSM]]) - A시리즈, M시리즈 칩셋 제조
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - OLED 디스플레이 및 메모리 공급
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - OLED 디스플레이 및 메모리 공급
 - Sony(JP, [[2.개별종목/SONY\|Sony]]) - 카메라 센서 공급
 - Qualcomm(US, [[2.개별종목/QCOM\|QCOM]]) - 모뎀 칩셋 공급
 - Broadcom(US, [[2.개별종목/AVGO\|AVGO]]) - 무선 통신 칩셋 공급
@@ -162,15 +162,15 @@ Apple은 제조업체가 아닌 fabless 모델을 채택하여 설계와 마케�
 
 ## 주요제품
 
-**iPhone:** 스마트폰 시장 프리미엄 세그먼트, **매출** 비중 약 51% (2024년 기준), 관련 경쟁사 [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/GOOGL\|GOOGL]]
+**iPhone:** 스마트폰 시장 프리미엄 세그먼트, **매출** 비중 약 51% (2024년 기준), 관련 경쟁사 [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/GOOGL\|GOOGL]]
 
 **Services:** App Store, iCloud, Apple Music 등 서비스, 매출 비중 약 25% (2024년 기준), 관련 경쟁사 [[2.개별종목/GOOGL\|GOOGL]], [[2.개별종목/MSFT\|MSFT]]
 
 **Mac:** 데스크톱 및 노트북 컴퓨터, 매출 비중 약 8% (2024년 기준), 관련 경쟁사 [[2.개별종목/MSFT\|MSFT]], [[2.개별종목/DELL\|DELL]]
 
-**iPad:** 태블릿 컴퓨터, 매출 비중 약 7% (2024년 기준), 관련 경쟁사 [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/AMZN\|AMZN]]
+**iPad:** 태블릿 컴퓨터, 매출 비중 약 7% (2024년 기준), 관련 경쟁사 [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/AMZN\|AMZN]]
 
-**웨어러블·홈·액세서리:** Apple Watch, AirPods, HomePod 등, 매출 비중 약 9% (2024년 기준), 관련 경쟁사 [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/GOOGL\|GOOGL]]
+**웨어러블·홈·액세서리:** Apple Watch, AirPods, HomePod 등, 매출 비중 약 9% (2024년 기준), 관련 경쟁사 [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]], [[2.개별종목/GOOGL\|GOOGL]]
 
 ---
 
@@ -180,7 +180,7 @@ Apple은 제조업체가 아닌 fabless 모델을 채택하여 설계와 마케�
 
 - 사용처: iPhone, Mac, iPad 등 모든 기기의 핵심 부품
 - 주요 공급 지역: 대만, 한국, 중국
-- 주요 공급 업체: Taiwan Semiconductor [[2.개별종목/TSM\|TSM]], Samsung [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
+- 주요 공급 업체: Taiwan Semiconductor [[2.개별종목/TSM\|TSM]], Samsung [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]
 
 **희토류 금속:**
 
@@ -238,7 +238,7 @@ Apple은 제조업체가 아닌 fabless 모델을 채택하여 설계와 마케�
 
 ## 경쟁업체
 
-- Samsung Electronics(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 갤럭시 스마트폰 시리즈, 글로벌 스마트폰 시장 1위
+- Samsung Electronics(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 갤럭시 스마트폰 시리즈, 글로벌 스마트폰 시장 1위
 - Google(US, [[2.개별종목/GOOGL\|GOOGL]]) - 픽셀 스마트폰 및 Android 운영체제, 소프트웨어 생태계 경쟁
 - Microsoft(US, [[2.개별종목/MSFT\|MSFT]]) - Surface 시리즈 태블릿/노트북, 클라우드 서비스 경쟁
 - Xiaomi(CN, [[1810\|1810]]) - 가성비 스마트폰, 중국 및 글로벌 시장 확장

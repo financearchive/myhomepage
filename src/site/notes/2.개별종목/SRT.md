@@ -51,7 +51,7 @@ Sartorius AG는 생명과학 연구 및 [[바이오프로세싱\|바이오프로
 
 #### 주요제품
 
-- **[[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/바이오리액터\|바이오리액터]] (Bioreactors)**
+- **[[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/바이오리액터\|바이오리액터]] (Bioreactors)**
 - **세포 배양 미디어 (Cell Culture Media)**
 - **필터 및 여과 시스템 (Filtration Systems)**
 - **실험실 장비 (Laboratory Equipment)**

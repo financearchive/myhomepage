@@ -326,7 +326,7 @@ ScanTech AI Systems는 신생기업으로 글로벌 보안 검색 시장에서 �
 
 - Industrial Select Sector SPDR Fund [[XLI\|XLI]]
 - Vanguard Industrials ETF [[VIS\|VIS]]
-- Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 
 **마이크로캡/소형주 ETF:**
 

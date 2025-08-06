@@ -56,7 +56,7 @@ AECOM은 미국 텍사스주 달라스에 본사를 둔 다국적 [[인프라 �
     
 - 소프트웨어 및 기술 솔루션: Autodesk(US, [[2.개별종목/ADSK\|ADSK]]), Trimble(US, [[2.개별종목/TRMB\|TRMB]])
     
-- 금융 및 보험: 프로젝트 자금 조달 및 보험 (Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), AIG(US, [[2.개별종목/AIG\|AIG]]))
+- 금융 및 보험: 프로젝트 자금 조달 및 보험 (Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), AIG(US, [[2.개별종목/AIG\|AIG]]))
     
 
 ## 밸류체인

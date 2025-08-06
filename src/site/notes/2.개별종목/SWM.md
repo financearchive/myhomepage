@@ -8,7 +8,7 @@
 ### 산업섹터 및 산업 (Sector, Industry)
 
 - **Sector (섹터)**: Consumer Defensive ([[소비자 방어주\|소비자 방어주]])
-- **Industry (산업)**: Tobacco ([[1.Study/★ 산업/식음료픔 산업/2.담배/담배\|담배]])
+- **Industry (산업)**: Tobacco ([[1.Study/2.산업/식음료픔 산업/2.담배/담배\|담배]])
 
 ### 영위사업
 

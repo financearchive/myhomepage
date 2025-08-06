@@ -9,7 +9,7 @@ ADC Therapeutics SA(ADCT)는 항체-약물 접합체(ADC) 개발 분야의 선�
 ## 산업섹터
 
 섹터: [[헬스케어\|헬스케어]](Health Care)  
-산업: [[1.Study/★ 산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]](Biotechnology)
+산업: [[1.Study/2.산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]](Biotechnology)
 
 ## 영위사업
 

@@ -34,7 +34,7 @@ Teleflex Incorporated는 혈관 및 중재적 접근, 수술, 마취, 심장 관
 
 - 병원 및 의료 시설: 의료기기 사용 (HCA Healthcare(US, [[2.개별종목/HCA\|HCA]]), Universal Health Services(US, [[2.개별종목/UHS\|UHS]]))
     
-- 응급 의료 서비스: 응급 처치 장비 사용 (American Medical Response([[1.Study/★ 산업/로봇 산업/INFO_로봇/AMR\|AMR]]), Falck([[Falck\|Falck]]))
+- 응급 의료 서비스: 응급 처치 장비 사용 (American Medical Response([[1.Study/2.산업/로봇 산업/INFO_로봇/AMR\|AMR]]), Falck([[Falck\|Falck]]))
     
 
 후방산업:
