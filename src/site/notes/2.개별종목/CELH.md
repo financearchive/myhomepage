@@ -7,7 +7,7 @@
 ### 산업섹터 (Sector, Industry)
 
 - **Sector:** [[소비자 방어주\|소비자 방어주]] (Consumer Defensive)
-- **Industry:** [[1.Study/★ 산업/식음료픔 산업/논알콜 음료\|논알콜 음료]] (Beverages - Non-Alcoholic)
+- **Industry:** [[1.Study/2.산업/식음료픔 산업/논알콜 음료\|논알콜 음료]] (Beverages - Non-Alcoholic)
 
 ### 영위사업
 

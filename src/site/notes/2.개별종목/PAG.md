@@ -67,7 +67,7 @@ PAG(Pacific Alliance Group)는 아시아 태평양 지역을 중심으로 활동
 
 1. 자금 조달: BlackRock(US, [[2.개별종목/BLK\|BLK]]), Fidelity Investments(US, [[Fidelity\|Fidelity]])
 2. 투자 대상 발굴 및 실사: Bain & Company(US, [[Bain\|Bain]]), McKinsey & Company(US, [[McKinsey\|McKinsey]])
-3. 투자 집행: Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley(US, [[2.개별종목/MS\|MS]])
+3. 투자 집행: Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley(US, [[2.개별종목/MS\|MS]])
 4. 포트폴리오 관리 및 가치 제고: Boston Consulting Group(US, [[BCG\|BCG]]), Alvarez & Marsal(US, [[Alvarez & Marsal\|Alvarez & Marsal]])
 5. 투자 회수: JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]]), Citigroup(US, [[2.개별종목/C\|C]])
 

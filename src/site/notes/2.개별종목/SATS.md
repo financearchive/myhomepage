@@ -13,7 +13,7 @@
 
 EchoStar Corporation은 미국에 본사를 둔 [[위성 통신\|위성 통신]] 및 인터넷 서비스 제공업체입니다. 이 회사는 Hughes Network Systems와 EchoStar Satellite Services를 통해 위성 기반의 통신 솔루션을 제공하며, Dish Network 브랜드 하에 텔레비전 서비스를 운영합니다. EchoStar는 2008년에 비소비자 자산을 분리하여 현재의 형태로 재편성되었으며, 2023년에는 Dish Network와의 합병을 통해 사업을 통합했습니다.
 
-- 자회사 Hughes Network Systems를 보유. [[1.Study/★ 산업/항공,우주,방위 산업/2.우주/INFO_우주/정지궤도 위성\|정지궤도 위성]](GEO), [[1.Study/★ 산업/항공,우주,방위 산업/2.우주/INFO_우주/통신 위성\|통신 위성]] 활용 광범위 위성 통신 및 인터넷 서비스
+- 자회사 Hughes Network Systems를 보유. [[1.Study/2.산업/항공,우주,방위 산업/2.우주/INFO_우주/정지궤도 위성\|정지궤도 위성]](GEO), [[1.Study/2.산업/항공,우주,방위 산업/2.우주/INFO_우주/통신 위성\|통신 위성]] 활용 광범위 위성 통신 및 인터넷 서비스
 
 ## 전방/후방 산업
 

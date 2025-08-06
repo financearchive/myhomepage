@@ -101,6 +101,6 @@ Leidos Holdings는 2024년 기준 글로벌 정부 IT 서비스 시장에서 약
 
 - iShares U.S. Aerospace & Defense ETF - [[ITA\|ITA]]
 - SPDR S&P Aerospace & Defense ETF - [[XAR\|XAR]]
-- Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - First Trust NASDAQ Cybersecurity ETF - [[CIBR\|CIBR]]
 - Global X Cybersecurity ETF - [[BUG\|BUG]]

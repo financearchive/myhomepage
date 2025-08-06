@@ -12,7 +12,7 @@ Industry: [[자동차 소매\|자동차 소매]](Auto & Truck Dealerships)
 
 ## 영위사업
 
-Group 1 Automotive, Inc.는 미국과 영국에서 [[1.Study/★ 산업/자동차 산업/자동차\|자동차]] 소매업을 영위하는 Fortune 250 기업입니다. 주요 사업 영역은 다음과 같습니다:
+Group 1 Automotive, Inc.는 미국과 영국에서 [[1.Study/2.산업/자동차 산업/자동차\|자동차]] 소매업을 영위하는 Fortune 250 기업입니다. 주요 사업 영역은 다음과 같습니다:
 
 1. 신차 및 중고차 판매
 2. 차량 금융 서비스 주선

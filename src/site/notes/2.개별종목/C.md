@@ -17,7 +17,7 @@
 
 - **전방산업:** 기업 및 개인 금융 서비스, 자산관리, 신용카드
     
-    - **기업 금융 서비스:** 기업에게 금융 상품 및 서비스를 제공. 주요 기업: JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
+    - **기업 금융 서비스:** 기업에게 금융 상품 및 서비스를 제공. 주요 기업: JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
     - **개인 금융 서비스:** 개인에게 금융 상품 및 서비스를 제공. 주요 기업: Bank of America (미국, [[2.개별종목/BAC\|BAC]]), Wells Fargo (미국, [[2.개별종목/WFC\|WFC]]).
     - **자산관리:** 자산 관리 및 투자 서비스를 제공. 주요 기업: BlackRock (미국, [[2.개별종목/BLK\|BLK]]), Vanguard Group.
     - **신용카드:** 신용카드 발급 및 관리. 주요 기업: American Express (미국, [[2.개별종목/AXP\|AXP]]), Discover Financial (미국, [[2.개별종목/DFS\|DFS]]).
@@ -29,7 +29,7 @@
 #### 밸류체인
 
 - **자금 조달:** 자금 조달 및 관리
-    - 주요 기업: JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
+    - 주요 기업: JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
 - **금융 상품 개발:** 다양한 금융 상품 개발
     - 주요 기업: Bank of America (미국, [[2.개별종목/BAC\|BAC]]), Wells Fargo (미국, [[2.개별종목/WFC\|WFC]]).
 - **금융 서비스 제공:** 금융 서비스 제공 및 관리
@@ -53,7 +53,7 @@
 
 #### 경쟁업체
 
-- **투자은행:** JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
+- **투자은행:** JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]).
 - **상업은행:** Bank of America (미국, [[2.개별종목/BAC\|BAC]]), Wells Fargo (미국, [[2.개별종목/WFC\|WFC]]).
 - **신용카드:** American Express (미국, [[2.개별종목/AXP\|AXP]]), Discover Financial (미국, [[2.개별종목/DFS\|DFS]]).
 - **자산관리:** BlackRock (미국, [[2.개별종목/BLK\|BLK]]), Vanguard Group.

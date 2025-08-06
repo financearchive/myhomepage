@@ -32,7 +32,7 @@ KeyCorp는 KeyBank National Association의 지주회사로, 미국 내에서 다
     - **주요 기업**:
         
         - BlackRock (미국, [[2.개별종목/BLK\|BLK]])
-        - Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
+        - Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
         
     
 

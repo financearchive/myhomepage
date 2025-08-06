@@ -5,7 +5,7 @@
 #부동산 #부동산서비스 
 
 
-**산업섹터 (Sector):** [[1.Study/★ 산업/부동산/부동산\|부동산]] (Real Estate)  
+**산업섹터 (Sector):** [[1.Study/2.산업/부동산/부동산\|부동산]] (Real Estate)  
 
 **산업 (Industry):** [[부동산 서비스\|부동산 서비스]] (Real Estate Services)
 

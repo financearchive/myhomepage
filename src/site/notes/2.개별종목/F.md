@@ -36,7 +36,7 @@ Ford는 승용차, 트럭, SUV 및 상용차를 설계, 제조 및 판매하며,
 - Ford F-Series (픽업 트럭, 매출 비중: 약 30%, 2023년 기준)
 - Ford Explorer (SUV, 매출 비중: 약 15%, 2023년 기준)
 - Ford Mustang (스포츠카, 매출 비중: 약 10%, 2023년 기준)
-- [[1.Study/★ 산업/자동차 산업/전기차/전기차\|전기차]]: Ford Mustang Mach-E, Ford F-150 Lightning (매출 비중: 증가 추세)
+- [[1.Study/2.산업/자동차 산업/전기차/전기차\|전기차]]: Ford Mustang Mach-E, Ford F-150 Lightning (매출 비중: 증가 추세)
 
 ## 주요 판매국가
 

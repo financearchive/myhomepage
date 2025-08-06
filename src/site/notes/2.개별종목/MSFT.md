@@ -17,7 +17,7 @@ Microsoft Corporation(NASDAQ: MSFT)는 전 세계적으로 소프트웨어, 하�
 
 1. **Productivity and Business Processes**: Office 365, Microsoft Teams, LinkedIn 등
     
-2. **Intelligent Cloud**: Azure [[1.Study/★ 산업/클라우드/클라우드\|클라우드]] 플랫폼, 서버 제품 및 엔터프라이즈 서비스
+2. **Intelligent Cloud**: Azure [[1.Study/2.산업/클라우드/클라우드\|클라우드]] 플랫폼, 서버 제품 및 엔터프라이즈 서비스
     
 3. **More Personal Computing**: [[Windows\|Windows]] 운영체제, [[Surface\|Surface]] 디바이스, [[Xbox\|Xbox]] 게임 콘솔
     

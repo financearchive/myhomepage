@@ -12,7 +12,7 @@
 
 ## 산업 (Industry)
 
-산업: [[자산운용\|자산운용]] (Asset Management), [[디지털자산\|디지털자산]] (Digital Assets), [[1.Study/★ 산업/통신_데이터센터 산업/2.데이터센터/데이터센터\|데이터센터]] (Data Centers), [[핀테크\|핀테크]] (Financial Technology)
+산업: [[자산운용\|자산운용]] (Asset Management), [[디지털자산\|디지털자산]] (Digital Assets), [[1.Study/2.산업/통신_데이터센터 산업/2.데이터센터/데이터센터\|데이터센터]] (Data Centers), [[핀테크\|핀테크]] (Financial Technology)
 
 ---
 
@@ -210,7 +210,7 @@ Galaxy Digital은 금융서비스 및 디지털 인프라 운영 기업으로서
 - D.E. Shaw(US, [[D.E. Shaw\|D.E. Shaw]]) - 헤지펀드, 디지털자산 투자 고객
 - Millennium Management(US, [[Millennium\|Millennium]]) - 헤지펀드, 트레이딩 서비스 고객
 - Point72(US, [[Point72\|Point72]]) - 헤지펀드, 디지털자산 서비스 고객
-- Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 투자은행, 디지털자산 서비스 협력
+- Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 투자은행, 디지털자산 서비스 협력
 - Morgan Stanley(US, [[2.개별종목/MS\|MS]]) - 투자은행, 기관투자자 고객
 - JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]]) - 투자은행, 기관투자자 고객
 - Bank of America(US, [[2.개별종목/BAC\|BAC]]) - 투자은행, 기관투자자 고객

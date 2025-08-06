@@ -40,7 +40,7 @@ Corning Incorporated는 1851년 설립된 미국의 글로벌 소재과학 및 �
 
 **고객 유형별 수익 구조:**
 
-- 기업 고객(Enterprise): 광통신 부문에서 55% 성장 (AI [[1.Study/★ 산업/통신_데이터센터 산업/2.데이터센터/데이터센터\|데이터센터]] 수요)
+- 기업 고객(Enterprise): 광통신 부문에서 55% 성장 (AI [[1.Study/2.산업/통신_데이터센터 산업/2.데이터센터/데이터센터\|데이터센터]] 수요)
 - 통신사(Carrier): AT&T([[2.개별종목/T\|T]]), Verizon([[2.개별종목/VZ\|VZ]]) 등 [[5G\|5G]] 네트워크 구축 관련
 - 소비자전자(Consumer Electronics): Apple, Samsung 등 스마트폰/디스플레이 기업
 
@@ -110,7 +110,7 @@ Corning Incorporated는 1851년 설립된 미국의 글로벌 소재과학 및 �
 
 **전방산업 (제품 사용 산업):**
 
-- 스마트폰: Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Gorilla Glass 적용
+- 스마트폰: Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Gorilla Glass 적용
 - 통신인프라: AT&T(US, [[2.개별종목/T\|T]]), Verizon(US, [[2.개별종목/VZ\|VZ]]) - 광섬유 케이블
 - 디스플레이: Samsung Display(KR, [[Samsung Display\|Samsung Display]]), LG Display(KR, [[LG Display\|LG Display]]) - LCD/OLED 유리기판
 - 자동차: Ford(US, [[2.개별종목/F\|F]]), GM(US, [[2.개별종목/GM\|GM]]) - 자동차 유리 및 환경기술
@@ -182,7 +182,7 @@ Corning Incorporated는 1851년 설립된 미국의 글로벌 소재과학 및 �
 **스마트폰/전자기업:**
 
 - Apple(US, [[2.개별종목/AAPL\|AAPL]]) - iPhone/iPad용 Gorilla Glass 및 카메라 렌즈
-- Samsung Electronics(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Galaxy 시리즈용 보호유리 및 디스플레이 기판
+- Samsung Electronics(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - Galaxy 시리즈용 보호유리 및 디스플레이 기판
 - Xiaomi(CN, [[Xiaomi\|Xiaomi]]) - 스마트폰용 Gorilla Glass 공급
 - Oppo(CN, [[Oppo\|Oppo]]) - 모바일 기기용 특수유리
 - Vivo(CN, [[Vivo\|Vivo]]) - 스마트폰 보호유리 솔루션
@@ -198,7 +198,7 @@ Corning Incorporated는 1851년 설립된 미국의 글로벌 소재과학 및 �
 
 - Samsung Display(KR, [[Samsung Display\|Samsung Display]]) - OLED/LCD 유리기판
 - LG Display(KR, [[LG Display\|LG Display]]) - 대형 디스플레이용 특수유리
-- BOE Technology(CN, [[1.Study/★ 경제/★ 매크로/☆ 금리/영란은행/BOE\|BOE]]) - LCD 패널용 유리기판
+- BOE Technology(CN, [[1.Study/1.경제/매크로/3.금리/영란은행/BOE\|BOE]]) - LCD 패널용 유리기판
 - Japan Display(JP, [[JDI\|JDI]]) - 중소형 디스플레이용 유리
 
 **자동차 제조사:**

@@ -145,7 +145,7 @@ HII는 미국 군함 건조 시장에서 독보적인 위치를 차지하고 있
     
 2. SPDR S&P Aerospace & Defense ETF - [[XAR\|XAR]]
     
-3. Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+3. Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
     
 4. ARK Space Exploration & Innovation ETF - [[ARKX\|ARKX]]
     

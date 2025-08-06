@@ -7,7 +7,7 @@
 ## 산업섹터
 
 - **Sector**: Technology ([[테크\|테크]])
-- **Industry**: Semiconductors ([[1.Study/★ 산업/반도체 산업/반도체\|반도체]])
+- **Industry**: Semiconductors ([[1.Study/2.산업/반도체 산업/반도체\|반도체]])
 
 ## 영위사업
 
@@ -35,7 +35,7 @@ Qualcomm은 무선 통신 및 모바일 기술을 개발하고 상용화하는 �
     
 - **제조**: 반도체 및 시스템 소프트웨어의 생산
     
-    - **대표 회사**: [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, KRX: 005930) - 반도체 제조
+    - **대표 회사**: [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, KRX: 005930) - 반도체 제조
     - **대표 회사**: GlobalFoundries (US, [[2.개별종목/GFS\|GFS]]) - 파운드리 서비스
     
 - **마케팅 및 유통**: 글로벌 파트너십을 통한 제품 판매 및 라이센스 제공

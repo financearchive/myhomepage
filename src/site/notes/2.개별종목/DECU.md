@@ -101,7 +101,7 @@ AllianzIM U.S. Equity Buffer15 Uncapped Dec ETF(DECU)는 2024년 11월 29일 출
 **후방산업 (서비스 공급 업체):**
 
 - 옵션 거래소: Cboe Global Markets(US, [[CBOE\|CBOE]]) - FLEX Options 거래
-- 프라임 브로커: Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 거래 청산 및 결제
+- 프라임 브로커: Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 거래 청산 및 결제
 - 데이터 제공업체: S&P Global(US, [[SPGI\|SPGI]]) - 기초 지수 데이터
 
 ---

@@ -7,7 +7,7 @@
 #### 산업섹터 및 산업
 
 - **Sector**: [[필수 소비재\|필수 소비재]] (Consumer Staples)
-- **Industry**: [[1.Study/★ 산업/식음료픔 산업/논알콜 음료\|논알콜 음료]] (Beverages - Non-Alcoholic)
+- **Industry**: [[1.Study/2.산업/식음료픔 산업/논알콜 음료\|논알콜 음료]] (Beverages - Non-Alcoholic)
 
 #### 영위사업
 

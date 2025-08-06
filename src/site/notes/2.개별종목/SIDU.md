@@ -9,7 +9,7 @@
 ## 3. 산업 분류
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]]  
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
 
 ---
 
@@ -17,7 +17,7 @@
 
 Sidus Space Inc는 2012년 설립된 [[우주\|우주]] 및 방위 기술 기업으로 위성 설계, 제조, 발사 및 데이터 수집을 포함한 종합적인 우주 서비스를 제공합니다. 플로리다 메릿 아일랜드에 본사를 두고 있으며, 캐롤 크레이그(Carol Craig)가 창업자이자 CEO로 회사를 이끌고 있습니다.
 
-회사의 주력 제품은 LizzieSat [[1.Study/★ 산업/항공,우주,방위 산업/2.우주/INFO_우주/인공위성\|인공위성]] 플랫폼으로, 고객별 맞춤형 페이로드를 통합할 수 있는 다목적 위성 시스템입니다. 최근에는 LizzieSat-3을 성공적으로 발사했으며, 여러 LizzieSat 위성으로 구성된 저궤도 위성군을 구축하고 있습니다. 2025년 7월에는 달 탐사용 위성 플랫폼인 LunarLizzie를 발표했으며, 이는 최대 800kg의 페이로드를 지원하는 차세대 달 탐사 플랫폼입니다.
+회사의 주력 제품은 LizzieSat [[1.Study/2.산업/항공,우주,방위 산업/2.우주/INFO_우주/인공위성\|인공위성]] 플랫폼으로, 고객별 맞춤형 페이로드를 통합할 수 있는 다목적 위성 시스템입니다. 최근에는 LizzieSat-3을 성공적으로 발사했으며, 여러 LizzieSat 위성으로 구성된 저궤도 위성군을 구축하고 있습니다. 2025년 7월에는 달 탐사용 위성 플랫폼인 LunarLizzie를 발표했으며, 이는 최대 800kg의 페이로드를 지원하는 차세대 달 탐사 플랫폼입니다.
 
 Sidus Space는 우주 인프라 서비스(Space Infrastructure-as-a-Service) 비즈니스 모델을 채택하고 있으며, 데이터 수집 및 분석, 위성 제조, 임무 계획 및 관리, AI/ML 제품 및 서비스, 우주 및 방위 하드웨어 제조 등의 서비스를 제공합니다. 특히 AI 기반 데이터 분석 플랫폼인 Orlaith AI 생태계를 통해 실시간 데이터 분석 서비스를 제공하고 있습니다.
 
@@ -276,7 +276,7 @@ Sidus Space는 우주 인프라 서비스(Space Infrastructure-as-a-Service) 비
 **섹터 관련 ETF:**
 
 - iShares U.S. Aerospace & Defense ETF [[ITA\|ITA]]
-- Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - SPDR S&P Kensho Final Frontiers ETF [[ROKT\|ROKT]]
 
 **테마 관련 ETF:**

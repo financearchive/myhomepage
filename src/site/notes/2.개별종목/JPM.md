@@ -22,7 +22,7 @@ JPMorgan Chase & Co.는 전 세계적으로 금융 서비스를 제공하는 회
 
 - **전방산업**: 다양한 산업의 기업 및 개인 고객
     - **핵심 산업**: 금융 서비스, 투자 은행
-    - **핵심 기업**: Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
+    - **핵심 기업**: Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
 - **후방산업**: 금융 기술 및 데이터 제공
     - **핵심 산업**: 금융 기술, 데이터 분석
     - **핵심 기업**: [[Bloomberg\|Bloomberg]] (미국, 비상장), FactSet (미국, [[FDS\|FDS]])
@@ -30,7 +30,7 @@ JPMorgan Chase & Co.는 전 세계적으로 금융 서비스를 제공하는 회
 #### 밸류체인
 
 - **연구개발 (R&D)**: 금융 상품 및 서비스 개발
-    - **대표 회사**: Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
+    - **대표 회사**: Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]), Morgan Stanley (미국, [[2.개별종목/MS\|MS]])
 - **제조 (Manufacturing)**: 금융 상품 및 서비스 제공
     - **대표 회사**: JPMorgan Chase & Co. (미국, [[2.개별종목/JPM\|JPM]]), Bank of America (미국, [[2.개별종목/BAC\|BAC]])
 - **유통 (Distribution)**: 금융 상품 및 서비스의 전 세계 유통
@@ -44,6 +44,6 @@ JPMorgan Chase & Co.는 전 세계적으로 금융 서비스를 제공하는 회
 
 #### 경쟁업체
 
-- **Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])**: 투자 은행 서비스
+- **Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])**: 투자 은행 서비스
 - **Morgan Stanley (미국, [[2.개별종목/MS\|MS]])**: 투자 은행 및 자산 관리 서비스
 - **Bank of America (미국, [[2.개별종목/BAC\|BAC]])**: 다각화된 금융 서비스

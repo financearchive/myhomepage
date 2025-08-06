@@ -206,7 +206,7 @@ News Corporation의 핵심 경쟁력은 글로벌 미디어 생태계에서 구�
 - Apple(US, [[2.개별종목/AAPL\|AAPL]]) - 기술 제품 광고, 프리미엄 브랜드 마케팅
 - Microsoft(US, [[2.개별종목/MSFT\|MSFT]]) - 소프트웨어 및 클라우드 서비스 광고
 - JPMorgan Chase(US, [[2.개별종목/JPM\|JPM]]) - 금융 서비스 광고 및 데이터 솔루션
-- Goldman Sachs(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 투자 서비스 광고 및 금융 데이터
+- Goldman Sachs(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]]) - 투자 서비스 광고 및 금융 데이터
 - McKinsey & Company - 컨설팅 서비스 광고 및 비즈니스 정보
 - Amazon(US, [[2.개별종목/AMZN\|AMZN]]) - 이커머스 및 AWS 서비스 광고
 - Tesla(US, [[2.개별종목/TSLA\|TSLA]]) - 전기차 및 기업 브랜딩 광고

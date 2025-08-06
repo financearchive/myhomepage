@@ -25,7 +25,7 @@ Best Buy는 [[가전제품\|가전제품]], 컴퓨터, 모바일 기기, 가전,
 
 - 역할: 제품 공급
 - 전자제품 제조업체: Apple (US, [[2.개별종목/AAPL\|AAPL]])
-- 가전제품 제조업체: [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930)
+- 가전제품 제조업체: [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, 005930)
 
 ## 주요제품
 

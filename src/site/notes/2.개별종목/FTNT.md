@@ -190,7 +190,7 @@ Fortinet은 제조업체가 아닌 fabless 모델을 채택하여 설계와 소�
 
 - 사용처: 데이터 처리 및 저장을 위한 메모리 모듈
 - 주요 공급 지역: 한국, 대만, 중국
-- 주요 공급 업체: Samsung [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]], SK Hynix [[SK Hynix\|SK Hynix]]
+- 주요 공급 업체: Samsung [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]], SK Hynix [[SK Hynix\|SK Hynix]]
 
 **PCB 기판:**
 

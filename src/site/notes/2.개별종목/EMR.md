@@ -6,7 +6,7 @@
 
 #### 산업섹터 (Sector, Industry)
 
-- **Sector**: [[산업재\|산업재]] (Industrials), [[1.Study/★ 산업/전력산업/전력기기\|전력기기]]
+- **Sector**: [[산업재\|산업재]] (Industrials), [[1.Study/2.산업/전력산업/전력기기\|전력기기]]
 - **Industry**: [[특수 산업 기계\|특수 산업 기계]] (Specialty Industrial Machinery)
 
 #### 영위사업

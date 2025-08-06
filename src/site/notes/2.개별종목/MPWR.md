@@ -6,7 +6,7 @@
 
 ## 산업 섹터
 
-Monolithic Power Systems Inc(MPWR)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/★ 산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
+Monolithic Power Systems Inc(MPWR)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/2.산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
 
 ## 영위사업
 
@@ -39,7 +39,7 @@ MPS는 단순한 칩 공급업체에서 종합 솔루션 제공업체로 전환�
     - 데이터센터: Amazon Web Services (US, [[2.개별종목/AMZN\|AMZN]]), Microsoft Azure (US, [[2.개별종목/MSFT\|MSFT]])
     - 자동차: Tesla (US, [[2.개별종목/TSLA\|TSLA]]), General Motors (US, [[2.개별종목/GM\|GM]])
     - 통신장비: Cisco Systems (US, [[2.개별종목/CSCO\|CSCO]]), Huawei (비상장)
-    - 소비자 가전: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]
+    - 소비자 가전: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]
     
 
 ## 밸류체인

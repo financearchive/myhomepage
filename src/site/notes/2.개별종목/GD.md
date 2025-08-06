@@ -20,7 +20,7 @@ General Dynamics Corporation(NYSE: GD)은 [[미국의 대표적인 방위산업 
 3. 전투 시스템: 전차, 장갑차, 무기 시스템, 탄약 등 생산
 4. 기술: IT 서비스, C4ISR 솔루션, 사이버 보안 등 제공
 
-2024년 기준 총 매출은 약 394억 달러였으며, 전 세계적으로 106,500명 이상의 직원을 고용하고 있습니다. 최근에는 AI, [[1.Study/★ 산업/로봇 산업/로봇\|로봇]]공학, 자율 시스템 등 첨단 기술 분야에 대한 투자를 확대하고 있으며, 특히 사이버 보안과 우주 관련 사업에 주력하고 있습니다.[3](https://markets.ft.com/data/equities/tearsheet/profile?s=GD%3ANYQ)
+2024년 기준 총 매출은 약 394억 달러였으며, 전 세계적으로 106,500명 이상의 직원을 고용하고 있습니다. 최근에는 AI, [[1.Study/2.산업/로봇 산업/로봇\|로봇]]공학, 자율 시스템 등 첨단 기술 분야에 대한 투자를 확대하고 있으며, 특히 사이버 보안과 우주 관련 사업에 주력하고 있습니다.[3](https://markets.ft.com/data/equities/tearsheet/profile?s=GD%3ANYQ)
 
 ## 핵심 경쟁력
 
@@ -96,6 +96,6 @@ General Dynamics는 2024년 3분기 기준 글로벌 방위산업 시장에서 �
 
 - iShares U.S. Aerospace & Defense ETF - [[ITA\|ITA]]
 - SPDR S&P Aerospace & Defense ETF - [[XAR\|XAR]]
-- Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - Direxion Daily Aerospace & Defense Bull 3X Shares - [[DFEN\|DFEN]]
 - ARK Space Exploration & Innovation ETF - [[ARKX\|ARKX]]

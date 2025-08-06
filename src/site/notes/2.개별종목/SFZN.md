@@ -8,11 +8,11 @@
 #### 산업섹터 (Sector, Industry)
 
 - **Sector**: [[헬스케어\|헬스케어]] (Healthcare)
-- **Industry**: [[의약품 제조\|의약품 제조]] - 전문 및 일반 (Drug Manufacturers - Specialty & Generic), [[1.Study/★ 산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]
+- **Industry**: [[의약품 제조\|의약품 제조]] - 전문 및 일반 (Drug Manufacturers - Specialty & Generic), [[1.Study/2.산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]
 
 #### 영위사업
 
-Siegfried는 글로벌 [[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CDMO\|CDMO]](Contract Development and Manufacturing Organization)로서 의약품, 생물학적 제제, 세포 및 유전자 치료제, 소비자 건강 제품의 개발 및 제조 솔루션을 제공합니다. 주요 사업 부문은 생물학적 제제, 고형제, 무균제 및 기타 의약품 제조로 나뉩니다.
+Siegfried는 글로벌 [[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CDMO\|CDMO]](Contract Development and Manufacturing Organization)로서 의약품, 생물학적 제제, 세포 및 유전자 치료제, 소비자 건강 제품의 개발 및 제조 솔루션을 제공합니다. 주요 사업 부문은 생물학적 제제, 고형제, 무균제 및 기타 의약품 제조로 나뉩니다.
 
 #### 전방/후방산업
 

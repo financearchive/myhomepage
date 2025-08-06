@@ -15,7 +15,7 @@
 
 Keurig Dr Pepper Inc.(NASDAQ: KDP)는 미국의 주요 [[음료 제조\|음료 제조]] 및 유통 기업입니다. 회사는 2018년 Keurig Green Mountain과 Dr Pepper Snapple Group의 합병으로 설립되었습니다. 주요 사업 부문은 다음과 같습니다:
 
-1. [[1.Study/★ 산업/원자재 산업/3.농산물/INFO_식량,가축 등/커피\|커피]] 시스템: Keurig 싱글 서브 커피 머신 및 K-Cup 포드
+1. [[1.Study/2.산업/원자재 산업/3.농산물/INFO_식량,가축 등/커피\|커피]] 시스템: Keurig 싱글 서브 커피 머신 및 K-Cup 포드
 2. 포장 음료: Dr Pepper, Canada Dry, Snapple 등의 브랜드 음료
 3. 농축액 및 원액: Mott's, ReaLemon 등의 브랜드 제품
 4. 라틴 아메리카 음료: Peñafiel, Clamato 등 지역 브랜드

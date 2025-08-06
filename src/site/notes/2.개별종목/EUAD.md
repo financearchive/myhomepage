@@ -33,7 +33,7 @@ Select STOXX Europe Aerospace & Defense ETF(EUAD)는 [[유럽\|유럽]]의 [[항
         
     - 운용자산: 약 65억 달러[1](https://www.poems.com.sg/etf-screener/CBOEBZX-ITA/)
         
-2. [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]] Invesco Aerospace & Defense ETF
+2. [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]] Invesco Aerospace & Defense ETF
     
     - SPADE™ Defense 지수 기반
         

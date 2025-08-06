@@ -5,7 +5,7 @@
 #테크 #소프트웨어 #DevSecOps #플랫폼
 
 
-GitLab Inc.는 소프트웨어 개발 수명 주기를 위한 [[1.Study/★ 산업/AI,자율주행 산업/info_ai/DevSecOps\|DevSecOps]] [[플랫폼\|플랫폼]]을 제공하는 기업입니다.
+GitLab Inc.는 소프트웨어 개발 수명 주기를 위한 [[1.Study/2.산업/AI,자율주행 산업/info_ai/DevSecOps\|DevSecOps]] [[플랫폼\|플랫폼]]을 제공하는 기업입니다.
 
 ## 산업섹터
 

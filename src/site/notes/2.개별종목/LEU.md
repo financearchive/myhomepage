@@ -7,7 +7,7 @@
 ## 산업섹터
 
 - Sector: Energy ([[에너지\|에너지]])
-- Industry: Uranium ([[1.Study/★ 산업/원자재 산업/5.기타원자재/우라늄\|우라늄]])
+- Industry: Uranium ([[1.Study/2.산업/원자재 산업/5.기타원자재/우라늄\|우라늄]])
 
 ## 영위사업
 

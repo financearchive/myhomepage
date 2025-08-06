@@ -215,7 +215,7 @@ Alphabet은 주로 소프트웨어와 서비스 회사로 전통적인 제조 �
 - Target(US, [[2.개별종목/TGT\|TGT]]) - 소매업, 디지털 마케팅
 - Ford(US, [[2.개별종목/F\|F]]) - 자동차 제조, 안드로이드 오토 파트너
 - General Motors(US, [[2.개별종목/GM\|GM]]) - 자동차 제조, 안드로이드 오토 및 클라우드
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자기기, 안드로이드 파트너
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자기기, 안드로이드 파트너
 - LG Electronics(KR, [[LG Electronics\|LG Electronics]]) - 전자기기, 안드로이드 파트너
 
 ---

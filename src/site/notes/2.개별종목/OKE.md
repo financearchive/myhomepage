@@ -6,8 +6,8 @@
 
 - 최근이슈
 	- 2024년
-		- [[0.DAILY Invest/과거/2024/11월/2024-11-23\|2024-11-23]]: EnLink Midstream 잔여 지분 57% 인수 계약 발표 ($43억)
-		- [[0.DAILY Invest/과거/2024/12월/2024-12-04\|2024-12-04]]: 텍사스 주 내 12.5만b/d 규모 NGL 분별기인 ‘MB-6’ 준공 및 NGL 파이프라인 확장 완료
+		- [[0.DAILY-Invest/과거/2024/11월/2024-11-23\|2024-11-23]]: EnLink Midstream 잔여 지분 57% 인수 계약 발표 ($43억)
+		- [[0.DAILY-Invest/과거/2024/12월/2024-12-04\|2024-12-04]]: 텍사스 주 내 12.5만b/d 규모 NGL 분별기인 ‘MB-6’ 준공 및 NGL 파이프라인 확장 완료
 
 ---
 
@@ -139,7 +139,7 @@ ONEOK는 제조업체가 아닌 에너지 미드스트림 서비스 제공업체
 - 석유화학 업체: NGL을 원료로 플라스틱, 화학제품 생산 - ExxonMobil(US, [[2.개별종목/XOM\|XOM]]), Chevron Phillips(US, [[Chevron Phillips\|Chevron Phillips]])
 - 정제소: 원유 정제 및 정제제품 생산 - Valero(US, [[2.개별종목/VLO\|VLO]]), Marathon Petroleum(US, [[2.개별종목/MPC\|MPC]])
 - 발전소: 천연가스 발전 - NextEra Energy(US, [[2.개별종목/NEE\|NEE]]), Dominion Energy(US, [[2.개별종목/D\|D]])
-- 수출 터미널: LNG 수출 및 NGL 수출 - Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]])
+- 수출 터미널: LNG 수출 및 NGL 수출 - Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]])
 
 **후방산업:**
 

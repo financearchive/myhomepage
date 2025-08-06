@@ -6,7 +6,7 @@
 
 **산업섹터 (Sector):** [[기초 소재\|기초 소재]] (Basic Materials)  
 
-**산업 (Industry):** [[1.Study/★ 산업/원자재 산업/2.철강/철강\|철강]] (Steel)
+**산업 (Industry):** [[1.Study/2.산업/원자재 산업/2.철강/철강\|철강]] (Steel)
 
 ### 영위사업
 

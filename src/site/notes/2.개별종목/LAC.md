@@ -16,7 +16,7 @@
 
 Lithium Americas Corp.는 [[리튬 광산\|리튬 광산]] 개발 및 생산에 주력하는 기업입니다. 주요 사업은 다음과 같습니다:
 
-1. Thacker Pass 프로젝트: 미국 네바다주에 위치한 세계 최대 규모의 [[1.Study/★ 산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/리튬/리튬\|리튬]] 광산 개발
+1. Thacker Pass 프로젝트: 미국 네바다주에 위치한 세계 최대 규모의 [[1.Study/2.산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/리튬/리튬\|리튬]] 광산 개발
 2. 리튬 기술 개발: 배터리급 리튬 카보네이트 생산을 위한 기술 개발 및 검증
 3. 지속가능한 리튬 생산: 환경 친화적이고 책임감 있는 리튬 생산 방식 추구
 
@@ -40,7 +40,7 @@ Lithium Americas Corp.는 [[리튬 광산\|리튬 광산]] 개발 및 생산에 
 2. 전방산업:
     
     - 전기차 제조: Tesla(US, [[2.개별종목/TSLA\|TSLA]]), General Motors(US, [[2.개별종목/GM\|GM]])
-    - 배터리 제조: Panasonic(JP, [[Panasonic\|Panasonic]]), LG Energy Solution(KR, [[1.Study/★ 산업/이차전지, 배터리 산업/1.이차전지/종목/LG에너지솔루션\|LG에너지솔루션]])
+    - 배터리 제조: Panasonic(JP, [[Panasonic\|Panasonic]]), LG Energy Solution(KR, [[1.Study/2.산업/이차전지, 배터리 산업/1.이차전지/종목/LG에너지솔루션\|LG에너지솔루션]])
     
 
 ## 밸류체인

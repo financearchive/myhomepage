@@ -230,7 +230,7 @@ Sea Limited는 인터넷 플랫폼 회사로 전통적인 제조 프로세스는
 - L'Oréal(FR, [[OR\|OR]]) - 화장품 기업, 라이브 커머스 활용
 - Nike(US, [[2.개별종목/NKE\|NKE]]) - 스포츠 브랜드, 이커머스 판매
 - Adidas(DE, [[2.개별종목/ADS\|ADS]]) - 글로벌 스포츠 브랜드
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 판매 및 마케팅
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 판매 및 마케팅
 - Apple(US, [[2.개별종목/AAPL\|AAPL]]) - 모바일 기기 및 액세서리 판매
 - Xiaomi(CN, [[1810\|1810]]) - 스마트폰 및 전자제품 판매
 - Nestlé(CH, [[2.개별종목/NESN\|NESN]]) - 식품 및 음료 판매

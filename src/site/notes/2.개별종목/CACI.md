@@ -98,6 +98,6 @@ CACI는 2024년 기준으로 미국 방산 IT 서비스 시장에서 약 10%의 
 
 - iShares U.S. Aerospace & Defense ETF - [[ITA\|ITA]]
 - SPDR S&P Aerospace & Defense ETF - [[XAR\|XAR]]
-- Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - ARK Autonomous Technology & Robotics ETF - [[ARKQ\|ARKQ]]
 - First Trust NASDAQ Cybersecurity ETF - [[CIBR\|CIBR]]

@@ -102,7 +102,7 @@ NICE Ltd는 [[AI 기반 디지털 비즈니스 솔루션\|AI 기반 디지털 �
 
 ## 산업 내 글로벌 시장 점유율
 
-NICE는 [[1.Study/★ 산업/클라우드/CCaaS\|CCaaS]](Contact Center as a Service) 시장에서 선도적인 위치를 차지하고 있으며, 2024년 기준 약 15-20%의 시장 점유율을 보유하고 있는 것으로 추정됩니다.
+NICE는 [[1.Study/2.산업/클라우드/CCaaS\|CCaaS]](Contact Center as a Service) 시장에서 선도적인 위치를 차지하고 있으며, 2024년 기준 약 15-20%의 시장 점유율을 보유하고 있는 것으로 추정됩니다.
 
 ## 최근 3년 내 주요 이슈
 

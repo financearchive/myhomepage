@@ -9,7 +9,7 @@
 ## 산업 분류
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]] 
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
 
 ---
 
@@ -589,7 +589,7 @@ Hexcel의 비즈니스 모델은 고성능 복합소재 개발 및 제조를 통
 
 - iShares U.S. Aerospace & Defense ETF [[ITA\|ITA]] - Hexcel 편입 비중: 1.8%
 - SPDR S&P Aerospace & Defense ETF [[XAR\|XAR]] - Hexcel 편입 비중: 3.7%
-- Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]] - Hexcel 편입 비중: 1.5%
+- Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]] - Hexcel 편입 비중: 1.5%
 - First Trust Industrials/Producer Durables AlphaDEX Fund [[FXR\|FXR]] - Hexcel 편입 비중: 1.2%
 - U.S. Global Jets ETF [[JETS\|JETS]] - Hexcel 편입 비중: 0.8%
 

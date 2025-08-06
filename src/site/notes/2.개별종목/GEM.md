@@ -8,7 +8,7 @@
 ## 산업섹터
 
 Sector: Financial Services ([[금융 서비스\|금융 서비스]])  
-Industry: Cryptocurrency ([[1.Study/★ 산업/암호화폐/암호화폐\|암호화폐]])
+Industry: Cryptocurrency ([[1.Study/2.산업/암호화폐/암호화폐\|암호화폐]])
 
 ## 회사 개요
 

@@ -23,7 +23,7 @@ Ferrovial SE는 4개의 주요 사업 부문을 운영하고 있습니다:
     
     - 공항 투자 및 운영
     - 영국의 Heathrow, Aberdeen, Glasgow, Southampton 공항 운영
-3. [[1.Study/★ 산업/부동산/건설\|건설]](Construction):
+3. [[1.Study/2.산업/부동산/건설\|건설]](Construction):
     
     - 토목 공사, 건물 및 산업 시설 설계 및 건설
     - 주요 프로젝트: 구겐하임 미술관(스페인), 마드리드 바라하스 공항 터미널 4 등

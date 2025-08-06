@@ -18,7 +18,7 @@
 
 ## 영위사업
 
-Freeport-McMoRan은 1912년 설립된 세계적인 광산업 기업으로, [[1.Study/★ 산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/구리/구리\|구리]], [[1.Study/★ 산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/금/금\|금]], 몰[[리브덴\|리브덴]]의 채굴 및 생산을 통해 글로벌 [[1.Study/★ 산업/원자재 산업/INFO_원자재/원자재\|원자재]] 시장에서 선도적 위치를 차지하고 있습니다. 회사는 북미, 남미, 인도네시아에 걸쳐 지리적으로 다양한 대규모 광산을 운영하며, 특히 구리 생산에서 글로벌 최고 수준의 경쟁력을 보유하고 있습니다.
+Freeport-McMoRan은 1912년 설립된 세계적인 광산업 기업으로, [[1.Study/2.산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/구리/구리\|구리]], [[1.Study/2.산업/원자재 산업/1.비철금속/★ 비철금속 & 귀금속/금/금\|금]], 몰[[리브덴\|리브덴]]의 채굴 및 생산을 통해 글로벌 [[1.Study/2.산업/원자재 산업/INFO_원자재/원자재\|원자재]] 시장에서 선도적 위치를 차지하고 있습니다. 회사는 북미, 남미, 인도네시아에 걸쳐 지리적으로 다양한 대규모 광산을 운영하며, 특히 구리 생산에서 글로벌 최고 수준의 경쟁력을 보유하고 있습니다.
 
 주요 사업부문으로는 북미 구리 광산(모렌시, 백다드, 사프포드, 시에리타, 마이애미, 치노, 타이론), 남미 구리 광산(세로베르데, 엘아브라), 인도네시아 그라스베르크 광산(구리 및 금), 몰리브덴 사업부(클라이막스 몰리브덴), 정제 및 가공 사업부로 구성됩니다. 2024년 총 매출 254억 5천만 달러를 기록했으며, 구리 부문이 전체 매출의 약 53%를 차지하는 구리 중심 포트폴리오를 운영하고 있습니다.
 
@@ -114,7 +114,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 **전방산업:**
 
 - 전기차 제조업: 구리 와이어링 및 모터 제조용 - Tesla(US, [[2.개별종목/TSLA\|TSLA]]), Ford(US, [[2.개별종목/F\|F]]), GM(US, [[2.개별종목/GM\|GM]])
-- 전자기기 제조업: 반도체 및 전자부품 제조 - Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]])
+- 전자기기 제조업: 반도체 및 전자부품 제조 - Apple(US, [[2.개별종목/AAPL\|AAPL]]), Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]])
 - 건설업: 배관 및 전기 설비 - Caterpillar(US, [[2.개별종목/CAT\|CAT]]), Fluor(US, [[2.개별종목/FLR\|FLR]])
 - 재생에너지 산업: 태양광, 풍력 발전 설비 - General Electric(US, [[2.개별종목/GE\|GE]]), Siemens(DE, [[Siemens\|Siemens]])
 
@@ -162,7 +162,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 
 **몰리브덴 (Molybdenum):** 철강 합금, 석유 정제 촉매제로 사용, 매출 비중 약 8% (2024년 기준), 관련 경쟁사 [[CMMC\|CMMC]], [[TRQ\|TRQ]]
 
-**구리 로드 및 정제품:** 전기 케이블 및 배선용 고순도 구리, 부가가치 제품, 관련 경쟁사 [[2.개별종목/SCCO\|SCCO]], [[1.Study/★ 산업/반도체 산업/INFO_반도체/HBM\|HBM]]
+**구리 로드 및 정제품:** 전기 케이블 및 배선용 고순도 구리, 부가가치 제품, 관련 경쟁사 [[2.개별종목/SCCO\|SCCO]], [[1.Study/2.산업/반도체 산업/INFO_반도체/HBM\|HBM]]
 
 ---
 
@@ -201,7 +201,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 - General Electric(US, [[2.개별종목/GE\|GE]]) - 발전기 및 전기 장비용 구리 
 - Siemens(DE, [[Siemens\|Siemens]]) - 산업용 전기 장비
 - Ford Motor(US, [[2.개별종목/F\|F]]) - 자동차 전기 시스템용 구리 
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 스마트폰 및 반도체용 구리 
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 스마트폰 및 반도체용 구리 
 - Caterpillar(US, [[2.개별종목/CAT\|CAT]]) - 건설장비용 구리 부품 
 - Boeing(US, [[2.개별종목/BA\|BA]]) - 항공기 전기 시스템용 구리 
 - Schneider Electric(FR, [[Schneider Electric\|Schneider Electric]]) - 전기 장비 및 자동화 시스템 
@@ -240,7 +240,7 @@ Freeport-McMoRan의 핵심 경쟁력은 세계적 규모의 광산 자산 포트
 - Barrick Gold(CA, [[2.개별종목/B\|B]]) - 대형 금 생산업체, 구리 부문도 운영
 - Antofagasta(UK, [[2.개별종목/Antofagasta\|Antofagasta]]) - 칠레 기반 구리 생산업체
 - First Quantum Minerals(CA, [[2.개별종목/FM\|FM]]) - 캐나다 구리 생산업체
-- Hudbay Minerals(CA, [[1.Study/★ 산업/반도체 산업/INFO_반도체/HBM\|HBM]]) - 캐나다 구리 및 아연 생산업체
+- Hudbay Minerals(CA, [[1.Study/2.산업/반도체 산업/INFO_반도체/HBM\|HBM]]) - 캐나다 구리 및 아연 생산업체
 - Lundin Mining(CA, [[LUN\|LUN]]) - 캐나다 구리 생산업체
 - Teck Resources(CA, [[2.개별종목/Teck\|TECK]]) - 캐나다 구리 및 아연 생산업체
 - Ivanhoe Mines(CA, [[IVN\|IVN]]) - 아프리카 구리 생산업체

@@ -7,7 +7,7 @@
 ## 산업 섹터
 
 - **Sector(산업섹터)**: Health Care([[헬스케어\|헬스케어]])
-- **Industry(산업)**: Biotechnology([[1.Study/★ 산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]])
+- **Industry(산업)**: Biotechnology([[1.Study/2.산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]])
 
 ## 영위 사업
 
