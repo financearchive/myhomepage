@@ -76,7 +76,7 @@ Nano Nuclear Energy Inc.(NASDAQ: NNE)는 첨단 [[원자력\|원자력]] 에너�
 
 ## 경쟁업체
 
-- NuScale Power(US, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/1.원자력발전/SMR\|SMR]]): 소형 모듈형 원자로
+- NuScale Power(US, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/1.원자력발전/SMR\|SMR]]): 소형 모듈형 원자로
 - X-energy(US, [[2.개별종목/XE\|XE]]): 고온가스냉각로
 - TerraPower(비상장): 진행파 원자로
 - Oklo Inc.(비상장): 마이크로 원자로

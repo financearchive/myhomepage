@@ -6,7 +6,7 @@
 
 ## 산업 섹터
 
-Amkor Technology Inc(AMKR)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/★ 산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
+Amkor Technology Inc(AMKR)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/2.산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
 
 ## 영위사업
 

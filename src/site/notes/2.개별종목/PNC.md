@@ -31,7 +31,7 @@ PNC Financial Services Group Inc.는 다양한 소매 및 상업 은행 제품�
     - **주요 기업**:
         
         - BlackRock (미국, [[2.개별종목/BLK\|BLK]])
-        - Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
+        - Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
 
 
 ## 밸류체인

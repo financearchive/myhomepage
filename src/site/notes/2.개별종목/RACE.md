@@ -7,7 +7,7 @@
 **산업섹터 (Sector, Industry)**:
 
 - **Sector**: [[임의소비재\|임의소비재]] (Consumer Discretionary)
-- **Industry**: [[1.Study/★ 산업/자동차 산업/자동차\|자동차]] (Automobiles)
+- **Industry**: [[1.Study/2.산업/자동차 산업/자동차\|자동차]] (Automobiles)
 
 **영위사업**: Ferrari N.V.는 고성능 [[스포츠카\|스포츠카]]를 설계, 제조 및 판매하는 이탈리아의 럭셔리 자동차 제조업체입니다. 이 회사는 주로 Ferrari 브랜드의 스포츠카를 생산하며, [[모터스포츠\|모터스포츠]] 활동에도 적극적으로 참여하고 있습니다
 

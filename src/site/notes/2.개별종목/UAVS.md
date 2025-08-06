@@ -10,7 +10,7 @@
 
 ## 산업
 
-산업: [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]](Aerospace & Defense)
+산업: [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]](Aerospace & Defense)
 
 ## 영위사업
 
@@ -149,7 +149,7 @@ AgEagle Aerial Systems Inc.는 상업용 및 정부용 [[무인 항공 시스템
 2. iShares U.S. Aerospace & Defense ETF - [[ITA\|ITA]]
 3. ARK Autonomous Technology & Robotics ETF - [[ARKQ\|ARKQ]]
 4. First Trust Indxx Innovative Transaction & Process ETF - [[LEGR\|LEGR]]
-5. Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+5. Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 
 공유
 

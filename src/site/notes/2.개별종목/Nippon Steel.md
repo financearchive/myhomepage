@@ -8,7 +8,7 @@
 **산업섹터 (Sector, Industry)**
 
 - **Sector:** [[기초 소재\|기초 소재]] (Basic Materials)
-- **Industry:** [[1.Study/★ 산업/원자재 산업/2.철강/철강\|철강]] (Steel)
+- **Industry:** [[1.Study/2.산업/원자재 산업/2.철강/철강\|철강]] (Steel)
 
 **영위사업 (Business Operations)** Nippon Steel Corporation은 철강 제조 및 가공, 엔지니어링 및 건설, 화학 및 소재, 시스템 솔루션 등 다양한 사업을 영위하고 있습니다. 주요 사업 부문은 다음과 같습니다:
 
@@ -32,7 +32,7 @@
 - **내부 물류 (Inbound Logistics):** 원자재 수급 및 운송
     - **대표 회사:** Rio Tinto (호주, [[2.개별종목/RIO\|RIO]]), Vale (브라질, [[2.개별종목/Vale\|VALE]])
 - **운영 (Operations):** 철강 제조 및 가공
-    - **대표 회사:** [[JFE Steel\|JFE Steel]] (일본, 5411), [[1.Study/★ 산업/원자재 산업/2.철강/종목/포스코\|포스코]] (한국, 005490)
+    - **대표 회사:** [[JFE Steel\|JFE Steel]] (일본, 5411), [[1.Study/2.산업/원자재 산업/2.철강/종목/포스코\|포스코]] (한국, 005490)
 - **외부 물류 (Outbound Logistics):** 철강 제품 유통 및 판매
     - **대표 회사:** [[Mitsui\|Mitsui]] & Co. (일본, 8031), [[Sumitomo\|Sumitomo]] Corporation (일본, 8053)
 - **마케팅 및 판매 (Marketing & Sales):** 철강 제품 마케팅 및 판매
@@ -57,7 +57,7 @@
 
 **경쟁업체 (Competitors)**
 
-- **[[1.Study/★ 산업/원자재 산업/2.철강/종목/포스코\|포스코]] (한국, 005490):** 철강 제조 및 가공
+- **[[1.Study/2.산업/원자재 산업/2.철강/종목/포스코\|포스코]] (한국, 005490):** 철강 제조 및 가공
 - **[[JFE Steel\|JFE Steel]] (일본, 5411):** 철강 제조 및 가공
 - **ArcelorMittal (룩셈부르크, [[2.개별종목/MT\|MT]]):** 철강 제조 및 가공
 - **[[Tata Steel \|Tata Steel ]](인도, 500470):** 철강 제조 및 가공

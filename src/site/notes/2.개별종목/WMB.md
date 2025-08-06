@@ -17,7 +17,7 @@
 
 ## 영위사업
 
-Williams Companies(NYSE: WMB)는 미국의 주요 [[에너지 인프라\|에너지 인프라]] 기업으로, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/천연가스\|천연가스]] 처리, 수송, 저장을 전문으로 합니다. 주요 사업 부문은 송전 및 멕시코만, 북동부 G&P, 서부, 가스 및 [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/NGL\|NGL]] 마케팅 서비스입니다. 회사는 33,000마일의 파이프라인 네트워크를 보유하고 있으며, 주요 자산으로는 [[Transco\|Transco]]와 [[Northwest Pipeline\|Northwest Pipeline]]이 있습니다. Williams는 마르셀러스, 유티카, 바넷, 이글 포드, 헤인즈빌 등 주요 셰일 지역에서 미드스트림 활동을 수행합니다.
+Williams Companies(NYSE: WMB)는 미국의 주요 [[에너지 인프라\|에너지 인프라]] 기업으로, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/천연가스\|천연가스]] 처리, 수송, 저장을 전문으로 합니다. 주요 사업 부문은 송전 및 멕시코만, 북동부 G&P, 서부, 가스 및 [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/NGL\|NGL]] 마케팅 서비스입니다. 회사는 33,000마일의 파이프라인 네트워크를 보유하고 있으며, 주요 자산으로는 [[Transco\|Transco]]와 [[Northwest Pipeline\|Northwest Pipeline]]이 있습니다. Williams는 마르셀러스, 유티카, 바넷, 이글 포드, 헤인즈빌 등 주요 셰일 지역에서 미드스트림 활동을 수행합니다.
 
 ## 핵심 경쟁력
 
@@ -30,7 +30,7 @@ Williams Companies의 핵심 경쟁력은 광범위한 천연가스 인프라 �
 - 전력 생산: NextEra Energy(US, [[2.개별종목/NEE\|NEE]]), Duke Energy(US, [[2.개별종목/DUK\|DUK]])
 - 산업용 에너지: Dow Chemical(US, [[2.개별종목/DOW\|DOW]]), ExxonMobil(US, [[2.개별종목/XOM\|XOM]])
 - 주거 및 상업용 난방: Atmos Energy(US, [[2.개별종목/ATO\|ATO]])
-- LNG 수출: Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]])
+- LNG 수출: Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]])
 
 ## 후방산업
 
@@ -46,7 +46,7 @@ Williams Companies의 핵심 경쟁력은 광범위한 천연가스 인프라 �
 4. 천연가스 수송: Williams Companies(US, [[2.개별종목/WMB\|WMB]]), TC Energy(CA, [[TRP\|TRP]])
 5. 천연가스 저장: Williams Companies(US, [[2.개별종목/WMB\|WMB]]), Kinder Morgan(US, [[2.개별종목/KMI\|KMI]])
 6. 천연가스 유통: Atmos Energy(US, [[2.개별종목/ATO\|ATO]]), Southern Company(US, [[2.개별종목/SO\|SO]])
-7. LNG 수출: Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]])
+7. LNG 수출: Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]])
 
 ## 제품 및 고객
 
@@ -59,7 +59,7 @@ Williams Companies의 핵심 경쟁력은 광범위한 천연가스 인프라 �
 
 ## 주요 고객
 
-Chevron(US, [[2.개별종목/CVX\|CVX]]), ExxonMobil(US, [[2.개별종목/XOM\|XOM]]), Shell(UK, [[SHEL\|SHEL]]), BP(UK, [[BP\|BP]]), ConocoPhillips(US, [[2.개별종목/COP\|COP]]), Duke Energy(US, [[2.개별종목/DUK\|DUK]]), Southern Company(US, [[2.개별종목/SO\|SO]]), Dominion Energy(US, [[2.개별종목/D\|D]]), NextEra Energy(US, [[2.개별종목/NEE\|NEE]]), Exelon(US, [[2.개별종목/EXC\|EXC]]), Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]]), Atmos Energy(US, [[2.개별종목/ATO\|ATO]]), NiSource(US, [[NI\|NI]]), CenterPoint Energy(US, [[2.개별종목/CNP\|CNP]])
+Chevron(US, [[2.개별종목/CVX\|CVX]]), ExxonMobil(US, [[2.개별종목/XOM\|XOM]]), Shell(UK, [[SHEL\|SHEL]]), BP(UK, [[BP\|BP]]), ConocoPhillips(US, [[2.개별종목/COP\|COP]]), Duke Energy(US, [[2.개별종목/DUK\|DUK]]), Southern Company(US, [[2.개별종목/SO\|SO]]), Dominion Energy(US, [[2.개별종목/D\|D]]), NextEra Energy(US, [[2.개별종목/NEE\|NEE]]), Exelon(US, [[2.개별종목/EXC\|EXC]]), Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Sempra Energy(US, [[2.개별종목/SRE\|SRE]]), Atmos Energy(US, [[2.개별종목/ATO\|ATO]]), NiSource(US, [[NI\|NI]]), CenterPoint Energy(US, [[2.개별종목/CNP\|CNP]])
 
 ## 주요 판매국가
 
@@ -69,7 +69,7 @@ Chevron(US, [[2.개별종목/CVX\|CVX]]), ExxonMobil(US, [[2.개별종목/XOM\|X
 
 ## 경쟁업체
 
-Kinder Morgan(US, [[2.개별종목/KMI\|KMI]]), Energy Transfer(US, [[2.개별종목/ET\|ET]]), TC Energy(CA, [[TRP\|TRP]]), ONEOK(US, [[2.개별종목/OKE\|OKE]]), Enbridge(CA, [[ENB\|ENB]]), Enterprise Products Partners(US, [[2.개별종목/EPD\|EPD]]), Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Plains All American Pipeline(US, [[PAA\|PAA]]), Targa Resources(US, [[2.개별종목/TRGP\|TRGP]]), Magellan Midstream Partners(US, [[MMP\|MMP]])
+Kinder Morgan(US, [[2.개별종목/KMI\|KMI]]), Energy Transfer(US, [[2.개별종목/ET\|ET]]), TC Energy(CA, [[TRP\|TRP]]), ONEOK(US, [[2.개별종목/OKE\|OKE]]), Enbridge(CA, [[ENB\|ENB]]), Enterprise Products Partners(US, [[2.개별종목/EPD\|EPD]]), Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]]), Plains All American Pipeline(US, [[PAA\|PAA]]), Targa Resources(US, [[2.개별종목/TRGP\|TRGP]]), Magellan Midstream Partners(US, [[MMP\|MMP]])
 
 ## 산업 내 글로벌 시장 점유율
 

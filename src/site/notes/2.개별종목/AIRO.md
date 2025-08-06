@@ -9,7 +9,7 @@
 ## 산업 분류
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]]  
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
 
 ---
 
@@ -238,7 +238,7 @@ _정보 없음_ - IPO 이후 상세한 주주 구성 정보 미공개
 **직접 관련 ETF:**
 
 - ITA - iShares U.S. Aerospace & Defense ETF [[ITA\|ITA]]
-- PPA - Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- PPA - Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - DFEN - Direxion Daily Aerospace & Defense Bull 3X Shares [[DFEN\|DFEN]]
 
 **섹터 관련 ETF:**

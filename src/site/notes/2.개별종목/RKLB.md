@@ -9,7 +9,7 @@
 ## 산업 분류
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]]  
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]], [[1.Study/★ 산업/항공,우주,방위 산업/2.우주/INFO_우주/인공위성\|인공위성]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]], [[1.Study/2.산업/항공,우주,방위 산업/2.우주/INFO_우주/인공위성\|인공위성]]
 
 ---
 
@@ -309,7 +309,7 @@ Rocket Lab은 위성 설계, 구성 요소 제조, 위성 통합 및 시험을 �
 
 **액체 메탄:**
 
-- 사용처: 뉴트론 로켓 연료(개발 중), Cheniere Energy(US, [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]])
+- 사용처: 뉴트론 로켓 연료(개발 중), Cheniere Energy(US, [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/LNG\|LNG]])
 - 영향: 뉴트론 로켓의 성능 및 재사용성에 핵심
 - 가격 변동: 천연가스 시장 변동에 영향 받음
 
@@ -589,7 +589,7 @@ Rocket Lab은 위성 설계, 구성 요소 제조, 위성 통합 및 시험을 �
 
 - iShares U.S. Aerospace & Defense ETF [[ITA\|ITA]]
 - SPDR S&P Aerospace & Defense ETF [[XAR\|XAR]]
-- Invesco Aerospace & Defense ETF [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+- Invesco Aerospace & Defense ETF [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
 - First Trust S-Network Future Vehicles & Technology ETF [[CARZ\|CARZ]]
 
 **혁신 기술 ETF:**

@@ -149,7 +149,7 @@ Meta는 소프트웨어 플랫폼 기업으로 전통적인 제조공정보다�
 **하드웨어 공급 단계:** VR/AR 기기 및 인프라 부품 공급
 
 - Qualcomm(US, [[2.개별종목/QCOM\|QCOM]]) - VR 헤드셋용 칩셋 공급
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - OLED 디스플레이 및 메모리 공급
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - OLED 디스플레이 및 메모리 공급
 - Intel(US, [[2.개별종목/INTC\|INTC]]) - 데이터 센터용 프로세서 공급
 - NVIDIA(US, [[2.개별종목/NVDA\|NVDA]]) - AI 훈련용 GPU 공급
 - Broadcom(US, [[2.개별종목/AVGO\|AVGO]]) - 네트워킹 칩셋 공급
@@ -224,7 +224,7 @@ Meta는 소프트웨어 플랫폼 기업으로 전통적인 제조공정보다�
 - Nike(US, [[2.개별종목/NKE\|NKE]]) - 스포츠 브랜드 광고 및 인플루언서 마케팅
 - McDonald's(US, [[2.개별종목/MCD\|MCD]]) - 패스트푸드 브랜드 광고 및 로컬 마케팅
 - L'Oréal(FR, [[L'Oréal\|L'Oréal]]) - 화장품 브랜드 광고 및 뷰티 콘텐츠
-- Samsung(KR, [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 브랜드 광고 및 제품 론칭
+- Samsung(KR, [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]]) - 전자제품 브랜드 광고 및 제품 론칭
 - Walmart(US, [[2.개별종목/WMT\|WMT]]) - 리테일 광고 및 이커머스 마케팅
 - Target(US, [[2.개별종목/TGT\|TGT]]) - 소매 브랜드 광고 및 계절 마케팅
 - Amazon(US, [[2.개별종목/AMZN\|AMZN]]) - 이커머스 플랫폼 및 제품 광고

@@ -17,7 +17,7 @@
 
 ## 4. 영위사업
 
-Ramaco Resources Inc.는 미국 중부 애팔래치아 지역에서 메탈루지컬 코킹([[제철용 코크\|제철용 코크]])을 생산하는 주요 [[1.Study/★ 산업/에너지 산업/1.화석 에너지/1.정유화학/석탄\|석탄]]광산 기업입니다. 회사는 웨스트 버지니아 남부와 버지니아 남서부 지역에서 4개의 활성 메탈루지컬 석탄 광산 복합단지를 운영하고 있으며, 와이오밍 셰리던 카운티 근처에 Brook Mine이라는 [[1.Study/★ 산업/원자재 산업/1.비철금속/희토류/희토류\|희토류]] 및 석탄 개발 광산을 보유하고 있습니다.
+Ramaco Resources Inc.는 미국 중부 애팔래치아 지역에서 메탈루지컬 코킹([[제철용 코크\|제철용 코크]])을 생산하는 주요 [[1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/석탄\|석탄]]광산 기업입니다. 회사는 웨스트 버지니아 남부와 버지니아 남서부 지역에서 4개의 활성 메탈루지컬 석탄 광산 복합단지를 운영하고 있으며, 와이오밍 셰리던 카운티 근처에 Brook Mine이라는 [[1.Study/2.산업/원자재 산업/1.비철금속/희토류/희토류\|희토류]] 및 석탄 개발 광산을 보유하고 있습니다.
 
 주요 사업 부문은 고품질 저비용 메탈루지컬 코킹 생산으로, 전 세계 20개국 이상의 제철소와 코크 플랜트에 제품을 공급하고 있습니다. 회사의 주요 광산 자산은 Elk Creek, Berwind, Knox Creek, Amonate 복합단지로 구성되어 있으며, 총 6천만 톤의 고품질 메탈루지컬 코킹 매장량을 보유하고 있습니다.
 
@@ -167,7 +167,7 @@ Ramaco Resources Inc.는 미국 중부 애팔래치아 지역에서 메탈루지
 
 - 사용처: 제철소 용광로, 코크 플랜트
 - 매출비중: 95% 이상 (2024년 기준)
-- 주요 경쟁사: Alpha Metallurgical Resources([[1.Study/★ 산업/로봇 산업/INFO_로봇/AMR\|AMR]]), Warrior Met Coal([[HCC\|HCC]])
+- 주요 경쟁사: Alpha Metallurgical Resources([[1.Study/2.산업/로봇 산업/INFO_로봇/AMR\|AMR]]), Warrior Met Coal([[HCC\|HCC]])
 
 **희토류 및 전략광물 (Brook Mine):**
 
@@ -276,7 +276,7 @@ Ramaco Resources Inc.는 미국 중부 애팔래치아 지역에서 메탈루지
 
 **미국 메탈루지컬 코킹 생산업체:**
 
-- Alpha Metallurgical Resources(US, [[1.Study/★ 산업/로봇 산업/INFO_로봇/AMR\|AMR]]) - 미국 메탈루지컬 코킹 1위, 시장점유율 35%
+- Alpha Metallurgical Resources(US, [[1.Study/2.산업/로봇 산업/INFO_로봇/AMR\|AMR]]) - 미국 메탈루지컬 코킹 1위, 시장점유율 35%
 - Warrior Met Coal(US, [[HCC\|HCC]]) - 미국 메탈루지컬 코킹 2위, 시장점유율 25%
 - Arch Resources(US, [[ARCH\|ARCH]]) - 미국 석탄 대기업, 시장점유율 15%
 - Peabody Energy(US, [[BTU\|BTU]]) - 미국 최대 석탄업체, 시장점유율 10%

@@ -7,7 +7,7 @@
 
 
 - 최신이슈
-	- [[0.DAILY Invest/과거/2024/12월/2024-12-20\|2024-12-20]], Prasinezumab을 개발해 Roche([[2.개별종목/ROG\|ROG]])에 기술 수출한 바이오텍인 ProthenaCorp.(PRTA)의 주가 34% 상승(시총 기준 2.18억달러 증가). 
+	- [[0.DAILY-Invest/과거/2024/12월/2024-12-20\|2024-12-20]], Prasinezumab을 개발해 Roche([[2.개별종목/ROG\|ROG]])에 기술 수출한 바이오텍인 ProthenaCorp.(PRTA)의 주가 34% 상승(시총 기준 2.18억달러 증가). 
 		- Roche(ROG), [[파킨슨병\|파킨슨병]] 신약 후보 Prasinezumab 임상 2b상 PADOVA 결과 발표 중 하위 그룹 분석에서 Prasinezumab의 임상적 이점이 드러났기 때문
 		  
 

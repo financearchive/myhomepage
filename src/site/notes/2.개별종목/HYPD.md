@@ -10,7 +10,7 @@
 
 **섹터(Sector):** Industrials - [[산업재\|산업재]]  
 **산업(Industry):** Farm & Heavy Construction Machinery - [[농업\|농업]] 및 중장비 기계  
-**최근 전환 산업:** Cryptocurrency Treasury - [[1.Study/★ 산업/암호화폐/암호화폐\|암호화폐]] 재무 관리
+**최근 전환 산업:** Cryptocurrency Treasury - [[1.Study/2.산업/암호화폐/암호화폐\|암호화폐]] 재무 관리
 
 ---
 

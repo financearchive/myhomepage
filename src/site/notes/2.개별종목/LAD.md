@@ -11,7 +11,7 @@ Industry: [[자동차 소매\|자동차 소매]](Auto & Truck Dealerships)
 
 ## 영위사업
 
-Lithia Motors, Inc.는 글로벌 [[1.Study/★ 산업/자동차 산업/자동차\|자동차]] 소매업체로, 주요 사업 영역은 다음과 같습니다:
+Lithia Motors, Inc.는 글로벌 [[1.Study/2.산업/자동차 산업/자동차\|자동차]] 소매업체로, 주요 사업 영역은 다음과 같습니다:
 
 1. 차량 운영 부문
     

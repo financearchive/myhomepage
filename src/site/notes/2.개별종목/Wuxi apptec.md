@@ -7,11 +7,11 @@
 #### 산업섹터 및 산업 (Sector, Industry)
 
 - **Sector:** [[헬스케어\|헬스케어]] (Healthcare)
-- **Industry:** [[진단 및 연구\|진단 및 연구]] (Diagnostics & Research), [[1.Study/★ 산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]
+- **Industry:** [[진단 및 연구\|진단 및 연구]] (Diagnostics & Research), [[1.Study/2.산업/헬스케어/3.바이오테크/바이오테크\|바이오테크]]
 
 #### 영위사업 (Business Operations)
 
-WuXi AppTec는 글로벌 제약 및 생명과학 산업을 지원하는 연구 및 제조([[1.Study/★ 산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CDMO\|CDMO]]) 서비스를 제공합니다. 주요 사업 영역은 다음과 같습니다:
+WuXi AppTec는 글로벌 제약 및 생명과학 산업을 지원하는 연구 및 제조([[1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CDMO\|CDMO]]) 서비스를 제공합니다. 주요 사업 영역은 다음과 같습니다:
 
 - **화학 약물 [[CRDMO\|CRDMO]]** (Contract Research, Development and Manufacturing Organization)
 - **전임상 및 임상 연구 서비스** (Preclinical and Clinical Research Services)

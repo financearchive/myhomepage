@@ -9,7 +9,7 @@
 ## 산업 분류
 
 **섹터(Sector):** Technology - [[테크\|테크]]
-**산업(Industry):** Aerospace & Defense - [[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
+**산업(Industry):** Aerospace & Defense - [[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]]
 
 ---
 
@@ -343,7 +343,7 @@ _참고: 회사는 최근 상장되어 소유권 구조에 대한 완전한 정�
 
 - Technology Select Sector SPDR Fund([[XLK\|XLK]]) - 기술 섹터 ETF
 - Vanguard Information Technology ETF([[VGT\|VGT]]) - 정보 기술 섹터 ETF
-- Invesco Aerospace & Defense ETF([[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]) - 항공우주 및 방위 기업 ETF
+- Invesco Aerospace & Defense ETF([[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]) - 항공우주 및 방위 기업 ETF
 
 **테마 ETF**:
 

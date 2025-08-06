@@ -6,7 +6,7 @@
 
 ## 산업 섹터
 
-Maxim Integrated Products는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/★ 산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
+Maxim Integrated Products는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/2.산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
 
 ## 영위사업
 
@@ -21,7 +21,7 @@ Maxim Integrated Products는 [[아날로그 IC\|아날로그 IC]] 및 [[혼합 �
 7. 내장형 보안
 8. 마이크로컨트롤러
 
-Maxim은 [[1.Study/★ 산업/자동차 산업/자동차\|자동차]], 산업, [[통신\|통신]], 소비자 및 컴퓨팅 시장을 주요 타겟으로 하고 있습니다. 특히 자동차 분야에서는 인포테인먼트, [[1.Study/★ 산업/자동차 산업/전기차/전기차\|전기차]]/하이브리드 차량 배터리, 스마트키, 센서 등의 솔루션을 제공하고 있습니다.
+Maxim은 [[1.Study/2.산업/자동차 산업/자동차\|자동차]], 산업, [[통신\|통신]], 소비자 및 컴퓨팅 시장을 주요 타겟으로 하고 있습니다. 특히 자동차 분야에서는 인포테인먼트, [[1.Study/2.산업/자동차 산업/전기차/전기차\|전기차]]/하이브리드 차량 배터리, 스마트키, 센서 등의 솔루션을 제공하고 있습니다.
 
 ## 핵심 경쟁력
 
@@ -67,7 +67,7 @@ Maxim Integrated Products의 핵심 경쟁력은 다음과 같습니다:
 ## 주요고객
 
 1. Apple (US, [[2.개별종목/AAPL\|AAPL]])
-2. [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] 
+2. [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] 
 3. General Motors (US, [[2.개별종목/GM\|GM]])
 4. Ford (US, [[2.개별종목/F\|F]])
 5. Siemens (DE, [[2.개별종목/SIE\|SIE]])

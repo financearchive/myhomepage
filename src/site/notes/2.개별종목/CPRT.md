@@ -7,7 +7,7 @@
 ## 산업 섹터
 
 - Sector: Consumer Services([[경기소비재\|경기소비재]])
-- Industry: Automotive([[1.Study/★ 산업/자동차 산업/자동차\|자동차]])
+- Industry: Automotive([[1.Study/2.산업/자동차 산업/자동차\|자동차]])
 
 ## 영위 사업
 
@@ -33,7 +33,7 @@ Copart는 [[온라인 차량 경매\|온라인 차량 경매]] 및 재마케팅 
 - 온라인 경매 플랫폼:
     
     - Copart는 자체 VB3 기술을 통해 온라인 경매를 운영합니다.
-    - 대표 기업: KAR Auction Services (미국, [[KAR\|KAR]]), Ritchie Bros. Auctioneers (캐나다, [[1.Study/★ 경제/★ 매크로/☆ 금리/RBA/RBA\|RBA]])
+    - 대표 기업: KAR Auction Services (미국, [[KAR\|KAR]]), Ritchie Bros. Auctioneers (캐나다, [[1.Study/1.경제/매크로/3.금리/RBA/RBA\|RBA]])
     
 - 차량 보관 및 운송:
     
@@ -55,7 +55,7 @@ Copart는 [[온라인 차량 경매\|온라인 차량 경매]] 및 재마케팅 
 ## 경쟁업체
 
 - KAR Auction Services (미국, [[KAR\|KAR]]) - 온라인 및 오프라인 차량 경매
-- Ritchie Bros. Auctioneers (캐나다, [[1.Study/★ 경제/★ 매크로/☆ 금리/RBA/RBA\|RBA]]) - 산업 장비 및 차량 경매
+- Ritchie Bros. Auctioneers (캐나다, [[1.Study/1.경제/매크로/3.금리/RBA/RBA\|RBA]]) - 산업 장비 및 차량 경매
 - IAA (미국, [[IAA\|IAA]]) - 손상 차량 경매
 
 ## 산업 내 글로벌 시장 점유율

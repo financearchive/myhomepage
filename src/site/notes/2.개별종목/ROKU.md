@@ -7,7 +7,7 @@
 
 - 최근 이슈
 	- 2023년
-		-  [[0.DAILY Invest/과거/2023/7월/2023-07-12\|2023-07-12]]
+		-  [[0.DAILY-Invest/과거/2023/7월/2023-07-12\|2023-07-12]]
 			-  [[2.개별종목/ROKU\|2.개별종목/ROKU]] +11.1%, Shopify와 Shoppable 광고 관련 파트너십 체결, 소비자들은 Shopify의 쇼핑 솔루션을 이용해 ROKU로 비디오를 시청하다가 Roku Pay를 이용해 바로 구매 가능
 
 ## 산업섹터
@@ -41,7 +41,7 @@ Roku는 [[스트리밍\|스트리밍]] 플랫폼을 제공하는 회사로, 사�
 - **소프트웨어 개발**: Roku 운영 체제 및 사용자 인터페이스 개발
     
     - **대표 회사**: Google (US, [[1.Study/☆ 개별종목/GOOGL\|1.Study/☆ 개별종목/GOOGL]]) - Android TV 운영 체제
-    - **대표 회사**: [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, KRX: 005930) - Tizen OS
+    - **대표 회사**: [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] (KR, KRX: 005930) - Tizen OS
 - **콘텐츠 제공**: 다양한 스트리밍 서비스와의 파트너십
     
     - **대표 회사**: [[Hulu\|Hulu]] (US, 비상장) - 스트리밍 서비스

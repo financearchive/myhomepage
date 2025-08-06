@@ -26,7 +26,7 @@ Li-Cycle Holdings Corp.는 북미에서 [[리튬이온 배터\|리튬이온 배�
 
 - **원료 채굴**: Albemarle (US, [[2.개별종목/ALB\|ALB]]), SQM (CL, [[SQM\|SQM]])
 - **리튬 화합물 제조**: Ganfeng Lithium (CN, [[002460\|002460]]), Livent (US, [[LTHM\|LTHM]])
-- **배터리 생산**: [[2.개별종목/CATL\|CATL]] (CN, 300750), [[1.Study/★ 산업/이차전지, 배터리 산업/1.이차전지/종목/LG에너지솔루션\|LG에너지솔루션]] (KR, 373220)
+- **배터리 생산**: [[2.개별종목/CATL\|CATL]] (CN, 300750), [[1.Study/2.산업/이차전지, 배터리 산업/1.이차전지/종목/LG에너지솔루션\|LG에너지솔루션]] (KR, 373220)
 - **배터리 재활용**: Li-Cycle Holdings Corp., [[2.개별종목/Redwood Materials\|Redwood Materials]] (US, 비상장)
 
 #### 주요제품

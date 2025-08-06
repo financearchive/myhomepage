@@ -6,7 +6,7 @@
 
 ## 산업 섹터
 
-GlobalFoundries Inc(GFS)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/★ 산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
+GlobalFoundries Inc(GFS)는 [[정보기술\|정보기술]](Information Technology) 섹터, [[1.Study/2.산업/반도체 산업/반도체\|반도체]](Semiconductors) 산업에 속합니다.
 
 ## 영위사업
 
@@ -49,7 +49,7 @@ GlobalFoundries의 핵심 경쟁력은 다음과 같습니다:
 2. 전방산업:
     
     - 자동차: General Motors (US, [[2.개별종목/GM\|GM]]), Ford (US, [[2.개별종목/F\|F]])
-    - 스마트폰: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] 
+    - 스마트폰: Apple (US, [[2.개별종목/AAPL\|AAPL]]), [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] 
     - 데이터센터: Amazon Web Services (US, [[2.개별종목/AMZN\|AMZN]]), Microsoft Azure (US, [[2.개별종목/MSFT\|MSFT]])
     
 
@@ -83,7 +83,7 @@ GlobalFoundries의 핵심 경쟁력은 다음과 같습니다:
 ## 경쟁업체
 
 1. Taiwan Semiconductor Manufacturing Company (TW, [[2.개별종목/TSM\|TSM]]) - 첨단 로직 반도체
-2. [[1.Study/★ 테마/VR,AR,MR/종목/Samsung\|Samsung]] - 첨단 로직 및 메모리 반도체
+2. [[1.Study/3.테마/VR,AR,MR/종목/Samsung\|Samsung]] - 첨단 로직 및 메모리 반도체
 3. United Microelectronics Corporation (TW, [[UMC\|UMC]]) - 특수 공정 반도체
 4. Semiconductor Manufacturing International Corporation (HK, [[0981\|0981]]) - 중국 기반 파운드리
 5. Tower Semiconductor (IL, [[TSEM\|TSEM]]) - 아날로그 및 혼합 신호 반도체

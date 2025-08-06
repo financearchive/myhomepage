@@ -8,7 +8,7 @@
 #### 산업섹터 및 산업
 
 - **Sector**: [[테크\|테크]] (Technology)
-- **Industry**: [[가전제품\|가전제품]] (Consumer Electronics), [[1.Study/★ 산업/로봇 산업/로봇\|로봇]]
+- **Industry**: [[가전제품\|가전제품]] (Consumer Electronics), [[1.Study/2.산업/로봇 산업/로봇\|로봇]]
 
 #### 영위사업
 

@@ -7,7 +7,7 @@
 ## 산업섹터
 
 섹터: [[테크\|테크]](Technology)  
-산업: [[1.Study/★ 산업/반도체 산업/반도체\|반도체]](Semiconductors)
+산업: [[1.Study/2.산업/반도체 산업/반도체\|반도체]](Semiconductors)
 
 ## 영위사업
 

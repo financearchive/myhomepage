@@ -17,7 +17,7 @@ American International Group Inc (AIG)는 글로벌 보험 및 금융 서비스 
 
 - **전방산업:** 금융 서비스업
     - **핵심 산업:** 금융 서비스업은 AIG의 보험 상품을 사용하여 다양한 금융 솔루션을 제공합니다.
-    - **관련 기업:** JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/★ 산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
+    - **관련 기업:** JPMorgan Chase (미국, [[2.개별종목/JPM\|JPM]]), Goldman Sachs (미국, [[1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/종목/GS\|GS]])
 - **후방산업:** 재보험업
     - **핵심 산업:** 재보험업은 AIG에 재보험 상품을 제공하여 리스크를 분산시킵니다.
     - **관련 기업:** Munich Re (독일, [[MUV2\|MUV2]]), Swiss Re (스위스, [[SREN\|SREN]])

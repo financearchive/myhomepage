@@ -10,7 +10,7 @@
 
 ## 산업
 
-[[1.Study/★ 산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]](Aerospace and Defense)
+[[1.Study/2.산업/항공,우주,방위 산업/4.방위산업/항공우주 및 방위산업\|항공우주 및 방위산업]](Aerospace and Defense)
 
 ## 영위사업
 
@@ -97,4 +97,4 @@ Loar Holdings는 글로벌 기업으로, 구체적인 국가별 매출 비중은
 
 1. iShares U.S. Aerospace & Defense ETF - [[ITA\|ITA]]
 2. SPDR S&P Aerospace & Defense ETF - [[XAR\|XAR]]
-3. Invesco Aerospace & Defense ETF - [[1.Study/★ 산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
+3. Invesco Aerospace & Defense ETF - [[1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/PPA\|PPA]]
