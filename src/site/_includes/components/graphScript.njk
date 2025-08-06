@@ -1,84 +1,89 @@
 <script>
     async function fetchGraphData() {
-        const graphData = await fetch('/graph.json').then(res => res.json());
-        const fullGraphData  = filterFullGraphData(graphData);
-        return {graphData, fullGraphData}
+        try {
+            const graphData = await fetch('/graph.json').then(res => res.json());
+            const fullGraphData = filterFullGraphData(graphData);
+            return { graphData, fullGraphData };
+        } catch (error) {
+            console.error("graphData 로딩 실패:", error);
+            return { graphData: null, fullGraphData: null };
+        }
     }
 
     function getNextLevelNeighbours(existing, remaining) {
         const keys = Object.values(existing).map((n) => n.neighbors).flat();
         const n_remaining = Object.keys(remaining).reduce((acc, key) => {
-                if (keys.indexOf(key) != -1) {
-                    if (!remaining[key].hide) {
-                        existing[key] = remaining[key];
-                    }
-                } else {
-                    acc[key] = remaining[key];
+            if (keys.indexOf(key) != -1) {
+                if (!remaining[key].hide) {
+                    existing[key] = remaining[key];
                 }
-                return acc;
-            }, {});
-        return existing, n_remaining;
+            } else {
+                acc[key] = remaining[key];
+            }
+            return acc;
+        }, {});
+        return [existing, n_remaining];
     }
 
     function filterLocalGraphData(graphData, depth) {
-        if (graphData == null) {
+        if (!graphData || !graphData.nodes) {
+            console.error("graphData가 유효하지 않습니다.");
             return null;
         }
+
         // 🚀 개선된 디버깅 + URL 매칭 로직
         let currentLink = decodeURI(window.location.pathname).replace(/\/$/, ''); // trailing slash 제거
         console.log("=== GRAPH DEBUG ===");
         console.log("Current URL:", currentLink);
         console.log("Available nodes:", Object.keys(graphData.nodes).slice(0, 5));
-        
+
         // 1차: 정확한 URL 매칭
         let currentNode = graphData.nodes[currentLink];
         console.log("1차 매칭 결과:", currentNode);
-        
-        // 2차: 매칭 실패시 제목으로 찾기
+
+        // 2차: 매칭 실패 시 제목으로 찾기
         if (!currentNode) {
             const pageTitle = document.title.trim().toLowerCase();
             console.log("페이지 제목:", pageTitle);
-            
-            currentNode = Object.values(graphData.nodes).find(node => 
-                node.title.trim().toLowerCase() === pageTitle || 
+            currentNode = Object.values(graphData.nodes).find(node =>
+                node.title.trim().toLowerCase() === pageTitle ||
                 currentLink.includes(node.title.trim()) ||
                 node.url.replace(/\/$/, '').includes(currentLink.split('/').pop()) ||
                 pageTitle.includes(node.title.trim().toLowerCase())
             );
             console.log("2차 매칭 결과:", currentNode);
         }
-        
-        // 3차: 여전히 못찾으면 홈으로
+
+        // 3차: 여전히 못 찾으면 홈으로
         if (!currentNode) {
             console.warn("매칭되는 노드가 없어 홈 노드로 fallback합니다.");
             currentNode = Object.values(graphData.nodes).find((v) => v.home);
             console.log("3차 홈으로 fallback:", currentNode);
         }
-        
+
         if (!currentNode) {
             console.error("홈 노드도 찾을 수 없습니다.");
-        } else {
-            console.log("최종 currentNode:", currentNode);
-            // 여기서 그래프 렌더링 호출 (예: renderLocalGraph)
-            renderLocalGraph(graphData, 1, false);
+            return null;
         }
+
+        console.log("최종 currentNode:", currentNode);
         // 🚀 개선된 로직 끝
+
         let remaining = JSON.parse(JSON.stringify(graphData.nodes));
         let links = JSON.parse(JSON.stringify(graphData.links));
-        let currentLink = decodeURI(window.location.pathname);
-        let currentNode = remaining[currentLink] || Object.values(remaining).find((v) => v.home);
         delete remaining[currentNode.url];
         if (!currentNode.home) {
             let home = Object.values(remaining).find((v) => v.home);
-            delete remaining[home.url];
+            if (home) delete remaining[home.url];
         }
         currentNode.current = true;
         let existing = {};
         existing[currentNode.url] = currentNode;
+
         for (let i = 0; i < depth; i++) {
-            existing, remaining = getNextLevelNeighbours(existing, remaining);
+            [existing, remaining] = getNextLevelNeighbours(existing, remaining);
         }
-        nodes = Object.values(existing);
+        let nodes = Object.values(existing);
         if (!currentNode.home) {
             nodes = nodes.filter(n => !n.home);
         }
@@ -88,10 +93,12 @@
             links: links.filter(function (con) {
                 return ids.indexOf(con.target) > -1 && ids.indexOf(con.source) > -1;
             }),
-        }
+        };
     }
 
-    function getCssVar(variable) {return getComputedStyle(document.body).getPropertyValue(variable)}
+    function getCssVar(variable) {
+        return getComputedStyle(document.body).getPropertyValue(variable);
+    }
 
     function htmlDecode(input) {
         var doc = new DOMParser().parseFromString(input, "text/html");
@@ -99,18 +106,22 @@
     }
 
     function renderGraph(graphData, id, delay, fullScreen) {
-        if (graphData == null) {
+        if (!graphData || !graphData.nodes) {
+            console.error("렌더링할 그래프 데이터가 없습니다.");
             return;
         }
         const el = document.getElementById(id);
-        width = el.offsetWidth;
-        height = el.offsetHeight;
+        if (!el) {
+            console.error(`#${id} 요소를 찾을 수 없습니다.`);
+            return;
+        }
+        const width = el.offsetWidth;
+        const height = el.offsetHeight;
         const highlightNodes = new Set();
         let hoverNode = null;
         const color = getCssVar("--graph-main");
         const mutedColor = getCssVar("--graph-muted");
-        let Graph = ForceGraph()
-        (el)
+        let Graph = ForceGraph()(el)
             .graphData(graphData)
             .nodeId('id')
             .nodeLabel('title')
@@ -123,34 +134,16 @@
             .linkDirectionalArrowRelPos(0.5)
             .autoPauseRedraw(false)
             .linkColor((link) => {
-                if (hoverNode == null) {
-                    return color;
-                }
-                if (link.source.id == hoverNode.id || link.target.id == hoverNode.id) {
-                    return color;
-                } else {
-                    return mutedColor;
-                }
-                
+                if (hoverNode == null) return color;
+                return (link.source.id == hoverNode.id || link.target.id == hoverNode.id) ? color : mutedColor;
             })
             .nodeCanvasObject((node, ctx) => {
                 const numberOfNeighbours = (node.neighbors && node.neighbors.length) || 2;
                 const nodeR = Math.min(7, Math.max(numberOfNeighbours / 2, 2));
-                
                 ctx.beginPath();
                 ctx.arc(node.x, node.y, nodeR, 0, 2 * Math.PI, false);
-                if (hoverNode == null) {
-                    ctx.fillStyle = color;
-                } else {
-                    if (node == hoverNode || highlightNodes.has(node.url)) {
-                        ctx.fillStyle = color;
-                    } else {
-                        ctx.fillStyle = mutedColor;
-                    }
-                }
-                 
+                ctx.fillStyle = hoverNode == null ? color : (node == hoverNode || highlightNodes.has(node.url) ? color : mutedColor);
                 ctx.fill();
-                
                 if (node.current) {
                     ctx.beginPath();
                     ctx.arc(node.x, node.y, nodeR + 1, 0, 2 * Math.PI, false);
@@ -158,11 +151,9 @@
                     ctx.strokeStyle = color;
                     ctx.stroke();
                 }
-
-                const label = htmlDecode(node.title)
+                const label = htmlDecode(node.title);
                 const fontSize = 3.5;
                 ctx.font = `${fontSize}px Sans-Serif`;
-
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'top';
                 ctx.fillText(label, node.x, node.y + nodeR + 2);
@@ -173,48 +164,49 @@
             .onNodeHover(node => {
                 highlightNodes.clear();
                 if (node) {
-                highlightNodes.add(node);
-                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
+                    highlightNodes.add(node);
+                    node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
                 }
                 hoverNode = node || null;
-                
             });
-            if (fullScreen || (delay != null && graphData.nodes.length > 4)) {
-                setTimeout(() => {
-                    Graph.zoomToFit(5, 75);
-                }, delay || 200);
-            }
+        if (fullScreen || (delay != null && graphData.nodes.length > 4)) {
+            setTimeout(() => {
+                Graph.zoomToFit(5, 75);
+            }, delay || 200);
+        }
         return Graph;
     }
 
     function renderLocalGraph(graphData, depth, fullScreen) {
-        if (window.graph){
+        if (window.graph) {
             window.graph._destructor();
         }
         const data = filterLocalGraphData(graphData, depth);
+        if (!data) {
+            console.error("filterLocalGraphData에서 유효한 데이터를 반환하지 못했습니다.");
+            return;
+        }
         return renderGraph(data, 'link-graph', null, fullScreen);
     }
 
     function filterFullGraphData(graphData) {
-        if (graphData == null) {
-            return null;
-        }
+        if (!graphData) return null;
         graphData = JSON.parse(JSON.stringify(graphData));
         const hiddens = Object.values(graphData.nodes).filter((n) => n.hide).map((n) => n.id);
         const data = {
             links: JSON.parse(JSON.stringify(graphData.links)).filter((l) => hiddens.indexOf(l.source) == -1 && hiddens.indexOf(l.target) == -1),
             nodes: [...Object.values(graphData.nodes).filter((n) => !n.hide)]
-        }
-        return data
+        };
+        return data;
     }
 
     function openFullGraph(fullGraphData) {
         lucide.createIcons({
-                attrs: {
-                    class: ["svg-icon"]
-                }
-            });
-        return renderGraph(fullGraphData, "full-graph-container", 200, false);;
+            attrs: {
+                class: ["svg-icon"]
+            }
+        });
+        return renderGraph(fullGraphData, "full-graph-container", 200, false);
     }
 
     function closefullGraph(fullGraph) {
@@ -224,30 +216,31 @@
         return null;
     }
 </script>
-<div  x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
     <div class="graph-title-container">
         <div class="graph-title">Connected Pages</div>
         <div id="graph-controls">
-                <div class="depth-control">
-                    <label for="graph-depth">Depth</label>
-                    <div class="slider">
-                            <input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth"/>
+            <div class="depth-control">
+                <label for="graph-depth">Depth</label>
+                <div class="slider">
+                    <input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth"/>
                     <datalist id="depthmarkers">
-                            <option value="1" label="1"></option>
-                            <option value="2" label="2"></option>
-                            <option value="3" label="3"></option>
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
                     </datalist>
-                    </div>
-                    <span id="depth-display" x-text="depth"></span>
                 </div>
-                <div class="ctrl-right">
-                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i  icon-name="globe" aria-hidden="true"></i></span>
-                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen"><i  icon-name="expand" aria-hidden="true"></i></span>
-                </div>
+                <span id="depth-display" x-text="depth"></span>
+            </div>
+            <div class="ctrl-right">
+                <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+                <span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+            </div>
         </div>
     </div>
-    <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
+    <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
     <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
-        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span>
+        <div id="full-graph-container"></div>
     </div>
 </div>
