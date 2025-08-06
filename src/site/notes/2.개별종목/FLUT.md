@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/FLUT/","created":"2025-04-29T18:46:58.247+09:00","updated":"2025-07-29T21:37:04.662+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/FLUT/","created":"2025-04-29T18:46:58.247+09:00","updated":"2025-06-03T20:05:59.074+09:00"}
 ---
 
 Flutter Entertainment Plc는 아일랜드 더블린에 본사를 둔 글로벌 온라인 스포츠 베팅 및 게이밍 산업의 선두주자입니다. 2023년 기준 273,45명의 직원을 보유하며, FanDuel, Betfair, PokerStars 등 다양한 브랜드를 통해 전 세계 100개국 이상에서 서비스를 제공하고 있습니다. 2024년 3분기 매출은 47.7억 달러로 전년 대비 44% 성장했으며, 특히 미국 시장에서 강력한 성장세를 보이고 있습니다[5](https://www.perplexity.ai/finance/FLUT)[7](https://www.morningstar.co.uk/uk/news/AN_1741126316816355500/flutter-sees-fourth-quarter-revenue-climb-as-customer-numbers-increase.aspx).
