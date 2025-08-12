@@ -4,7 +4,7 @@
 
 #중국 #헬스케어 #제약 #제네릭
 
-Universe Pharmaceuticals Inc(UPC)는 [[1.Study/4.국가별 이슈/중국/중국\|중국]]의 제약 회사입니다.
+Universe Pharmaceuticals Inc(UPC)는 [[1.Study/4.국가/중국/중국\|중국]]의 제약 회사입니다.
 
 ## 산업섹터
 
