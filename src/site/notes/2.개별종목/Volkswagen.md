@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Volkswagen/","created":"2023-06-20T14:05:37.930+09:00","updated":"2025-06-03T20:06:01.998+09:00"}
+{"dg-publish":true,"permalink":"/2/volkswagen/","created":"2023-06-20T14:05:37.930+09:00","updated":"2025-06-03T20:06:01.998+09:00"}
 ---
 
 #자동차 #소비재 #전기차 #임의소비재 #자동차제조업

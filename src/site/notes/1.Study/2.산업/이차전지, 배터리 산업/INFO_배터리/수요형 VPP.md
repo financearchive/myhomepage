@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/수요형 VPP/","created":"2024-11-20T21:02:27.691+09:00","updated":"2025-06-26T16:51:08.983+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//info/vpp/","created":"2024-11-20T21:02:27.691+09:00","updated":"2025-06-26T16:51:08.983+09:00"}
 ---
 
 #수요형VPP #VPP

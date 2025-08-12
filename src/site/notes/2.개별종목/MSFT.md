@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/MSFT/","created":"2024-08-29T21:48:00.853+09:00","updated":"2025-06-03T20:06:00.228+09:00"}
+{"dg-publish":true,"permalink":"/2/msft/","created":"2024-08-29T21:48:00.853+09:00","updated":"2025-06-03T20:06:00.228+09:00"}
 ---
 
 #테크 #소프트웨어 #클라우드 #Xbox #게임 #Azure

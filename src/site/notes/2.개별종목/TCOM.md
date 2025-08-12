@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/TCOM/","created":"2024-11-20T23:21:53.354+09:00","updated":"2025-06-03T20:06:01.524+09:00"}
+{"dg-publish":true,"permalink":"/2/tcom/","created":"2024-11-20T23:21:53.354+09:00","updated":"2025-06-03T20:06:01.524+09:00"}
 ---
 
 #임의소비재 #여행서비스 #여행 #Trip_com #Skyscanner
