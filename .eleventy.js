@@ -33,7 +33,7 @@ function getFrontMatter(filePath) {
   }
 }
 
-// ===== 🚀 FIXED: 완전히 고유한 permalink 생성 함수 =====
+// ===== 🚀 ULTIMATE FIX: 절대적으로 고유한 permalink 생성 =====
 function generateUniquePermalink(filePath, frontMatter) {
   // 캐시에서 확인
   if (permalinkCache.has(filePath)) {
@@ -51,39 +51,26 @@ function generateUniquePermalink(filePath, frontMatter) {
   const relativePath = filePath.replace('./src/site/notes/', '');
   const pathWithoutExt = relativePath.replace(/\.md$/, '');
   
-  // 전체 파일 경로를 기반으로 한 고유 해시 생성 (더 긴 해시 사용)
-  const fullPathHash = crypto.createHash('sha256').update(relativePath).digest('hex').substring(0, 12);
+  // 전체 파일 경로 기반 SHA256 해시 (16자리)
+  const fullPathHash = crypto.createHash('sha256').update(relativePath).digest('hex').substring(0, 16);
   
-  // 파일명만 추출 (마지막 부분)
+  // 파일명과 디렉토리 분리
   const fileName = path.basename(pathWithoutExt);
+  const dirPath = path.dirname(pathWithoutExt);
   
-  // 파일명 처리
-  let processedFileName;
-  if (/[a-zA-Z0-9]/.test(fileName)) {
-    const slugified = slugify(fileName, { lower: true, strict: true });
-    processedFileName = slugified ? `${slugified}-${fullPathHash}` : `file-${fullPathHash}`;
+  // 더 간단하고 확실한 방법: 전체 경로를 해시로만 처리
+  const shortHash = crypto.createHash('md5').update(fileName).digest('hex').substring(0, 8);
+  
+  // 완전히 고유한 permalink 생성 (디렉토리 구조 + 파일 해시)
+  let permalink;
+  if (dirPath === '.') {
+    // 루트 디렉토리의 파일
+    permalink = `/${shortHash}-${fullPathHash}/`;
   } else {
-    // 한국어나 특수문자만 있는 경우
-    const contentHash = crypto.createHash('md5').update(fileName).digest('hex').substring(0, 8);
-    processedFileName = `kr-${contentHash}-${fullPathHash}`;
+    // 하위 디렉토리의 파일
+    const dirHash = crypto.createHash('md5').update(dirPath).digest('hex').substring(0, 8);
+    permalink = `/${dirHash}/${shortHash}-${fullPathHash}/`;
   }
-  
-  // 디렉토리 구조도 처리 (중복 방지를 위해)
-  const dirParts = path.dirname(pathWithoutExt).split('/').filter(part => part !== '.');
-  
-  const processedDirParts = dirParts.map((part, index) => {
-    if (/[a-zA-Z0-9]/.test(part)) {
-      const slugified = slugify(part, { lower: true, strict: true });
-      return slugified || `dir-${crypto.createHash('md5').update(part).digest('hex').substring(0, 4)}`;
-    } else {
-      // 한국어 디렉토리명
-      const dirHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
-      return `kr-${dirHash}`;
-    }
-  });
-  
-  // 최종 permalink 생성: 디렉토리 구조 + 고유 파일명
-  const permalink = '/' + [...processedDirParts, processedFileName].join('/') + '/';
   
   permalinkCache.set(filePath, permalink);
   return permalink;
@@ -98,7 +85,6 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     urlPath: "/img/optimized",
   };
 
-  // generate images, while this is async we don't wait
   if (process.env.ELEVENTY_ENV === "prod") Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
@@ -164,7 +150,6 @@ function getAnchorAttributes(filePath, linkTitle) {
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
 module.exports = function (eleventyConfig) {
-  // 빌드 최적화 설정
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setWatchThrottleWaitTime(100);
   
@@ -172,35 +157,85 @@ module.exports = function (eleventyConfig) {
     dynamicPartials: true,
   });
 
-  // ===== 🚀 FIXED: 더욱 강력한 노트 컬렉션 설정 =====
+  // ===== 🚀 CRITICAL: frontmatter permalink 완전히 무시하고 강제 적용 =====
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    permalink: (data) => {
+      // 노트 파일인지 확인
+      if (data.page && data.page.inputPath && data.page.inputPath.includes('/notes/')) {
+        const frontMatter = getFrontMatter(data.page.inputPath);
+        const uniquePermalink = generateUniquePermalink(data.page.inputPath, frontMatter);
+        
+        // frontmatter의 기존 permalink는 완전히 무시
+        console.log(`🔧 OVERRIDE: ${data.page.inputPath.replace('./src/site/notes/', '')} -> ${uniquePermalink}`);
+        return uniquePermalink;
+      }
+      return data.permalink;
+    }
+  });
+
+  // ===== 🚀 CRITICAL: 컬렉션에서도 강제 override =====
   eleventyConfig.addCollection("notes", function(collectionApi) {
     const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
-    const permalinkSet = new Set(); // 중복 검사용
+    const permalinkSet = new Set();
     
-    // 모든 노트에 강제로 새로운 고유 permalink 설정
     notes.forEach((note, index) => {
       const frontMatter = getFrontMatter(note.inputPath);
       let permalink = generateUniquePermalink(note.inputPath, frontMatter);
       
-      // 극단적 중복 방지를 위한 추가 검증 (인덱스 포함)
+      // 극단적 중복 방지
       let counter = 1;
       const originalPermalink = permalink;
       while (permalinkSet.has(permalink)) {
-        // 파일 순서 번호도 추가하여 완전한 고유성 보장
-        permalink = originalPermalink.replace(/\/$/, `-${index}-${counter}/`);
+        permalink = originalPermalink.replace(/\/$/, `-${Date.now()}-${counter}/`);
         counter++;
       }
       
       permalinkSet.add(permalink);
+      
+      // ===== 🚀 KEY: frontmatter의 permalink를 강제로 덮어쓰기 =====
       note.data.permalink = permalink;
       
-      // 디버깅용 로그 (빌드 시 확인용)
-      console.log(`✅ ${note.inputPath.replace('./src/site/notes/', '')} -> ${permalink}`);
+      // frontmatter에 잘못된 permalink가 있더라도 강제로 새 값 적용
+      if (note.data.page) {
+        note.data.page.permalink = permalink;
+      }
+      
+      console.log(`✅ FORCE: ${note.inputPath.replace('./src/site/notes/', '')} -> ${permalink}`);
     });
     
-    console.log(`📊 총 ${notes.length}개 노트 처리 완료, ${permalinkSet.size}개 고유 permalink 생성`);
+    console.log(`📊 총 ${notes.length}개 노트 처리, ${permalinkSet.size}개 고유 URL 생성`);
     
     return notes;
+  });
+
+  // ===== 🚀 CRITICAL: 데이터 전처리에서 잘못된 permalink 제거 =====
+  eleventyConfig.addDataExtension("md", (contents, filePath) => {
+    // MD 파일에서 frontmatter 파싱
+    if (filePath.includes('/notes/')) {
+      try {
+        const parsed = matter(contents);
+        const frontMatter = parsed.data;
+        
+        // 기존의 잘못된 permalink 삭제
+        if (frontMatter.permalink && (
+          frontMatter.permalink.includes('//') || 
+          frontMatter.permalink === '/1-study/4/' ||
+          frontMatter.permalink.endsWith('//'))
+        ) {
+          delete frontMatter.permalink;
+          console.log(`🗑️  REMOVED bad permalink from: ${filePath}`);
+        }
+        
+        // 새로운 고유 permalink 강제 설정
+        const uniquePermalink = generateUniquePermalink(filePath, {data: frontMatter});
+        frontMatter.permalink = uniquePermalink;
+        
+        return frontMatter;
+      } catch (e) {
+        return {};
+      }
+    }
+    return {};
   });
 
   let markdownLib = markdownIt({
@@ -241,7 +276,6 @@ module.exports = function (eleventyConfig) {
     })
     .use(namedHeadingsFilter)
     .use(function (md) {
-      //https://github.com/DCsunset/markdown-it-mermaid-plugin
       const origFenceRule =
         md.renderer.rules.fence ||
         function (tokens, idx, options, env, self) {
@@ -309,7 +343,6 @@ module.exports = function (eleventyConfig) {
           return res
         }
 
-        // Other languages
         return origFenceRule(tokens, idx, options, env, slf);
       };
 
@@ -320,7 +353,6 @@ module.exports = function (eleventyConfig) {
         };
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const imageName = tokens[idx].content;
-        //"image.png|metadata?|width"
         const [fileName, ...widthAndMetaData] = imageName.split("|");
         const lastValue = widthAndMetaData[widthAndMetaData.length - 1];
         const lastValueIsNumber = !isNaN(lastValue);
@@ -384,7 +416,6 @@ module.exports = function (eleventyConfig) {
     return (
       str &&
       str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
-        //Check if it is an embedded excalidraw drawing or mathjax javascript
         if (p1.indexOf("],[") > -1 || p1.indexOf('"$"') > -1) {
           return match;
         }
@@ -430,25 +461,21 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // 자동 메타 디스크립션 생성 필터
   eleventyConfig.addFilter("autoMetaDescription", function(content) {
     if (!content) return "";
     
-    // HTML 태그 및 마크다운 문법 제거
     const cleaned = content
-      .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
-      .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
-      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
-      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
-      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
-      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
-      .replace(/\s+/g, ' ')  // 여러 공백을 하나로
+      .replace(/<[^>]*>/g, ' ')
+      .replace(/#{1,6}\s/g, '')
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/\*(.*?)\*/g, '$1')
+      .replace(/\[\[(.*?)\]\]/g, '$1')
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')
+      .replace(/\s+/g, ' ')
       .trim();
     
-    // 첫 번째 문단만 사용
     const firstParagraph = cleaned.split('\n\n')[0] || cleaned;
     
-    // 160자로 제한
     if (firstParagraph.length > 160) {
       const words = firstParagraph.split(' ');
       let result = '';
@@ -599,7 +626,6 @@ module.exports = function (eleventyConfig) {
             fillPictureSourceSets(src, cls, alt, meta, width, imageTag);
           }
         } catch {
-          // Make it fault tolarent.
         }
       }
     }
