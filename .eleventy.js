@@ -1,6 +1,7 @@
 const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
+const path = require("path");
 
 const fileCache = new Map();
 function getFrontMatter(filePath) {
@@ -16,6 +17,38 @@ function getFrontMatter(filePath) {
     return null;
   }
 }
+
+// ===== 🚀 NEW: 한국어 파일명 처리를 위한 고유 permalink 생성 함수 =====
+function generateUniquePermalink(filePath, frontMatter) {
+  // 이미 permalink가 설정되어 있으면 그대로 사용
+  if (frontMatter && frontMatter.data && frontMatter.data.permalink) {
+    return frontMatter.data.permalink;
+  }
+
+  // 파일 경로에서 상대 경로 추출
+  const relativePath = filePath.replace('./src/site/notes/', '');
+  const pathWithoutExt = relativePath.replace(/\.md$/, '');
+  
+  // 경로를 슬래시로 분할
+  const pathParts = pathWithoutExt.split('/');
+  
+  // 각 부분을 처리
+  const processedParts = pathParts.map((part, index) => {
+    // 영어/숫자가 포함된 부분은 slugify 적용
+    if (/[a-zA-Z0-9]/.test(part)) {
+      const slugified = slugify(part, { lower: true });
+      return slugified || `part-${index}`;
+    } else {
+      // 한국어만 있는 경우 파일명의 해시값 사용
+      const crypto = require('crypto');
+      const hash = crypto.createHash('md5').update(part).digest('hex').substring(0, 8);
+      return `kr-${hash}`;
+    }
+  });
+  
+  return '/' + processedParts.join('/') + '/';
+}
+// ===== 🚀 NEW 끝 =====
 
 const matter = require("gray-matter");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
@@ -69,9 +102,11 @@ function getAnchorAttributes(filePath, linkTitle) {
       ? `${startPath}${fileName}`
       : `${startPath}${fileName}.md`;
     const frontMatter = getFrontMatter(fullPath);
-    if (frontMatter.data.permalink) {
-      permalink = frontMatter.data.permalink;
-    }
+    
+    // ===== 🚀 MODIFIED: 고유 permalink 생성 로직 적용 =====
+    permalink = generateUniquePermalink(fullPath, frontMatter);
+    // ===== 🚀 MODIFIED 끝 =====
+    
     if (
       frontMatter.data.tags &&
       frontMatter.data.tags.indexOf("gardenEntry") != -1
@@ -109,13 +144,30 @@ function getAnchorAttributes(filePath, linkTitle) {
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
 module.exports = function (eleventyConfig) {
-    // 빌드 최적화 설정 - 새로 추가됨
+  // 빌드 최적화 설정 - 새로 추가됨
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setWatchThrottleWaitTime(100);
   
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
+
+  // ===== 🚀 NEW: 컬렉션에 고유 permalink 적용 =====
+  eleventyConfig.addCollection("notes", function(collectionApi) {
+    const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
+    
+    // 각 노트에 고유 permalink 설정
+    notes.forEach(note => {
+      if (!note.data.permalink) {
+        const frontMatter = getFrontMatter(note.inputPath);
+        note.data.permalink = generateUniquePermalink(note.inputPath, frontMatter);
+      }
+    });
+    
+    return notes;
+  });
+  // ===== 🚀 NEW 끝 =====
+
   let markdownLib = markdownIt({
     breaks: true,
     html: true,
@@ -203,7 +255,7 @@ module.exports = function (eleventyConfig) {
             }
           }
           const foldDiv = collapsible ? `<div class="callout-fold">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+          &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down"&gt;
               <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
           </div>` : "";
@@ -351,10 +403,10 @@ module.exports = function (eleventyConfig) {
     const cleaned = content
       .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
       .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
-      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
-      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
-      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
-      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
+      .replace(/\*\*(.*?)\*\*/g, '\$1')  // 볼드 제거
+      .replace(/\*(.*?)\*/g, '\$1')  // 이탤릭 제거
+      .replace(/\[\[(.*?)\]\]/g, '\$1')  // 옵시디언 링크 제거
+      .replace(/\[(.*?)\]\(.*?\)/g, '\$1')  // 마크다운 링크 제거
       .replace(/\s+/g, ' ')  // 여러 공백을 하나로
       .trim();
     
@@ -496,7 +548,6 @@ module.exports = function (eleventyConfig) {
       />`;
     imageTag.innerHTML = html;
   }
-
 
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
