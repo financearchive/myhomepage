@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/joby/","created":"2024-12-03T21:56:11.187+09:00","updated":"2025-06-03T20:05:59.674+09:00"}
+{"dg-publish":true,"permalink":"/2/joby/","created":"2024-12-03T21:56:11.187+09:00","updated":"2025-07-29T21:37:04.793+09:00"}
 ---
 
 #산업재 #항공우주및방위 #eVTOL #UAM

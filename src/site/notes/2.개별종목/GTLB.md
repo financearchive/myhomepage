@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/gtlb/","created":"2024-12-13T21:49:20.980+09:00","updated":"2025-06-03T20:05:59.338+09:00"}
+{"dg-publish":true,"permalink":"/2/gtlb/","created":"2024-12-13T21:49:20.980+09:00","updated":"2025-07-29T21:37:04.712+09:00"}
 ---
 
 #테크 #소프트웨어 #DevSecOps #플랫폼

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/cars/","created":"2025-03-28T11:15:07.623+09:00","updated":"2025-06-03T20:05:58.151+09:00"}
+{"dg-publish":true,"permalink":"/2/cars/","created":"2025-03-28T11:15:07.623+09:00","updated":"2025-07-29T21:37:04.449+09:00"}
 ---
 
 	#중고차`

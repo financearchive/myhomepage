@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/keyence/","created":"2023-06-28T12:17:48.503+09:00","updated":"2025-06-03T20:05:59.720+09:00"}
+{"dg-publish":true,"permalink":"/2/keyence/","created":"2023-06-28T12:17:48.503+09:00","updated":"2025-07-29T21:37:04.806+09:00"}
 ---
 
 #로봇 #검사장비 #산업자동화

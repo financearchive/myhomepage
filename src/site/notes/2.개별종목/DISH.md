@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/DISH/","created":"2024-12-10T21:16:51.099+09:00","updated":"2025-07-29T21:37:04.573+09:00"}
+{"dg-publish":true,"permalink":"/2/dish/","created":"2024-12-10T21:16:51.099+09:00","updated":"2025-07-29T21:37:04.573+09:00"}
 ---
 
 #위성TV
