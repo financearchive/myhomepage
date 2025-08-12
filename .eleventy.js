@@ -33,7 +33,7 @@ function getFrontMatter(filePath) {
   }
 }
 
-// ===== 🚀 IMPROVED: 더 강력한 고유 permalink 생성 함수 =====
+// ===== 🚀 FIXED: 완전히 고유한 permalink 생성 함수 =====
 function generateUniquePermalink(filePath, frontMatter) {
   // 캐시에서 확인
   if (permalinkCache.has(filePath)) {
@@ -51,40 +51,40 @@ function generateUniquePermalink(filePath, frontMatter) {
   const relativePath = filePath.replace('./src/site/notes/', '');
   const pathWithoutExt = relativePath.replace(/\.md$/, '');
   
-  // 전체 파일 경로를 기반으로 한 고유 해시 생성
-  const fullPathHash = crypto.createHash('sha256').update(relativePath).digest('hex').substring(0, 8);
+  // 전체 파일 경로를 기반으로 한 고유 해시 생성 (더 긴 해시 사용)
+  const fullPathHash = crypto.createHash('sha256').update(relativePath).digest('hex').substring(0, 12);
   
-  // 경로를 슬래시로 분할
-  const pathParts = pathWithoutExt.split('/');
+  // 파일명만 추출 (마지막 부분)
+  const fileName = path.basename(pathWithoutExt);
   
-  // 각 부분을 처리하여 고유한 URL 생성
-  const processedParts = pathParts.map((part, index) => {
-    // 파일명 부분 (마지막 요소)인 경우 특별 처리
-    if (index === pathParts.length - 1) {
-      // 영어/숫자가 포함된 부분은 slugify 적용
-      if (/[a-zA-Z0-9]/.test(part)) {
-        const slugified = slugify(part, { lower: true, strict: true });
-        // 항상 파일별 고유 해시 추가
-        return slugified ? `${slugified}-${fullPathHash}` : `file-${fullPathHash}`;
-      } else {
-        // 한국어나 특수문자만 있는 경우
-        const contentHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
-        return `kr-${contentHash}-${fullPathHash}`;
-      }
+  // 파일명 처리
+  let processedFileName;
+  if (/[a-zA-Z0-9]/.test(fileName)) {
+    const slugified = slugify(fileName, { lower: true, strict: true });
+    processedFileName = slugified ? `${slugified}-${fullPathHash}` : `file-${fullPathHash}`;
+  } else {
+    // 한국어나 특수문자만 있는 경우
+    const contentHash = crypto.createHash('md5').update(fileName).digest('hex').substring(0, 8);
+    processedFileName = `kr-${contentHash}-${fullPathHash}`;
+  }
+  
+  // 디렉토리 구조도 처리 (중복 방지를 위해)
+  const dirParts = path.dirname(pathWithoutExt).split('/').filter(part => part !== '.');
+  
+  const processedDirParts = dirParts.map((part, index) => {
+    if (/[a-zA-Z0-9]/.test(part)) {
+      const slugified = slugify(part, { lower: true, strict: true });
+      return slugified || `dir-${crypto.createHash('md5').update(part).digest('hex').substring(0, 4)}`;
     } else {
-      // 디렉토리 부분 처리
-      if (/[a-zA-Z0-9]/.test(part)) {
-        const slugified = slugify(part, { lower: true, strict: true });
-        return slugified || `dir-${crypto.createHash('md5').update(part).digest('hex').substring(0, 4)}`;
-      } else {
-        // 한국어 디렉토리명
-        const dirHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 4);
-        return `kr-${dirHash}`;
-      }
+      // 한국어 디렉토리명
+      const dirHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
+      return `kr-${dirHash}`;
     }
   });
   
-  const permalink = '/' + processedParts.join('/') + '/';
+  // 최종 permalink 생성: 디렉토리 구조 + 고유 파일명
+  const permalink = '/' + [...processedDirParts, processedFileName].join('/') + '/';
+  
   permalinkCache.set(filePath, permalink);
   return permalink;
 }
@@ -172,21 +172,22 @@ module.exports = function (eleventyConfig) {
     dynamicPartials: true,
   });
 
-  // ===== 🚀 IMPROVED: 더 안전한 노트 컬렉션 설정 =====
+  // ===== 🚀 FIXED: 더욱 강력한 노트 컬렉션 설정 =====
   eleventyConfig.addCollection("notes", function(collectionApi) {
     const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
     const permalinkSet = new Set(); // 중복 검사용
     
     // 모든 노트에 강제로 새로운 고유 permalink 설정
-    notes.forEach(note => {
+    notes.forEach((note, index) => {
       const frontMatter = getFrontMatter(note.inputPath);
       let permalink = generateUniquePermalink(note.inputPath, frontMatter);
       
-      // 혹시 모를 중복 방지를 위한 추가 검증
+      // 극단적 중복 방지를 위한 추가 검증 (인덱스 포함)
       let counter = 1;
       const originalPermalink = permalink;
       while (permalinkSet.has(permalink)) {
-        permalink = originalPermalink.replace('/', `/${counter}-`);
+        // 파일 순서 번호도 추가하여 완전한 고유성 보장
+        permalink = originalPermalink.replace(/\/$/, `-${index}-${counter}/`);
         counter++;
       }
       
@@ -196,6 +197,8 @@ module.exports = function (eleventyConfig) {
       // 디버깅용 로그 (빌드 시 확인용)
       console.log(`✅ ${note.inputPath.replace('./src/site/notes/', '')} -> ${permalink}`);
     });
+    
+    console.log(`📊 총 ${notes.length}개 노트 처리 완료, ${permalinkSet.size}개 고유 permalink 생성`);
     
     return notes;
   });
