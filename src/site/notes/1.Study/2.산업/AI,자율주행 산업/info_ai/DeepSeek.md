@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2/ai/info-ai/deep-seek/","created":"2025-01-27T12:37:13.255+09:00","updated":"2025-06-26T17:20:57.497+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/AI,자율주행 산업/info_ai/DeepSeek/","created":"2025-01-27T12:37:13.255+09:00","updated":"2025-06-26T17:20:57.497+09:00"}
 ---
 
 #AI #DeepSeek

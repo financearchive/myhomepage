@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//1/info/tsa/","created":"2024-11-20T21:02:29.475+09:00","updated":"2025-06-26T17:13:50.725+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/항공,우주,방위 산업/1.항공/INFO-항공/TSA/","created":"2024-11-20T21:02:29.475+09:00","updated":"2025-06-26T17:13:50.725+09:00"}
 ---
 
 #항공 #TSA #미국교통안정청

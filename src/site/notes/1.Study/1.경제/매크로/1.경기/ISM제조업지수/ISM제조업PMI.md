@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/1//1/ism/ism-pmi/","created":"2024-11-20T21:02:26.941+09:00","updated":"2025-06-03T20:07:19.598+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/1.경기/ISM제조업지수/ISM제조업PMI/","created":"2024-11-20T21:02:26.941+09:00","updated":"2025-06-03T20:07:19.598+09:00"}
 ---
 
 #매크로 #경기 #제조업

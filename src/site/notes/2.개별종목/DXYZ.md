@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/dxyz/","created":"2024-11-19T14:13:13.937+09:00","updated":"2025-07-29T21:37:04.603+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/DXYZ/","created":"2024-11-19T14:13:13.937+09:00","updated":"2025-07-29T21:37:04.603+09:00"}
 ---
 
 #금융 #자산관리 #ETN #SpaceX

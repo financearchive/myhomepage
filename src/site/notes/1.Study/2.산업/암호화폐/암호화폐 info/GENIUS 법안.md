@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/genius/","created":"2025-07-23T18:57:40.807+09:00","updated":"2025-07-25T20:40:55.721+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/암호화폐/암호화폐 info/GENIUS 법안/","created":"2025-07-23T18:57:40.807+09:00","updated":"2025-07-25T20:40:55.721+09:00"}
 ---
 
 #암호화폐 #스테이블코인 
