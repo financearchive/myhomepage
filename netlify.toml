@@ -4,7 +4,7 @@
   functions = "src/functions"
 
 [build.environment]
-  NODE_VERSION = "22.x"
+  NODE_VERSION = "22"
   ELEVENTY_ENV = "prod"
 
 [[redirects]]
