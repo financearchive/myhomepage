@@ -1,28 +1,7 @@
 <script>
-    // 파일명으로 URL 찾기 함수 추가
-    function findNodeByTitle(nodes, title) {
-        // 정확한 제목 매칭
-        let node = Object.values(nodes).find(n => n.title === title);
-        if (node) return node;
-        
-        // 부분 매칭
-        node = Object.values(nodes).find(n => 
-            n.title.toLowerCase().includes(title.toLowerCase()) ||
-            title.toLowerCase().includes(n.title.toLowerCase())
-        );
-        if (node) return node;
-        
-        // URL 기반 매칭
-        const currentPath = decodeURI(window.location.pathname);
-        node = Object.values(nodes).find(n => n.url === currentPath);
-        if (node) return node;
-        
-        return null;
-    }
-
     async function fetchGraphData() {
         const graphData = await fetch('/graph.json').then(res => res.json());
-        const fullGraphData = filterFullGraphData(graphData);
+        const fullGraphData  = filterFullGraphData(graphData);
         return {graphData, fullGraphData}
     }
 
@@ -47,56 +26,24 @@
         }
         let remaining = JSON.parse(JSON.stringify(graphData.nodes));
         let links = JSON.parse(JSON.stringify(graphData.links));
-        
-        // ===== 🚀 IMPROVED: 현재 노드 찾기 로직 개선 =====
         let currentLink = decodeURI(window.location.pathname);
-        let currentNode = remaining[currentLink];
-        
-        // 현재 URL로 찾지 못하면 다른 방법들 시도
-        if (!currentNode) {
-            // 페이지 제목으로 찾기
-            const pageTitle = document.querySelector('h1')?.textContent || 
-                             document.title.split(' | ')[0];
-            
-            if (pageTitle) {
-                currentNode = findNodeByTitle(remaining, pageTitle);
-            }
-        }
-        
-        // 여전히 못 찾으면 홈 페이지 사용
-        if (!currentNode) {
-            currentNode = Object.values(remaining).find((v) => v.home);
-            console.log(`⚠️  현재 페이지 노드를 찾을 수 없어 홈페이지를 사용합니다: ${currentLink}`);
-        }
-        
-        if (!currentNode) {
-            console.log(`❌ 노드를 찾을 수 없습니다: ${currentLink}`);
-            return { nodes: [], links: [] };
-        }
-        
+        let currentNode = remaining[currentLink] || Object.values(remaining).find((v) => v.home);
         delete remaining[currentNode.url];
         if (!currentNode.home) {
             let home = Object.values(remaining).find((v) => v.home);
-            if (home) {
-                delete remaining[home.url];
-            }
+            delete remaining[home.url];
         }
         currentNode.current = true;
         let existing = {};
         existing[currentNode.url] = currentNode;
-        
         for (let i = 0; i < depth; i++) {
             existing, remaining = getNextLevelNeighbours(existing, remaining);
         }
-        
         nodes = Object.values(existing);
         if (!currentNode.home) {
             nodes = nodes.filter(n => !n.home);
         }
         let ids = nodes.map((n) => n.id);
-        
-        console.log(`✅ 그래프 렌더링: ${nodes.length}개 노드, 현재: ${currentNode.title}`);
-        
         return {
             nodes,
             links: links.filter(function (con) {
@@ -105,7 +52,6 @@
         }
     }
 
-    // 나머지 함수들은 동일...
     function getCssVar(variable) {return getComputedStyle(document.body).getPropertyValue(variable)}
 
     function htmlDecode(input) {
@@ -239,3 +185,30 @@
         return null;
     }
 </script>
+<div  x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+    <div class="graph-title-container">
+        <div class="graph-title">Connected Pages</div>
+        <div id="graph-controls">
+                <div class="depth-control">
+                    <label for="graph-depth">Depth</label>
+                    <div class="slider">
+                            <input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth"/>
+                    <datalist id="depthmarkers">
+                            <option value="1" label="1"></option>
+                            <option value="2" label="2"></option>
+                            <option value="3" label="3"></option>
+                    </datalist>
+                    </div>
+                    <span id="depth-display" x-text="depth"></span>
+                </div>
+                <div class="ctrl-right">
+                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i  icon-name="globe" aria-hidden="true"></i></span>
+                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen"><i  icon-name="expand" aria-hidden="true"></i></span>
+                </div>
+        </div>
+    </div>
+    <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
+    <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
+        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+    </div>
+</div>
