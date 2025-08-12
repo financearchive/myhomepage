@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/이차전지, 배터리 산업/3.ESS/ESS/","created":"2024-11-20T21:02:27.651+09:00","updated":"2025-06-26T16:46:32.310+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//3-ess/ess/","created":"2024-11-20T21:02:27.651+09:00","updated":"2025-06-26T16:46:32.310+09:00"}
 ---
 
 #배터리 #ESS 

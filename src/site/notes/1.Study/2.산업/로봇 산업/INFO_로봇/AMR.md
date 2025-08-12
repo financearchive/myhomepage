@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/로봇 산업/INFO_로봇/AMR/","created":"2024-11-20T21:02:28.009+09:00","updated":"2025-06-03T20:07:20.095+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//info/amr/","created":"2024-11-20T21:02:28.009+09:00","updated":"2025-06-03T20:07:20.095+09:00"}
 ---
 
 #로봇 #물류 #물류로봇

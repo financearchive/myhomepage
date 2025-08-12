@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/원자재 산업/1.비철금속/INFO_정련,제련,광산 등/AISC/","created":"2024-11-20T21:02:28.618+09:00","updated":"2025-06-26T13:20:38.367+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//1/info/aisc/","created":"2024-11-20T21:02:28.618+09:00","updated":"2025-06-26T13:20:38.367+09:00"}
 ---
 
 #AISC
