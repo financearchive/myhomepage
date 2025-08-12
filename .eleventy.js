@@ -3,8 +3,22 @@ const markdownIt = require("markdown-it");
 const fs = require("fs");
 const path = require("path");
 const crypto = require('crypto');
+const matter = require("gray-matter");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+const tocPlugin = require("eleventy-plugin-nesting-toc");
+const { parse } = require("node-html-parser");
+const htmlMinifier = require("html-minifier-terser");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
+const {
+  userMarkdownSetup,
+  userEleventySetup,
+} = require("./src/helpers/userSetup");
 
 const fileCache = new Map();
+const permalinkCache = new Map();
+
 function getFrontMatter(filePath) {
   if (fileCache.has(filePath)) {
     return fileCache.get(filePath);
@@ -19,11 +33,17 @@ function getFrontMatter(filePath) {
   }
 }
 
-// ===== 🚀 NEW: 강제 고유 permalink 생성 함수 (기존 무시) =====
+// ===== 🚀 IMPROVED: 더 강력한 고유 permalink 생성 함수 =====
 function generateUniquePermalink(filePath, frontMatter) {
+  // 캐시에서 확인
+  if (permalinkCache.has(filePath)) {
+    return permalinkCache.get(filePath);
+  }
+
   // gardenEntry 태그가 있으면 홈페이지로
   if (frontMatter && frontMatter.data && frontMatter.data.tags && 
       frontMatter.data.tags.indexOf("gardenEntry") !== -1) {
+    permalinkCache.set(filePath, "/");
     return "/";
   }
 
@@ -31,48 +51,43 @@ function generateUniquePermalink(filePath, frontMatter) {
   const relativePath = filePath.replace('./src/site/notes/', '');
   const pathWithoutExt = relativePath.replace(/\.md$/, '');
   
+  // 전체 파일 경로를 기반으로 한 고유 해시 생성
+  const fullPathHash = crypto.createHash('sha256').update(relativePath).digest('hex').substring(0, 8);
+  
   // 경로를 슬래시로 분할
   const pathParts = pathWithoutExt.split('/');
   
   // 각 부분을 처리하여 고유한 URL 생성
   const processedParts = pathParts.map((part, index) => {
-    // 영어/숫자가 포함된 부분은 slugify 적용
-    if (/[a-zA-Z0-9]/.test(part)) {
-      const slugified = slugify(part, { lower: true });
-      // slugify 결과가 비어있거나 너무 짧으면 해시 추가
-      if (!slugified || slugified.length < 2) {
-        const hash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
-        return slugified ? `${slugified}-${hash}` : `item-${hash}`;
+    // 파일명 부분 (마지막 요소)인 경우 특별 처리
+    if (index === pathParts.length - 1) {
+      // 영어/숫자가 포함된 부분은 slugify 적용
+      if (/[a-zA-Z0-9]/.test(part)) {
+        const slugified = slugify(part, { lower: true, strict: true });
+        // 항상 파일별 고유 해시 추가
+        return slugified ? `${slugified}-${fullPathHash}` : `file-${fullPathHash}`;
+      } else {
+        // 한국어나 특수문자만 있는 경우
+        const contentHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
+        return `kr-${contentHash}-${fullPathHash}`;
       }
-      return slugified;
     } else {
-      // 한국어나 특수문자만 있는 경우 해시값 사용
-      const hash = crypto.createHash('md5').update(part).digest('hex').substring(0, 8);
-      return `kr-${hash}`;
+      // 디렉토리 부분 처리
+      if (/[a-zA-Z0-9]/.test(part)) {
+        const slugified = slugify(part, { lower: true, strict: true });
+        return slugified || `dir-${crypto.createHash('md5').update(part).digest('hex').substring(0, 4)}`;
+      } else {
+        // 한국어 디렉토리명
+        const dirHash = crypto.createHash('md5').update(part).digest('hex').substring(0, 4);
+        return `kr-${dirHash}`;
+      }
     }
   });
   
-  // 파일명 자체도 고유성을 위해 해시 추가
-  const fileHash = crypto.createHash('md5').update(relativePath).digest('hex').substring(0, 6);
-  const lastIndex = processedParts.length - 1;
-  processedParts[lastIndex] = `${processedParts[lastIndex]}-${fileHash}`;
-  
-  return '/' + processedParts.join('/') + '/';
+  const permalink = '/' + processedParts.join('/') + '/';
+  permalinkCache.set(filePath, permalink);
+  return permalink;
 }
-// ===== 🚀 NEW 끝 =====
-
-const matter = require("gray-matter");
-const faviconsPlugin = require("eleventy-plugin-gen-favicons");
-const tocPlugin = require("eleventy-plugin-nesting-toc");
-const { parse } = require("node-html-parser");
-const htmlMinifier = require("html-minifier-terser");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-
-const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
-const {
-  userMarkdownSetup,
-  userEleventySetup,
-} = require("./src/helpers/userSetup");
 
 const Image = require("@11ty/eleventy-img");
 function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
@@ -115,9 +130,8 @@ function getAnchorAttributes(filePath, linkTitle) {
       : `${startPath}${fileName}.md`;
     const frontMatter = getFrontMatter(fullPath);
     
-    // ===== 🚀 MODIFIED: 항상 새로운 고유 permalink 생성 =====
+    // 항상 새로운 고유 permalink 생성
     permalink = generateUniquePermalink(fullPath, frontMatter);
-    // ===== 🚀 MODIFIED 끝 =====
     
     if (frontMatter && frontMatter.data && frontMatter.data.noteIcon) {
       noteIcon = frontMatter.data.noteIcon;
@@ -150,7 +164,7 @@ function getAnchorAttributes(filePath, linkTitle) {
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
 module.exports = function (eleventyConfig) {
-  // 빌드 최적화 설정 - 새로 추가됨
+  // 빌드 최적화 설정
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.setWatchThrottleWaitTime(100);
   
@@ -158,23 +172,33 @@ module.exports = function (eleventyConfig) {
     dynamicPartials: true,
   });
 
-  // ===== 🚀 NEW: 모든 노트에 강제로 고유 permalink 적용 =====
+  // ===== 🚀 IMPROVED: 더 안전한 노트 컬렉션 설정 =====
   eleventyConfig.addCollection("notes", function(collectionApi) {
     const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
+    const permalinkSet = new Set(); // 중복 검사용
     
     // 모든 노트에 강제로 새로운 고유 permalink 설정
     notes.forEach(note => {
       const frontMatter = getFrontMatter(note.inputPath);
-      // 기존 permalink 무시하고 항상 새로 생성
-      note.data.permalink = generateUniquePermalink(note.inputPath, frontMatter);
+      let permalink = generateUniquePermalink(note.inputPath, frontMatter);
       
-      // 디버깅용 로그 (필요시 주석 해제)
-      // console.log(`${note.inputPath} -> ${note.data.permalink}`);
+      // 혹시 모를 중복 방지를 위한 추가 검증
+      let counter = 1;
+      const originalPermalink = permalink;
+      while (permalinkSet.has(permalink)) {
+        permalink = originalPermalink.replace('/', `/${counter}-`);
+        counter++;
+      }
+      
+      permalinkSet.add(permalink);
+      note.data.permalink = permalink;
+      
+      // 디버깅용 로그 (빌드 시 확인용)
+      console.log(`✅ ${note.inputPath.replace('./src/site/notes/', '')} -> ${permalink}`);
     });
     
     return notes;
   });
-  // ===== 🚀 NEW 끝 =====
 
   let markdownLib = markdownIt({
     breaks: true,
@@ -403,7 +427,7 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // ===== 🚀 NEW: 자동 메타 디스크립션 생성 필터 추가 =====
+  // 자동 메타 디스크립션 생성 필터
   eleventyConfig.addFilter("autoMetaDescription", function(content) {
     if (!content) return "";
     
@@ -411,10 +435,10 @@ module.exports = function (eleventyConfig) {
     const cleaned = content
       .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
       .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
-      .replace(/\*\*(.*?)\*\*/g, '\$1')  // 볼드 제거
-      .replace(/\*(.*?)\*/g, '\$1')  // 이탤릭 제거
-      .replace(/\[\[(.*?)\]\]/g, '\$1')  // 옵시디언 링크 제거
-      .replace(/\[(.*?)\]\(.*?\)/g, '\$1')  // 마크다운 링크 제거
+      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
+      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
+      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
       .replace(/\s+/g, ' ')  // 여러 공백을 하나로
       .trim();
     
@@ -436,7 +460,6 @@ module.exports = function (eleventyConfig) {
     
     return firstParagraph;
   });
-  // ===== 🚀 NEW 끝 =====
 
   eleventyConfig.addTransform("dataview-js-links", function (str) {
     const parsed = parse(str);
@@ -495,14 +518,6 @@ module.exports = function (eleventyConfig) {
           }
         );
 
-        /* Hacky fix for callouts with only a title:
-        This will ensure callout-content isn't produced if
-        the callout only has a title, like this:
-        ```md
-        > [!info] i only have a title
-        ```
-        Not sure why content has a random <p> tag in it,
-        */
         if (content === "\n<p>\n") {
           content = "";
         }
@@ -701,7 +716,6 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
     cacheDir: ".eleventy-cache",
-    // 빌드 최적화 설정 - 새로 추가됨
     useGitIgnore: false,
     watchThrottleWaitTime: 100,
     incrementalBuild: true
