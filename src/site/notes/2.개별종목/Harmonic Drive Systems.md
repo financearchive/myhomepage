@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/harmonic-drive-systems/","created":"2023-06-28T12:17:47.128+09:00","updated":"2025-06-03T20:05:59.356+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Harmonic Drive Systems/","created":"2023-06-28T12:17:47.128+09:00","updated":"2025-06-03T20:05:59.356+09:00"}
 ---
 
 #로봇 #산업재 #기계 #소형정밀감속기

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/byte-dance/","created":"2024-12-31T08:56:23.851+09:00","updated":"2025-06-03T20:05:58.111+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/ByteDance/","created":"2024-12-31T08:56:23.851+09:00","updated":"2025-06-03T20:05:58.111+09:00"}
 ---
 
 #소셜미디어 #동영상앱 #AI추천 #광고수익 #중국테크기업 #TikTok #Douyin #콘텐츠플랫폼 #정보기술 #중국 #TikTok 

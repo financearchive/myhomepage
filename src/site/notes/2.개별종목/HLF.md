@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/hlf/","created":"2025-02-21T11:01:29.018+09:00","updated":"2025-06-03T20:05:59.416+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/HLF/","created":"2025-02-21T11:01:29.018+09:00","updated":"2025-06-03T20:05:59.416+09:00"}
 ---
 
 ## 핵심 키워드
@@ -84,7 +84,7 @@ Herbalife Ltd는 체중 관리, 표적 영양, 에너지, [[스포츠\|스포츠
     
 2. Usana Health Sciences(US, [[USNA\|USNA]]): 영양 보충제 및 스킨케어
     
-3. Nu Skin Enterprises(US, [[NUS\|NUS]]): 개인 관리 제품 및 영양 보충제
+3. Nu Skin Enterprises(US, [[2.개별종목/NUS\|NUS]]): 개인 관리 제품 및 영양 보충제
     
 4. Medifast(US, [[MED\|MED]]): 체중 관리 및 건강 관련 제품
     

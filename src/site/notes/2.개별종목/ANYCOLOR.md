@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/anycolor/","created":"2025-04-23T22:00:40.134+09:00","updated":"2025-07-11T13:02:12.238+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/ANYCOLOR/","created":"2025-04-23T22:00:40.134+09:00","updated":"2025-07-11T13:02:12.238+09:00"}
 ---
 
 ## 핵심 키워드

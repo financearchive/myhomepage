@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/complete-genomics/","created":"2024-09-11T10:53:19.016+09:00","updated":"2025-06-03T20:05:58.356+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Complete Genomics/","created":"2024-09-11T10:53:19.016+09:00","updated":"2025-06-03T20:05:58.356+09:00"}
 ---
 
 #바이오테크 #헬스케어 #CDMO #유전자시퀀싱 #유전체데이터분석 #중국 
