@@ -27,7 +27,7 @@
             x-data="{isDesktop: true, showFilesMobile: false}">
 
         <div x-show.important="!isDesktop" style="display: none;">
-            {%include "components/filetreeNavbar.njk"%}
+            {% include "./filetreeNavbar.njk" %}
         </div>
         
         <div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none;" class="fullpage-overlay"></div>
