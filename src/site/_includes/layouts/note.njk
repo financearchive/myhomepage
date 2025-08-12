@@ -76,6 +76,17 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% for imp in dynamics.notes.afterContent %}
         {% include imp %}
       {% endfor %}
+      {{ content | hideDataview | taggify | link | safe}}
+      
+      <!-- 🚀 댓글 시스템 추가 -->
+      {% if settings.dgShowComments !== false %}
+        <div class="comments-section">
+          <hr>
+          <h3>💬 댓글</h3>
+          {%include "components/giscus.njk"%}
+        </div>
+      {% endif %}
+      <!-- 기존 afterContent... -->
     </main>
 
     {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true or settings.dgShowToc === true%}
