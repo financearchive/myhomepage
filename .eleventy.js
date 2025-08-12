@@ -2,6 +2,7 @@ const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
 const path = require("path");
+const crypto = require('crypto');
 
 const fileCache = new Map();
 function getFrontMatter(filePath) {
@@ -18,11 +19,12 @@ function getFrontMatter(filePath) {
   }
 }
 
-// ===== 🚀 NEW: 한국어 파일명 처리를 위한 고유 permalink 생성 함수 =====
+// ===== 🚀 NEW: 강제 고유 permalink 생성 함수 (기존 무시) =====
 function generateUniquePermalink(filePath, frontMatter) {
-  // 이미 permalink가 설정되어 있으면 그대로 사용
-  if (frontMatter && frontMatter.data && frontMatter.data.permalink) {
-    return frontMatter.data.permalink;
+  // gardenEntry 태그가 있으면 홈페이지로
+  if (frontMatter && frontMatter.data && frontMatter.data.tags && 
+      frontMatter.data.tags.indexOf("gardenEntry") !== -1) {
+    return "/";
   }
 
   // 파일 경로에서 상대 경로 추출
@@ -32,19 +34,28 @@ function generateUniquePermalink(filePath, frontMatter) {
   // 경로를 슬래시로 분할
   const pathParts = pathWithoutExt.split('/');
   
-  // 각 부분을 처리
+  // 각 부분을 처리하여 고유한 URL 생성
   const processedParts = pathParts.map((part, index) => {
     // 영어/숫자가 포함된 부분은 slugify 적용
     if (/[a-zA-Z0-9]/.test(part)) {
       const slugified = slugify(part, { lower: true });
-      return slugified || `part-${index}`;
+      // slugify 결과가 비어있거나 너무 짧으면 해시 추가
+      if (!slugified || slugified.length < 2) {
+        const hash = crypto.createHash('md5').update(part).digest('hex').substring(0, 6);
+        return slugified ? `${slugified}-${hash}` : `item-${hash}`;
+      }
+      return slugified;
     } else {
-      // 한국어만 있는 경우 파일명의 해시값 사용
-      const crypto = require('crypto');
+      // 한국어나 특수문자만 있는 경우 해시값 사용
       const hash = crypto.createHash('md5').update(part).digest('hex').substring(0, 8);
       return `kr-${hash}`;
     }
   });
+  
+  // 파일명 자체도 고유성을 위해 해시 추가
+  const fileHash = crypto.createHash('md5').update(relativePath).digest('hex').substring(0, 6);
+  const lastIndex = processedParts.length - 1;
+  processedParts[lastIndex] = `${processedParts[lastIndex]}-${fileHash}`;
   
   return '/' + processedParts.join('/') + '/';
 }
@@ -96,6 +107,7 @@ function getAnchorAttributes(filePath, linkTitle) {
   const title = linkTitle ? linkTitle : fileName;
   let permalink = `/notes/${slugify(filePath)}`;
   let deadLink = false;
+  
   try {
     const startPath = "./src/site/notes/";
     const fullPath = fileName.endsWith(".md")
@@ -103,17 +115,11 @@ function getAnchorAttributes(filePath, linkTitle) {
       : `${startPath}${fileName}.md`;
     const frontMatter = getFrontMatter(fullPath);
     
-    // ===== 🚀 MODIFIED: 고유 permalink 생성 로직 적용 =====
+    // ===== 🚀 MODIFIED: 항상 새로운 고유 permalink 생성 =====
     permalink = generateUniquePermalink(fullPath, frontMatter);
     // ===== 🚀 MODIFIED 끝 =====
     
-    if (
-      frontMatter.data.tags &&
-      frontMatter.data.tags.indexOf("gardenEntry") != -1
-    ) {
-      permalink = "/";
-    }
-    if (frontMatter.data.noteIcon) {
+    if (frontMatter && frontMatter.data && frontMatter.data.noteIcon) {
       noteIcon = frontMatter.data.noteIcon;
     }
   } catch {
@@ -152,16 +158,18 @@ module.exports = function (eleventyConfig) {
     dynamicPartials: true,
   });
 
-  // ===== 🚀 NEW: 컬렉션에 고유 permalink 적용 =====
+  // ===== 🚀 NEW: 모든 노트에 강제로 고유 permalink 적용 =====
   eleventyConfig.addCollection("notes", function(collectionApi) {
     const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
     
-    // 각 노트에 고유 permalink 설정
+    // 모든 노트에 강제로 새로운 고유 permalink 설정
     notes.forEach(note => {
-      if (!note.data.permalink) {
-        const frontMatter = getFrontMatter(note.inputPath);
-        note.data.permalink = generateUniquePermalink(note.inputPath, frontMatter);
-      }
+      const frontMatter = getFrontMatter(note.inputPath);
+      // 기존 permalink 무시하고 항상 새로 생성
+      note.data.permalink = generateUniquePermalink(note.inputPath, frontMatter);
+      
+      // 디버깅용 로그 (필요시 주석 해제)
+      // console.log(`${note.inputPath} -> ${note.data.permalink}`);
     });
     
     return notes;
