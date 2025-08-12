@@ -1,4 +1,0 @@
----
-{"dg-publish":true,"permalink":"/1-study/1//3/rba/rba/","created":"2024-12-11T17:03:57.626+09:00","updated":"2025-06-03T20:07:19.785+09:00"}
----
-
