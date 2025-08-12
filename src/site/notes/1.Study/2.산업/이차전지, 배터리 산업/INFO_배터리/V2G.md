@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/v2-g/","created":"2024-11-20T21:02:27.679+09:00","updated":"2025-06-26T16:54:00.187+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/V2G/","created":"2024-11-20T21:02:27.679+09:00","updated":"2025-06-26T16:54:00.187+09:00"}
 ---
 
 #V2G #자동차 #전기 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/1//3/boj/boj/","created":"2024-11-20T21:02:27.152+09:00","updated":"2025-08-06T13:56:29.052+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/3.금리/BOJ/BOJ/","created":"2024-11-20T21:02:27.152+09:00","updated":"2025-08-06T13:56:29.052+09:00"}
 ---
 
 #금리 #통화정책 #엔캐리트레이드 #일본 #BOJ

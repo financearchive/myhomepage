@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/ercot/","created":"2024-11-20T21:02:29.226+09:00","updated":"2025-06-03T20:07:21.855+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/전력산업/전력_info/ERCOT/","created":"2024-11-20T21:02:29.226+09:00","updated":"2025-06-03T20:07:21.855+09:00"}
 ---
 
 #전력 #ISO #텍사스

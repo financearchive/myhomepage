@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/iso-ne/","created":"2024-11-20T21:02:29.227+09:00","updated":"2025-06-03T20:07:21.860+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/전력산업/전력_info/ISO-NE/","created":"2024-11-20T21:02:29.227+09:00","updated":"2025-06-03T20:07:21.860+09:00"}
 ---
 
 #전력 #뉴잉글랜드 #ISO

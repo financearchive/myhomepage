@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/residential-vpp/","created":"2024-11-20T21:02:27.702+09:00","updated":"2025-06-26T16:52:13.726+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/주택 분산자원을 활용한 Residential VPP 모델/","created":"2024-11-20T21:02:27.702+09:00","updated":"2025-06-26T16:52:13.726+09:00"}
 ---
 
 #VPP

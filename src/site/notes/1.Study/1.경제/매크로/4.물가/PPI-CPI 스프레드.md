@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/1//4/ppi-cpi/","created":"2024-11-20T21:02:27.265+09:00","updated":"2025-06-03T20:07:19.908+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/4.물가/PPI-CPI 스프레드/","created":"2024-11-20T21:02:27.265+09:00","updated":"2025-06-03T20:07:19.908+09:00"}
 ---
 
 

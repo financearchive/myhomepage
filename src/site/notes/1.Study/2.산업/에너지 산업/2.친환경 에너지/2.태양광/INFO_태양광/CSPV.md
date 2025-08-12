@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//2/2/info/cspv/","created":"2024-12-31T09:45:05.898+09:00","updated":"2025-06-03T20:07:21.030+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/에너지 산업/2.친환경 에너지/2.태양광/INFO_태양광/CSPV/","created":"2024-12-31T09:45:05.898+09:00","updated":"2025-06-03T20:07:21.030+09:00"}
 ---
 
 #태양광 #결정질실리콘태양광 #CSPV

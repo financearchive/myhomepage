@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//1/1/info/baseline/","created":"2024-11-20T21:02:28.314+09:00","updated":"2025-06-26T17:34:37.286+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/에너지 산업/1.화석 에너지/1.정유화학/INFO_정유, 기타에너지/baseline 생산량/","created":"2024-11-20T21:02:28.314+09:00","updated":"2025-06-26T17:34:37.286+09:00"}
 ---
 
 #baseline생산량

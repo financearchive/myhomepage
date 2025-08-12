@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//info/btm/","created":"2024-11-20T21:02:27.672+09:00","updated":"2025-06-26T16:53:08.801+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/이차전지, 배터리 산업/INFO_배터리/BTM 발전자원/","created":"2024-11-20T21:02:27.672+09:00","updated":"2025-06-26T16:53:08.801+09:00"}
 ---
 
 #BTM발전자원 #BTM

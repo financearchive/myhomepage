@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/2//1/info/lng/","created":"2024-11-20T21:02:29.275+09:00","updated":"2025-06-26T17:01:41.933+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/2.산업/조선,해운,기자재 산업/1.조선,기자재/INFO_조선/LNG벙커링/","created":"2024-11-20T21:02:29.275+09:00","updated":"2025-06-26T17:01:41.933+09:00"}
 ---
 
 #LNG벙커링 #LNG

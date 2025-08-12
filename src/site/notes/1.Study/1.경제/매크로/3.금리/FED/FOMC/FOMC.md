@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/1//3/fed/fomc/fomc/","created":"2024-11-20T21:02:27.168+09:00","updated":"2025-06-03T20:07:19.739+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/3.금리/FED/FOMC/FOMC/","created":"2024-11-20T21:02:27.168+09:00","updated":"2025-06-03T20:07:19.739+09:00"}
 ---
 
 #금리 #통화정책 #FOMC #미국 

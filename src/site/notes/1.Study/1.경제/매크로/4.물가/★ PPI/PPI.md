@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-study/1//4/ppi/ppi/","created":"2024-11-20T21:02:27.287+09:00","updated":"2025-06-17T22:46:22.592+09:00"}
+{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/4.물가/★ PPI/PPI/","created":"2024-11-20T21:02:27.287+09:00","updated":"2025-06-17T22:46:22.592+09:00"}
 ---
 
 #물가 #생산자물가
