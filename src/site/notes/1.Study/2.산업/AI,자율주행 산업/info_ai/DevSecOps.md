@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/AI,자율주행 산업/info_ai/DevSecOps/","created":"2024-12-15T08:52:58.768+09:00","updated":"2025-06-26T17:21:11.940+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2/ai/info-ai/dev-sec-ops/","created":"2024-12-15T08:52:58.768+09:00","updated":"2025-06-26T17:21:11.940+09:00"}
 ---
 
 #DevSecOps #소프트웨어 

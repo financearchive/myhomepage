@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/AI,자율주행 산업/CTV/","created":"2025-03-17T14:01:40.320+09:00","updated":"2025-06-26T17:22:23.891+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2/ai/ctv/","created":"2025-03-17T14:01:40.320+09:00","updated":"2025-06-26T17:22:23.891+09:00"}
 ---
 
 #CTV

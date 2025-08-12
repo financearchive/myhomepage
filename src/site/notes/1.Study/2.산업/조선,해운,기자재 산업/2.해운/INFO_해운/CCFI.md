@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/조선,해운,기자재 산업/2.해운/INFO_해운/CCFI/","created":"2024-11-20T21:02:29.337+09:00","updated":"2025-06-03T20:07:21.720+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//2/info/ccfi/","created":"2024-11-20T21:02:29.337+09:00","updated":"2025-06-03T20:07:21.720+09:00"}
 ---
 
 #해운 #컨테이너선 #컨테이너 #CCFI 

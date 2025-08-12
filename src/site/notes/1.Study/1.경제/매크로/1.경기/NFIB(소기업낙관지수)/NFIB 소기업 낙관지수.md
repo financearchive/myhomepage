@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/1.경제/매크로/1.경기/NFIB(소기업낙관지수)/NFIB 소기업 낙관지수/","created":"2024-11-20T21:02:26.957+09:00","updated":"2025-06-03T20:07:19.589+09:00"}
+{"dg-publish":true,"permalink":"/1-study/1//1/nfib/nfib/","created":"2024-11-20T21:02:26.957+09:00","updated":"2025-06-03T20:07:19.589+09:00"}
 ---
 
 #경기 #소기업

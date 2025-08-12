@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/전력산업/전력_info/PJM/","created":"2024-11-20T21:02:29.242+09:00","updated":"2025-06-03T20:07:21.882+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//info/pjm/","created":"2024-11-20T21:02:29.242+09:00","updated":"2025-06-03T20:07:21.882+09:00"}
 ---
 
 #전력 #RTO #도매전력시장 

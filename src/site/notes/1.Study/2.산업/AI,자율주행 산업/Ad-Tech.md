@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/AI,자율주행 산업/Ad-Tech/","created":"2025-03-17T13:56:00.836+09:00","updated":"2025-06-26T17:22:52.470+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2/ai/ad-tech/","created":"2025-03-17T13:56:00.836+09:00","updated":"2025-06-26T17:22:52.470+09:00"}
 ---
 
 #Ad-Tech #애드테크 #AI

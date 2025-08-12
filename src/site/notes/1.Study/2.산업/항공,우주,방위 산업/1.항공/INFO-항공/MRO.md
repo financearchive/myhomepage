@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/항공,우주,방위 산업/1.항공/INFO-항공/MRO/","created":"2024-11-20T21:02:29.472+09:00","updated":"2025-06-26T17:12:26.181+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//1/info/mro/","created":"2024-11-20T21:02:29.472+09:00","updated":"2025-06-26T17:12:26.181+09:00"}
 ---
 
 #MRO #항공 #항공기제조 
