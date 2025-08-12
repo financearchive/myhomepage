@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/save/","created":"2024-10-23T22:03:02.241+09:00","updated":"2025-06-03T20:06:01.098+09:00"}
+{"dg-publish":true,"permalink":"/2/save/","created":"2024-10-23T22:03:02.241+09:00","updated":"2025-07-29T21:37:05.153+09:00"}
 ---
 
 #항공 #항공사 #산업재 #LCC 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/trafigura/","created":"2023-06-04T17:05:24.202+09:00","updated":"2025-06-03T20:06:01.725+09:00"}
+{"dg-publish":true,"permalink":"/2/trafigura/","created":"2023-06-04T17:05:24.202+09:00","updated":"2025-07-29T21:37:05.291+09:00"}
 ---
 
 #비철금속 #수소 #소재 #무역 #석유및광물 #석유 

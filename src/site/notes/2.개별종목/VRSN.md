@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/vrsn/","created":"2025-03-19T20:57:34.107+09:00","updated":"2025-06-03T20:06:02.011+09:00"}
+{"dg-publish":true,"permalink":"/2/vrsn/","created":"2025-03-19T20:57:34.107+09:00","updated":"2025-07-29T21:37:05.362+09:00"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/PFE/","created":"2024-09-13T17:41:30.105+09:00","updated":"2025-06-03T20:06:00.653+09:00"}
+{"dg-publish":true,"permalink":"/2/pfe/","created":"2024-09-13T17:41:30.105+09:00","updated":"2025-07-29T21:37:05.047+09:00"}
 ---
 
 #제약 #바이오테크 #백신 #면역학 #종양학 #심장학 #내분비학 #신경학 #COVID19백신 #Comirnaty #Eliquis #Prevnar #Palbociclib #Vyndaqel #연구개발 #글로벌제약 #혁신의약품 #바이오의약품 #제네릭 #지적재산권 #바이오 

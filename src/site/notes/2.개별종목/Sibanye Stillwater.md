@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/sibanye-stillwater/","created":"2024-09-13T10:45:32.794+09:00","updated":"2025-06-03T20:06:01.179+09:00"}
+{"dg-publish":true,"permalink":"/2/sibanye-stillwater/","created":"2024-09-13T10:45:32.794+09:00","updated":"2025-07-29T21:37:05.183+09:00"}
 ---
 
 #금속및광업 #원자재 #백금 #팔라듐 #로듐 #금 #리튬 #배터리 

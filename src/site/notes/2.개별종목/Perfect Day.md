@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Perfect Day/","created":"2023-07-15T12:05:00.946+09:00","updated":"2025-06-03T20:06:00.631+09:00"}
+{"dg-publish":true,"permalink":"/2/perfect-day/","created":"2023-07-15T12:05:00.946+09:00","updated":"2025-07-29T21:37:05.044+09:00"}
 ---
 
 #대체단백질 #소비자방어주 #우유단백질 #포장식품 #우유

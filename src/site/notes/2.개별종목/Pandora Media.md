@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Pandora Media/","created":"2025-07-04T09:40:52.194+09:00","updated":"2025-07-29T21:37:05.034+09:00"}
+{"dg-publish":true,"permalink":"/2/pandora-media/","created":"2025-07-04T09:40:52.194+09:00","updated":"2025-07-29T21:37:05.034+09:00"}
 ---
 
 #SiriusXM #음악스트리밍
