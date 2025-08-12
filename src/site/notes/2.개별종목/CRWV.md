@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/CRWV/","created":"2025-04-01T11:49:18.335+09:00","updated":"2025-06-03T20:05:58.502+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/CRWV/","created":"2025-04-01T11:49:18.335+09:00","updated":"2025-07-29T21:37:04.527+09:00"}
 ---
 
 CoreWeave Inc.는 [[AI 및 고성능 컴퓨팅(HPC)에 특화된 클라우드 인프라 제공업체\|AI 및 고성능 컴퓨팅(HPC)에 특화된 클라우드 인프라 제공업체]]로, Nvidia GPU 기반의 차별화된 서비스로 급성장 중인 기업입니다. 2025년 3월 NYSE 상장 이후 AI 클라우드 시장에서 Amazon Web Services(AWS), Google Cloud와 경쟁하며 연간 200% 이상의 매출 성장률을 기록하고 있습니다.

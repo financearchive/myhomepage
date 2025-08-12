@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/aip/","created":"2025-08-06T17:14:32.666+09:00","updated":"2025-08-06T17:32:47.198+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/AIP/","created":"2025-08-06T17:14:32.666+09:00","updated":"2025-08-06T17:32:47.198+09:00"}
 ---
 
 #반도체IP #NetworkOnChip #NoC #SoC #SystemIP #인터커넥트 #AI반도체 #자동차반도체 #라이선스수익 #로열티 #칩렛 #멀티다이 #고성능컴퓨팅 #파워효율성 #EDA도구 #ARM파트너 #RISC-V #FlexNoC #Ncore #시스템온칩 #지적재산권 #반도체설계
