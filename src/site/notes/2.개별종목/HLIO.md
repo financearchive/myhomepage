@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/HLIO/","created":"2025-08-06T15:45:35.076+09:00","updated":"2025-08-06T17:33:00.409+09:00"}
+{"dg-publish":true,"permalink":"/2/hlio/","created":"2025-08-06T15:45:35.076+09:00","updated":"2025-08-06T17:33:00.409+09:00"}
 ---
 
 #Helios #HLIO #유압시스템 #카트리지밸브 #매니폴드 #전자제어 #Sun유압 #운동제어 #산업기계 #건설장비 #농업기계 #해양장비 #레크리에이션차량 #건강웰니스 #유압기술 #전자솔루션 #Balboa #NEM #Faster #Daman #Custom Fluidpower #인수합병전략 #글로벌제조 #산업자동화 #스크류인밸브

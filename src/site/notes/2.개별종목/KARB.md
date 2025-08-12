@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/KARB/","created":"2023-05-24T14:58:50.729+09:00","updated":"2025-06-03T20:05:59.711+09:00"}
+{"dg-publish":true,"permalink":"/2/karb/","created":"2023-05-24T14:58:50.729+09:00","updated":"2025-06-03T20:05:59.711+09:00"}
 ---
 
 #ETF
