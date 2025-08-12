@@ -733,6 +733,130 @@ module.exports = function (eleventyConfig) {
   });
 
   userEleventySetup(eleventyConfig);
+  // ===== 🚀 GRAPH FIX: 그래프 데이터 생성 로직 추가 =====
+  eleventyConfig.addCollection("graphData", function(collectionApi) {
+    const notes = collectionApi.getFilteredByGlob("src/site/notes/**/*.md");
+    const nodes = {};
+    const links = [];
+    const fileToPermalinkMap = new Map(); // 파일경로 → permalink 매핑
+  
+    // 1단계: 모든 노드 생성 및 매핑 테이블 구축
+    notes.forEach(note => {
+      const frontMatter = getFrontMatter(note.inputPath);
+      const uniquePermalink = generateUniquePermalink(note.inputPath, frontMatter);
+      const relativePath = note.inputPath.replace('./src/site/notes/', '').replace('.md', '');
+      
+      // 파일경로 → permalink 매핑 저장
+      fileToPermalinkMap.set(relativePath, uniquePermalink);
+      fileToPermalinkMap.set(note.inputPath, uniquePermalink);
+      
+      const title = (frontMatter && frontMatter.data && frontMatter.data.title) || 
+                    path.basename(note.inputPath, '.md');
+      
+      const isHome = frontMatter && frontMatter.data && frontMatter.data.tags && 
+                     frontMatter.data.tags.indexOf("gardenEntry") !== -1;
+      
+      nodes[uniquePermalink] = {
+        id: uniquePermalink,
+        url: uniquePermalink,
+        title: title,
+        home: isHome,
+        neighbors: [],
+        hide: false
+      };
+    });
+  
+    // 2단계: 링크 관계 분석
+    notes.forEach(note => {
+      const frontMatter = getFrontMatter(note.inputPath);
+      const sourcePermalink = generateUniquePermalink(note.inputPath, frontMatter);
+      
+      try {
+        const content = fs.readFileSync(note.inputPath, 'utf8');
+        
+        // [[링크]] 형태 찾기
+        const wikiLinks = content.match(/\[\[(.*?)\]\]/g) || [];
+        
+        wikiLinks.forEach(link => {
+          let linkContent = link.replace(/\[\[|\]\]/g, '');
+          
+          // |로 분리된 경우 첫 번째 부분만 사용 (실제 파일명)
+          if (linkContent.includes('|')) {
+            linkContent = linkContent.split('|')[0];
+          }
+          
+          // 여러 가능한 경로 시도
+          const possiblePaths = [
+            linkContent,
+            linkContent + '.md',
+            './src/site/notes/' + linkContent + '.md'
+          ];
+          
+          let targetPermalink = null;
+          
+          // 매핑에서 해당 파일의 permalink 찾기
+          for (const possiblePath of possiblePaths) {
+            if (fileToPermalinkMap.has(possiblePath)) {
+              targetPermalink = fileToPermalinkMap.get(possiblePath);
+              break;
+            }
+          }
+          
+          // 파일명으로도 검색해보기
+          if (!targetPermalink) {
+            const fileName = path.basename(linkContent, '.md');
+            for (const [filePath, permalink] of fileToPermalinkMap.entries()) {
+              if (path.basename(filePath, '.md') === fileName || 
+                  path.basename(filePath).replace('.md', '') === fileName) {
+                targetPermalink = permalink;
+                break;
+              }
+            }
+          }
+          
+          if (targetPermalink && nodes[targetPermalink] && sourcePermalink !== targetPermalink) {
+            // 양방향 링크 추가
+            if (!nodes[sourcePermalink].neighbors.includes(targetPermalink)) {
+              nodes[sourcePermalink].neighbors.push(targetPermalink);
+            }
+            if (!nodes[targetPermalink].neighbors.includes(sourcePermalink)) {
+              nodes[targetPermalink].neighbors.push(sourcePermalink);
+            }
+            
+            // 링크 데이터 추가 (중복 방지)
+            const linkExists = links.some(l => 
+              (l.source === sourcePermalink && l.target === targetPermalink) ||
+              (l.source === targetPermalink && l.target === sourcePermalink)
+            );
+            
+            if (!linkExists) {
+              links.push({
+                source: sourcePermalink,
+                target: targetPermalink
+              });
+            }
+          }
+        });
+      } catch (error) {
+        console.log(`그래프 링크 분석 오류: ${note.inputPath} - ${error.message}`);
+      }
+    });
+  
+    console.log(`📊 그래프 생성 완료: ${Object.keys(nodes).length}개 노드, ${links.length}개 링크`);
+    
+    return { nodes, links };
+  });
+  
+  // JSON 파일 생성
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    ...eleventyConfig.globalData?.eleventyComputed || {},
+    graphJson: () => {
+      return JSON.stringify({
+        nodes: {},
+        links: []
+      });
+    }
+  });
 
   return {
     dir: {
