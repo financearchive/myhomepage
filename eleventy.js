@@ -1,11 +1,8 @@
-// eleventy config (merged)
-// 붙여넣기해서 사용하세요.
 const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
-const matter = require("gray-matter"); // 🔹 frontmatter
-const faviconsPlugin = require("eleventy-plugin-gen-favicons"); // 🔹 favicons
-const tocPlugin = require("eleventy-plugin-nesting-toc"); // 🔹 toc
+const matter = require("gray-matter");
+const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -105,7 +102,7 @@ module.exports = function (eleventyConfig) {
     dynamicPartials: true,
   });
 
-  // Markdown-it setup (원본 기반)
+  // Markdown-it setup
   let markdownLib = markdownIt({
     breaks: true,
     html: true,
@@ -151,7 +148,7 @@ module.exports = function (eleventyConfig) {
         };
       md.renderer.rules.fence = (tokens, idx, options, env, slf) => {
         const token = tokens[idx];
-        if (token.info === "mermaid") {
+        if (tokenordre: token.info === "mermaid") {
           const code = token.content.trim();
           return `<pre class="mermaid">${code}</pre>`;
         }
@@ -221,7 +218,7 @@ module.exports = function (eleventyConfig) {
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const imageName = tokens[idx].content;
         const [fileName, ...widthAndMetaData] = imageName.split("|");
-        const lastValue = widthAndMetaData[widthAndMetaData.length - 1];
+        const lastValue = widthAndMetaData[width abndMetaData.length - 1];
         const lastValueIsNumber = !isNaN(lastValue);
         const width = lastValueIsNumber ? lastValue : null;
 
@@ -307,7 +304,7 @@ module.exports = function (eleventyConfig) {
     let match = str && str.match(tagRegex);
     if (match) {
       tags = match
-        .map((m) => {
+        .mdap((m) => {
           return `"${m.split("#")[1]}"`;
         })
         .join(", ");
@@ -328,7 +325,7 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // 자동 메타 디스크립션 (선택적이지만 유용)
+  // 자동 메타 디스크립션
   eleventyConfig.addFilter("autoMetaDescription", function (content) {
     if (!content) return "";
     const cleaned = content
@@ -417,7 +414,7 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
-  // picture transform (이미지 최적화 연결)
+  // picture transform
   function fillPictureSourceSets(src, cls, alt, meta, width, imageTag) {
     imageTag.tagName = "picture";
     let html = `<source
@@ -535,8 +532,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
   eleventyConfig.addPassthroughCopy("src/site/ads.txt");
 
-  // 🔹 Plugins: favicons, toc, rss (원본과 동일)
-  eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
+  // Plugins
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
@@ -548,12 +544,10 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-  // user custom setup (원본의 hook)
+  // user custom setup
   if (typeof userEleventySetup === "function") {
     userEleventySetup(eleventyConfig);
   }
-
-  // 추가 필터/플러그인 필요 시 여기에 넣으세요.
 
   return {
     dir: {
@@ -565,7 +559,5 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
-    // 필요시 cacheDir 등 옵션 추가
-    // cacheDir: ".eleventy-cache",
   };
 };
