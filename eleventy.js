@@ -1,8 +1,6 @@
 const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
-const path = require("path");
-const crypto = require('crypto');
 
 const fileCache = new Map();
 function getFrontMatter(filePath) {
@@ -18,6 +16,106 @@ function getFrontMatter(filePath) {
     return null;
   }
 }
+
+const matter = require("gray-matter");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+const tocPlugin = require("eleventy-plugin-nesting-toc");
+const { parse } = require("node-html-parser");
+const htmlMinifier = require("html-minifier-terser");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
+const {
+  userMarkdownSetup,
+  userEleventySetup,
+} = require("./src/helpers/userSetup");
+
+const Image = require("@11ty/eleventy-img");
+function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
+  let options = {
+    widths: widths,
+    formats: ["webp", "jpeg"],
+    outputDir: "./dist/img/optimized",
+    urlPath: "/img/optimized",
+  };
+
+  // generate images, while this is async we don't wait
+  if (process.env.ELEVENTY_ENV === "prod") Image(src, options);
+  let metadata = Image.statsSync(src, options);
+  return metadata;
+}
+
+function getAnchorLink(filePath, linkTitle) {
+  const {attributes, innerHTML} = getAnchorAttributes(filePath, linkTitle);
+  return `<a ${Object.keys(attributes).map(key => `${key}="${attributes[key]}"`).join(" ")}>${innerHTML}</a>`;
+}
+
+function getAnchorAttributes(filePath, linkTitle) {
+  let fileName = filePath.replaceAll("&amp;", "&");
+  let header = "";
+  let headerLinkPath = "";
+  if (filePath.includes("#")) {
+    [fileName, header] = filePath.split("#");
+    headerLinkPath = `#${headerToId(header)}`;
+  }
+
+  let noteIcon = process.env.NOTE_ICON_DEFAULT;
+  const title = linkTitle ? linkTitle : fileName;
+  let permalink = `/notes/${slugify(filePath)}`;
+  let deadLink = false;
+  try {
+    const startPath = "./src/site/notes/";
+    const fullPath = fileName.endsWith(".md")
+      ? `${startPath}${fileName}`
+      : `${startPath}${fileName}.md`;
+    const frontMatter = getFrontMatter(fullPath);
+    if (frontMatter.data.permalink) {
+      permalink = frontMatter.data.permalink;
+    }
+    if (
+      frontMatter.data.tags &&
+      frontMatter.data.tags.indexOf("gardenEntry") != -1
+    ) {
+      permalink = "/";
+    }
+    if (frontMatter.data.noteIcon) {
+      noteIcon = frontMatter.data.noteIcon;
+    }
+  } catch {
+    deadLink = true;
+  }
+
+  if (deadLink) {
+    return {
+      attributes: {
+        "class": "internal-link is-unresolved",
+        "href": "/404",
+        "target": "",
+      },
+      innerHTML: title,
+    }
+  }
+  return {
+    attributes: {
+      "class": "internal-link",
+      "target": "",
+      "data-note-icon": noteIcon,
+      "href": `${permalink}${headerLinkPath}`,
+    },
+    innerHTML: title,
+  }
+}
+
+const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
+
+module.exports = function (eleventyConfig) {
+    // 빌드 최적화 설정 - 새로 추가됨
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchThrottleWaitTime(100);
+  
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: true,
+  });
   let markdownLib = markdownIt({
     breaks: true,
     html: true,
@@ -105,7 +203,7 @@ function getFrontMatter(filePath) {
             }
           }
           const foldDiv = collapsible ? `<div class="callout-fold">
-          &lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down"&gt;
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
               <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
           </div>` : "";
@@ -253,10 +351,10 @@ function getFrontMatter(filePath) {
     const cleaned = content
       .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
       .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
-      .replace(/\*\*(.*?)\*\*/g, '\$1')  // 볼드 제거
-      .replace(/\*(.*?)\*/g, '\$1')  // 이탤릭 제거
-      .replace(/\[\[(.*?)\]\]/g, '\$1')  // 옵시디언 링크 제거
-      .replace(/\[(.*?)\]\(.*?\)/g, '\$1')  // 마크다운 링크 제거
+      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
+      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
+      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
       .replace(/\s+/g, ' ')  // 여러 공백을 하나로
       .trim();
     
@@ -398,6 +496,7 @@ function getFrontMatter(filePath) {
       />`;
     imageTag.innerHTML = html;
   }
+
 
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
