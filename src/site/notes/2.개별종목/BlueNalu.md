@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/BlueNalu/","created":"2024-08-31T08:30:41.504+09:00","updated":"2025-06-03T20:05:58.018+09:00"}
+{"dg-publish":true,"permalink":"/2/blue-nalu/","created":"2024-08-31T08:30:41.504+09:00","updated":"2025-06-03T20:05:58.018+09:00"}
 ---
 
 #푸드테크 #세포농업 #세포배양수산물

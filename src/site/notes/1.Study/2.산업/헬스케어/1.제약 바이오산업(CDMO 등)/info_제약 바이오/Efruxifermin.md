@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/Efruxifermin/","created":"2025-01-29T14:08:36.100+09:00","updated":"2025-06-26T17:18:42.372+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//1-cdmo/info/efruxifermin/","created":"2025-01-29T14:08:36.100+09:00","updated":"2025-06-26T17:18:42.372+09:00"}
 ---
 
 #Efruxifermin #MASH치료제 

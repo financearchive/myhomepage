@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/L3Harris Technologies/","created":"2024-11-06T21:18:22.019+09:00","updated":"2025-06-03T20:05:59.829+09:00"}
+{"dg-publish":true,"permalink":"/2/l3-harris-technologies/","created":"2024-11-06T21:18:22.019+09:00","updated":"2025-06-03T20:05:59.829+09:00"}
 ---
 
 #산업재 #항공우주방위 #항공우주 #인공위성 #위성발사 #위성운영 #위성제조 #위성통신 #우주 #통신위성 

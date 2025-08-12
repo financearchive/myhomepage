@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/반도체 산업/INFO_반도체/SOCAMM/","created":"2025-02-21T16:55:08.560+09:00","updated":"2025-06-25T13:33:16.479+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//info/socamm/","created":"2025-02-21T16:55:08.560+09:00","updated":"2025-06-25T13:33:16.479+09:00"}
 ---
 
 

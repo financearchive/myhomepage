@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1.Study/2.산업/헬스케어/1.제약 바이오산업(CDMO 등)/info_제약 바이오/CDMO/","created":"2024-11-20T21:02:29.722+09:00","updated":"2025-06-26T17:18:16.967+09:00"}
+{"dg-publish":true,"permalink":"/1-study/2//1-cdmo/info/cdmo/","created":"2024-11-20T21:02:29.722+09:00","updated":"2025-06-26T17:18:16.967+09:00"}
 ---
 
 #헬스케어 #CDMO

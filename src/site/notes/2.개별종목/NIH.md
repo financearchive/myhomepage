@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/NIH/","created":"2025-02-28T21:46:56.418+09:00","updated":"2025-06-03T20:06:00.329+09:00"}
+{"dg-publish":true,"permalink":"/2/nih/","created":"2025-02-28T21:46:56.418+09:00","updated":"2025-06-03T20:06:00.329+09:00"}
 ---
 
 National Institutes of Health(NIH)는 미국 증시에 상장되어 있지 않은 미국 정부 기관입니다.
