@@ -2,5 +2,4 @@
 permalink: /graph.json
 eleventyExcludeFromCollections: true
 ---
-{%- set graphData = collections.graphData | first -%}
-{{ graphData | jsonify | safe }}
+{{ graph | jsonify | safe }}
