@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/mosa-meat/","created":"2023-07-15T11:59:07.739+09:00","updated":"2025-07-29T21:37:04.935+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Mosa Meat/","created":"2023-07-15T11:59:07.739+09:00","updated":"2025-07-29T21:37:04.935+09:00"}
 ---
 
 #대체단백질 #대체육 #푸드테크 #배양육

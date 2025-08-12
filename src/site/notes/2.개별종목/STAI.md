@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/stai/","created":"2025-07-30T09:51:05.976+09:00","updated":"2025-07-30T11:35:44.041+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/STAI/","created":"2025-07-30T09:51:05.976+09:00","updated":"2025-07-30T11:35:44.041+09:00"}
 ---
 
 

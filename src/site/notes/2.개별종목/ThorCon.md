@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/thor-con/","created":"2024-11-19T22:17:40.169+09:00","updated":"2025-07-29T21:37:05.273+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/ThorCon/","created":"2024-11-19T22:17:40.169+09:00","updated":"2025-07-29T21:37:05.273+09:00"}
 ---
 
 

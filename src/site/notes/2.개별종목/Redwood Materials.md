@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2/redwood-materials/","created":"2024-09-12T11:29:37.732+09:00","updated":"2025-07-29T21:37:05.113+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Redwood Materials/","created":"2024-09-12T11:29:37.732+09:00","updated":"2025-07-29T21:37:05.113+09:00"}
 ---
 
 #폐배터리 #배터리재활용 #기초소재 #화학
