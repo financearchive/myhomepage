@@ -1,6 +1,24 @@
 const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
+
+
+const fileCache = new Map();
+function getFrontMatter(filePath) {
+  if (fileCache.has(filePath)) {
+    return fileCache.get(filePath);
+  }
+  try {
+    const file = fs.readFileSync(filePath, "utf8");
+    const frontMatter = matter(file);
+    fileCache.set(filePath, frontMatter);
+    return frontMatter;
+  } catch {
+    return null;
+  }
+}
+
+
 const matter = require("gray-matter");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const tocPlugin = require("eleventy-plugin-nesting-toc");
@@ -8,11 +26,13 @@ const { parse } = require("node-html-parser");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
+
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
 const {
   userMarkdownSetup,
   userEleventySetup,
 } = require("./src/helpers/userSetup");
+
 
 const Image = require("@11ty/eleventy-img");
 function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
@@ -23,16 +43,19 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     urlPath: "/img/optimized",
   };
 
-  // generate images, while this is async we don’t wait
-  Image(src, options);
+
+  // generate images, while this is async we don't wait
+  if (process.env.ELEVENTY_ENV === "prod") Image(src, options);
   let metadata = Image.statsSync(src, options);
   return metadata;
 }
+
 
 function getAnchorLink(filePath, linkTitle) {
   const {attributes, innerHTML} = getAnchorAttributes(filePath, linkTitle);
   return `<a ${Object.keys(attributes).map(key => `${key}="${attributes[key]}"`).join(" ")}>${innerHTML}</a>`;
 }
+
 
 function getAnchorAttributes(filePath, linkTitle) {
   let fileName = filePath.replaceAll("&amp;", "&");
@@ -43,6 +66,7 @@ function getAnchorAttributes(filePath, linkTitle) {
     headerLinkPath = `#${headerToId(header)}`;
   }
 
+
   let noteIcon = process.env.NOTE_ICON_DEFAULT;
   const title = linkTitle ? linkTitle : fileName;
   let permalink = `/notes/${slugify(filePath)}`;
@@ -52,8 +76,7 @@ function getAnchorAttributes(filePath, linkTitle) {
     const fullPath = fileName.endsWith(".md")
       ? `${startPath}${fileName}`
       : `${startPath}${fileName}.md`;
-    const file = fs.readFileSync(fullPath, "utf8");
-    const frontMatter = matter(file);
+    const frontMatter = getFrontMatter(fullPath);
     if (frontMatter.data.permalink) {
       permalink = frontMatter.data.permalink;
     }
@@ -69,6 +92,7 @@ function getAnchorAttributes(filePath, linkTitle) {
   } catch {
     deadLink = true;
   }
+
 
   if (deadLink) {
     return {
@@ -91,9 +115,15 @@ function getAnchorAttributes(filePath, linkTitle) {
   }
 }
 
+
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
+
 module.exports = function (eleventyConfig) {
+    // 빌드 최적화 설정 - 새로 추가됨
+  eleventyConfig.setUseGitIgnore(false);
+  eleventyConfig.setWatchThrottleWaitTime(100);
+  
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
   });
@@ -196,6 +226,7 @@ module.exports = function (eleventyConfig) {
             collapseClasses += " is-collapsed"
           }
 
+
           let res = `<div data-callout-metadata class="callout ${collapseClasses}" data-callout="${token.info.substring(3)
             }">${titleDiv}\n<div class="callout-content">${md.render(
               parts.slice(nbLinesToSkip).join("\n")
@@ -203,9 +234,11 @@ module.exports = function (eleventyConfig) {
           return res
         }
 
+
         // Other languages
         return origFenceRule(tokens, idx, options, env, slf);
       };
+
 
       const defaultImageRule =
         md.renderer.rules.image ||
@@ -220,14 +253,17 @@ module.exports = function (eleventyConfig) {
         const lastValueIsNumber = !isNaN(lastValue);
         const width = lastValueIsNumber ? lastValue : null;
 
+
         let metaData = "";
         if (widthAndMetaData.length > 1) {
           metaData = widthAndMetaData.slice(0, widthAndMetaData.length - 1).join(" ");
         }
 
+
         if (!lastValueIsNumber) {
           metaData += ` ${lastValue}`;
         }
+
 
         if (width) {
           const widthIndex = tokens[idx].attrIndex("width");
@@ -239,8 +275,10 @@ module.exports = function (eleventyConfig) {
           }
         }
 
+
         return defaultImageRule(tokens, idx, options, env, self);
       };
+
 
       const defaultLinkRule =
         md.renderer.rules.link_open ||
@@ -251,11 +289,13 @@ module.exports = function (eleventyConfig) {
         const aIndex = tokens[idx].attrIndex("target");
         const classIndex = tokens[idx].attrIndex("class");
 
+
         if (aIndex < 0) {
           tokens[idx].attrPush(["target", "_blank"]);
         } else {
           tokens[idx].attrs[aIndex][1] = "_blank";
         }
+
 
         if (classIndex < 0) {
           tokens[idx].attrPush(["class", "external-link"]);
@@ -263,16 +303,20 @@ module.exports = function (eleventyConfig) {
           tokens[idx].attrs[classIndex][1] = "external-link";
         }
 
+
         return defaultLinkRule(tokens, idx, options, env, self);
       };
     })
     .use(userMarkdownSetup);
 
+
   eleventyConfig.setLibrary("md", markdownLib);
+
 
   eleventyConfig.addFilter("isoDate", function (date) {
     return date && date.toISOString();
   });
+
 
   eleventyConfig.addFilter("link", function (str) {
     return (
@@ -284,10 +328,12 @@ module.exports = function (eleventyConfig) {
         }
         const [fileLink, linkTitle] = p1.split("|");
 
+
         return getAnchorLink(fileLink, linkTitle);
       })
     );
   });
+
 
   eleventyConfig.addFilter("taggify", function (str) {
     return (
@@ -297,6 +343,7 @@ module.exports = function (eleventyConfig) {
       })
     );
   });
+
 
   eleventyConfig.addFilter("searchableTags", function (str) {
     let tags;
@@ -315,6 +362,7 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+
   eleventyConfig.addFilter("hideDataview", function (str) {
     return (
       str &&
@@ -323,6 +371,43 @@ module.exports = function (eleventyConfig) {
       })
     );
   });
+
+
+  // ===== 🚀 NEW: 자동 메타 디스크립션 생성 필터 추가 =====
+  eleventyConfig.addFilter("autoMetaDescription", function(content) {
+    if (!content) return "";
+    
+    // HTML 태그 및 마크다운 문법 제거
+    const cleaned = content
+      .replace(/<[^>]*>/g, ' ')  // HTML 태그 제거
+      .replace(/#{1,6}\s/g, '')  // 마크다운 헤더 제거
+      .replace(/\*\*(.*?)\*\*/g, '$1')  // 볼드 제거
+      .replace(/\*(.*?)\*/g, '$1')  // 이탤릭 제거
+      .replace(/\[\[(.*?)\]\]/g, '$1')  // 옵시디언 링크 제거
+      .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // 마크다운 링크 제거
+      .replace(/\s+/g, ' ')  // 여러 공백을 하나로
+      .trim();
+    
+    // 첫 번째 문단만 사용
+    const firstParagraph = cleaned.split('\n\n')[0] || cleaned;
+    
+    // 160자로 제한
+    if (firstParagraph.length > 160) {
+      const words = firstParagraph.split(' ');
+      let result = '';
+      
+      for (const word of words) {
+        if ((result + word).length > 157) break;
+        result += word + ' ';
+      }
+      
+      return result.trim() + '...';
+    }
+    
+    return firstParagraph;
+  });
+  // ===== 🚀 NEW 끝 =====
+
 
   eleventyConfig.addTransform("dataview-js-links", function (str) {
     const parsed = parse(str);
@@ -336,11 +421,14 @@ module.exports = function (eleventyConfig) {
       dataViewJsLink.innerHTML = innerHTML;
     }
 
+
     return str && parsed.innerHTML;
   });
 
+
   eleventyConfig.addTransform("callout-block", function (str) {
     const parsed = parse(str);
+
 
     const transformCalloutBlocks = (
       blockquotes = parsed.querySelectorAll("blockquote")
@@ -348,7 +436,9 @@ module.exports = function (eleventyConfig) {
       for (const blockquote of blockquotes) {
         transformCalloutBlocks(blockquote.querySelectorAll("blockquote"));
 
+
         let content = blockquote.innerHTML;
+
 
         let titleDiv = "";
         let calloutType = "";
@@ -359,6 +449,7 @@ module.exports = function (eleventyConfig) {
         if (!content.match(calloutMeta)) {
           continue;
         }
+
 
         content = content.replace(
           calloutMeta,
@@ -374,12 +465,14 @@ module.exports = function (eleventyConfig) {
               ? `<div class="callout-fold"><i icon-name="chevron-down"></i></div>`
               : ``;
 
+
             calloutType = callout;
             calloutMetaData = metaData;
             titleDiv = `<div class="callout-title"><div class="callout-title-inner">${titleText}</div>${fold}</div>`;
             return "";
           }
         );
+
 
         /* Hacky fix for callouts with only a title:
         This will ensure callout-content isn't produced if
@@ -394,6 +487,7 @@ module.exports = function (eleventyConfig) {
         }
         let contentDiv = content ? `\n<div class="callout-content">${content}</div>` : "";
 
+
         blockquote.tagName = "div";
         blockquote.classList.add("callout");
         blockquote.classList.add(isCollapsable ? "is-collapsible" : "");
@@ -404,10 +498,13 @@ module.exports = function (eleventyConfig) {
       }
     };
 
+
     transformCalloutBlocks();
+
 
     return str && parsed.innerHTML;
   });
+
 
   function fillPictureSourceSets(src, cls, alt, meta, width, imageTag) {
     imageTag.tagName = "picture";
@@ -444,6 +541,8 @@ module.exports = function (eleventyConfig) {
   }
 
 
+
+
   eleventyConfig.addTransform("picture", function (str) {
     if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
       return str;
@@ -456,6 +555,7 @@ module.exports = function (eleventyConfig) {
         const alt = imageTag.getAttribute("alt");
         const width = imageTag.getAttribute("width") || '';
 
+
         try {
           const meta = transformImage(
             "./src/site" + decodeURI(imageTag.getAttribute("src")),
@@ -463,6 +563,7 @@ module.exports = function (eleventyConfig) {
             alt,
             ["(max-width: 480px)", "(max-width: 1024px)"]
           );
+
 
           if (meta) {
             fillPictureSourceSets(src, cls, alt, meta, width, imageTag);
@@ -475,6 +576,7 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
+
   eleventyConfig.addTransform("table", function (str) {
     const parsed = parse(str);
     for (const t of parsed.querySelectorAll(".cm-s-obsidian > table")) {
@@ -483,6 +585,7 @@ module.exports = function (eleventyConfig) {
       t.classList.add("table-wrapper");
       t.innerHTML = `<table>${inner}</table>`;
     }
+
 
     for (const t of parsed.querySelectorAll(
       ".cm-s-obsidian > .block-language-dataview > table"
@@ -501,11 +604,15 @@ module.exports = function (eleventyConfig) {
     return str && parsed.innerHTML;
   });
 
+
   eleventyConfig.addTransform("htmlMinifier", (content, outputPath) => {
     if (
       (process.env.NODE_ENV === "production" || process.env.ELEVENTY_ENV === "prod") &&
       outputPath &&
-      outputPath.endsWith(".html")
+      outputPath.endsWith(".html") &&
+      !outputPath.includes("rss.xml") &&
+      !outputPath.includes("sitemap.xml") &&
+      !outputPath.includes("feed.xml")
     ) {
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
@@ -521,9 +628,11 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+
   eleventyConfig.addPassthroughCopy("src/site/img");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
+  eleventyConfig.addPassthroughCopy("src/site/ads.txt"); 
   eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
@@ -538,10 +647,26 @@ module.exports = function (eleventyConfig) {
       return "";
     }
   });
+
+
+  eleventyConfig.addFilter("dateToRfc822", function(date) {
+    return new Date(date).toUTCString();
+  });
+
+
+  eleventyConfig.addFilter("getNewestCollectionItemDate", function(collection) {
+    if (!collection || !collection.length) {
+      return new Date();
+    }
+    return new Date(Math.max(...collection.map(item => {
+      return item.date ? new Date(item.date).getTime() : 0;
+    })));
+  });
   
   eleventyConfig.addFilter("jsonify", function (variable) {
     return JSON.stringify(variable) || '""';
   });
+
 
   eleventyConfig.addFilter("validJson", function (variable) {
     if (Array.isArray(variable)) {
@@ -552,6 +677,7 @@ module.exports = function (eleventyConfig) {
     return variable;
   });
 
+
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {
       closingSingleTag: "slash",
@@ -560,7 +686,6 @@ module.exports = function (eleventyConfig) {
   });
 
   userEleventySetup(eleventyConfig);
-
   return {
     dir: {
       input: "src/site",
@@ -571,5 +696,10 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: false,
     passthroughFileCopy: true,
+    cacheDir: ".eleventy-cache",
+    // 빌드 최적화 설정 - 새로 추가됨
+    useGitIgnore: false,
+    watchThrottleWaitTime: 100,
+    incrementalBuild: true
   };
 };
