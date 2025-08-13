@@ -22,23 +22,25 @@ async function getTheme() {
   }
 
   const res = await axios.get(themeUrl);
-  // 이전에 생성된 파일들 삭제
-  globSync("src/site/styles/_theme.*.css").forEach((f) => fs.rmSync(f));
+  // 이전에 생성된 모든 _theme.*.css 파일 삭제
+  globSync("src/site/styles/_theme.*.css").forEach((file) => {
+    try { fs.rmSync(file); } catch {}
+  });
 
-  // 첫 번째 CSS 주석만 남기고 나머지 전부 제거
-  let skipped = false;
-  const data = res.data.replace(themeCommentRegex, (m) => {
-    if (skipped) return "";
-    skipped = true;
-    return m;
+  // 첫 번째 CSS 주석만 남기고 나머지 삭제
+  let skippedFirst = false;
+  const data = res.data.replace(themeCommentRegex, (match) => {
+    if (skippedFirst) return "";
+    skippedFirst = true;
+    return match;
   });
 
   // SHA256 해시로 파일명 생성
   const hash = crypto.createHash("sha256").update(data).digest("hex").substring(0, 8);
+  // 해시 버전
   fs.writeFileSync(`src/site/styles/_theme.${hash}.css`, data);
-  // **고정 파일명**으로도 복사
+  // 고정된 이름 버전 (_theme.css)
   fs.writeFileSync(`src/site/styles/_theme.css`, data);
 }
 
 getTheme();
-
