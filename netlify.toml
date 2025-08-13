@@ -6,6 +6,7 @@
 [build.environment]
   NODE_VERSION = "22"
   ELEVENTY_ENV = "prod"
+  USE_FULL_RESOLUTION_IMAGES = "true"
 
 [[redirects]]
   from = "/api/*"
