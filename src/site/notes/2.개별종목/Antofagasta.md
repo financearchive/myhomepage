@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Antofagasta/","created":"2023-05-31T11:05:34.032+09:00","updated":"2025-07-29T21:37:04.338+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Antofagasta/","created":"2023-05-31T11:05:34.032+09:00","updated":"2025-06-03T20:05:57.706+09:00"}
 ---
 
 #종목 #원자재 #구리

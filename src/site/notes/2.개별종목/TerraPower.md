@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/TerraPower/","created":"2024-11-19T21:00:23.380+09:00","updated":"2025-07-29T21:37:05.266+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/TerraPower/","created":"2024-11-19T21:00:23.380+09:00","updated":"2025-06-03T20:06:01.586+09:00"}
 ---
 
 #원자력발전 #에너지 #원자력발전 #소듐냉각고속로 #SMR #4세대SMR  #소형모듈형원자로 #고순도저농축우라늄 #소듐 #Natrium원자로
