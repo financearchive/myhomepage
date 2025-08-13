@@ -4,6 +4,7 @@
   functions = "src/functions"
 
 [build.environment]
+  NODE_OPTIONS = "--max_old_space_size=10240"
   NODE_VERSION = "22"
   ELEVENTY_ENV = "prod"
   USE_FULL_RESOLUTION_IMAGES = "true"
