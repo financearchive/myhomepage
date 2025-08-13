@@ -75,9 +75,6 @@ function getAnchorLink(filePath, linkTitle) {
 }
 
 function getAnchorAttributes(filePath, linkTitle) {
-  // 여기에 들어온 위키링크 정보를 로그로 남깁니다.
-  console.log(`[11ty][getAnchorAttributes] filePath="${filePath}", linkTitle="${linkTitle}"`);
-
   // 파일 이름 / 헤더 분리
   const fileNameRaw = filePath.replaceAll("&amp;", "&");
   let [fileName, header] = [fileNameRaw, ""];
@@ -98,12 +95,12 @@ function getAnchorAttributes(filePath, linkTitle) {
     ? `${startPath}${fileName}`
     : `${startPath}${fileName}.md`;
 
-  console.log(`[11ty][getAnchorAttributes] fullPath="${fullPath}"`);
-
   try {
     const frontMatter = getFrontMatter(fullPath);
     if (!frontMatter || !frontMatter.data) {
-      console.error(`[11ty][getAnchorAttributes] ✖ no frontMatter.data at ${fullPath}`);
+      console.error(
+        `[11ty][getAnchorAttributes][ERROR] no frontMatter.data at ${fullPath}`
+      );
       deadLink = true;
     } else {
       // frontMatter 에서 permalink/tags/noteIcon 반영
@@ -121,7 +118,10 @@ function getAnchorAttributes(filePath, linkTitle) {
       }
     }
   } catch (e) {
-    console.error(`[11ty][getAnchorAttributes] exception reading frontMatter from ${fullPath}:`, e);
+    console.error(
+      `[11ty][getAnchorAttributes][EXCEPTION] reading frontMatter from ${fullPath}:`,
+      e
+    );
     deadLink = true;
   }
 
@@ -130,9 +130,9 @@ function getAnchorAttributes(filePath, linkTitle) {
       attributes: {
         class: "internal-link is-unresolved",
         href: "/404",
-        target: ""
+        target: "",
       },
-      innerHTML: title
+      innerHTML: title,
     };
   }
 
@@ -141,11 +141,12 @@ function getAnchorAttributes(filePath, linkTitle) {
       class: "internal-link",
       target: "",
       "data-note-icon": noteIcon,
-      href: `${permalink}${headerLinkPath}`
+      href: `${permalink}${headerLinkPath}`,
     },
-    innerHTML: title
+    innerHTML: title,
   };
 }
+
 
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
@@ -279,11 +280,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("isoDate", function (date) {
     return date && date.toISOString();
   });
-  eleventyConfig.addFilter("link", function(str) {
+  
+  eleventyConfig.addFilter("link", function (str) {
     if (!str) return str;
     try {
-      return str.replace(/\[\[(.*?\|.*?)\]\]/g, function(match, p1) {
-        // Excalidraw 임베드나 수식 스니펫 예외
+      return str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
+        // Excalidraw / 수식 스니펫 예외
         if (p1.includes("],[") || p1.includes('"$"')) {
           return match;
         }
@@ -291,9 +293,9 @@ module.exports = function (eleventyConfig) {
         return getAnchorLink(fileLink, linkTitle);
       });
     } catch (e) {
-      console.error("[11ty][Filter:link] FAILED on input:", str);
+      console.error("[11ty][Filter:link][ERROR] on:", str);
       console.error(e.stack || e);
-      // 에러 발생 시 원본 문자열 리턴
+      // 에러 났을 땐 원본 리턴
       return str;
     }
   });
