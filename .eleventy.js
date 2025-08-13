@@ -75,7 +75,7 @@ function getAnchorLink(filePath, linkTitle) {
 }
 
 function getAnchorAttributes(filePath, linkTitle) {
-  // 파일 이름 / 헤더 분리
+  // 파일명 & 헤더 분리
   const fileNameRaw = filePath.replaceAll("&amp;", "&");
   let [fileName, header] = [fileNameRaw, ""];
   let headerLinkPath = "";
@@ -97,12 +97,7 @@ function getAnchorAttributes(filePath, linkTitle) {
 
   try {
     const frontMatter = getFrontMatter(fullPath);
-    if (!frontMatter || !frontMatter.data) {
-      console.error(
-        `[11ty][getAnchorAttributes][ERROR] no frontMatter.data at ${fullPath}`
-      );
-      deadLink = true;
-    } else {
+    if (frontMatter && frontMatter.data) {
       // frontMatter 에서 permalink/tags/noteIcon 반영
       if (frontMatter.data.permalink) {
         permalink = frontMatter.data.permalink;
@@ -116,8 +111,12 @@ function getAnchorAttributes(filePath, linkTitle) {
       if (frontMatter.data.noteIcon) {
         noteIcon = frontMatter.data.noteIcon;
       }
+    } else {
+      // frontMatter 자체가 없거나 data가 없으면 deadLink 처리만 하고 로그는 찍지 않는다.
+      deadLink = true;
     }
   } catch (e) {
+    // 실제로 읽다 예외가 터지는 경우에만 로그를 남긴다.
     console.error(
       `[11ty][getAnchorAttributes][EXCEPTION] reading frontMatter from ${fullPath}:`,
       e
@@ -146,7 +145,6 @@ function getAnchorAttributes(filePath, linkTitle) {
     innerHTML: title,
   };
 }
-
 
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
 
@@ -281,22 +279,18 @@ module.exports = function (eleventyConfig) {
     return date && date.toISOString();
   });
   
-  eleventyConfig.addFilter("link", function (str) {
+  eleventyConfig.addFilter("link", function(str) {
     if (!str) return str;
     try {
-      return str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
-        // Excalidraw / 수식 스니펫 예외
-        if (p1.includes("],[") || p1.includes('"$"')) {
-          return match;
-        }
+      return str.replace(/\[\[(.*?\|.*?)\]\]/g, function(match, p1) {
+        if (p1.includes("],[") || p1.includes('"$"')) return match;
         const [fileLink, linkTitle] = p1.split("|");
         return getAnchorLink(fileLink, linkTitle);
       });
     } catch (e) {
       console.error("[11ty][Filter:link][ERROR] on:", str);
       console.error(e.stack || e);
-      // 에러 났을 땐 원본 리턴
-      return str;
+  +   throw e;  // ← 이 한 줄만 추가
     }
   });
 
