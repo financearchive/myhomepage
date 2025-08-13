@@ -2,9 +2,11 @@
 <html lang="{{ meta.mainLanguage }}">
   <head>
     <title>{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</title>
-    {%include "components/pageheader.njk"%}
+    {% include "components/pageheader.njk" %}
     <!-- RSS 구독 버튼 CSS 추가 -->
     <link rel="stylesheet" href="/styles/rss-subscribe.css">
+    <!-- Obsidian 테마 CSS (매 빌드 생성) -->
+    <link rel="stylesheet" href="/styles/_theme.css">
     {% for imp in dynamics.common.head %}
       {% include imp %}
     {% endfor %}
@@ -23,58 +25,48 @@
     </script>
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
-    {%include "components/notegrowthhistory.njk"%}
+    {% include "components/notegrowthhistory.njk" %}
     {% if settings.dgShowFileTree !== true %}
-      {%include "components/navbar.njk"%}
-    {%else%}
-      {%include "components/filetree.njk"%}
+      {% include "components/navbar.njk" %}
+    {% else %}
+      {% include "components/filetree.njk" %}
     {% endif %}
     {% if settings.dgEnableSearch === true %}
-      {%include "components/searchContainer.njk"%}
+      {% include "components/searchContainer.njk" %}
     {% endif %}
 
     <!-- 🚀 RSS 구독 버튼 추가 - 여기부터 -->
     <div class="rss-subscribe-container">
       <div class="rss-subscribe">
-        <a href="/rss.xml" class="rss-button" target="_blank">
-          📡 RSS 구독
-        </a>
-        <a href="/feed.xml" class="feed-button" target="_blank">
-          📰 피드 구독
-        </a>
-        <!-- 푸시 알림 구독 버튼 추가 -->
-        <button id="onesignal-bell" class="push-button">
-          🔔 알림 구독
-        </button>
+        <a href="/rss.xml" class="rss-button" target="_blank">📡 RSS 구독</a>
+        <a href="/feed.xml" class="feed-button" target="_blank">📰 피드 구독</a>
+        <button id="onesignal-bell" class="push-button">🔔 알림 구독</button>
       </div>
     </div>
     <!-- RSS 구독 버튼 끝 - 여기까지 -->
 
     <main class="content cm-s-obsidian {{contentClasses}}">
       <header>
-      {% if settings.dgShowInlineTitle === true %}
-        <h1>{{ noteTitle  }}</h1>
-      {% endif %}
-
-      <div class="header-meta">
-        {% if settings.dgShowTags === true and tags %}
-          <div class="header-tags">
-            {% for tag in tags %}
-              {% if tag != 'gardenEntry' and tag !='note' %}
-                <a class="tag" onclick="toggleTagSearch(this)">
-                  #{{tag}}
-                </a>
-              {% endif %}
-            {% endfor %}
-          </div>
+        {% if settings.dgShowInlineTitle === true %}
+          <h1>{{ noteTitle }}</h1>
         {% endif %}
-      </div>
-      {% for imp in dynamics.common.header %}
-        {% include imp %}
-      {% endfor %}
-      {% for imp in dynamics.index.header %}
-        {% include imp %}
-      {% endfor %}
+        <div class="header-meta">
+          {% if settings.dgShowTags === true and tags %}
+            <div class="header-tags">
+              {% for tag in tags %}
+                {% if tag != 'gardenEntry' and tag != 'note' %}
+                  <a class="tag" onclick="toggleTagSearch(this)">#{{ tag }}</a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        {% for imp in dynamics.common.header %}
+          {% include imp %}
+        {% endfor %}
+        {% for imp in dynamics.index.header %}
+          {% include imp %}
+        {% endfor %}
       </header>
       {% for imp in dynamics.common.beforeContent %}
         {% include imp %}
@@ -82,7 +74,7 @@
       {% for imp in dynamics.index.beforeContent %}
         {% include imp %}
       {% endfor %}
-      {{ content | hideDataview | taggify | link | safe}}
+      {{ content | hideDataview | taggify | link | safe }}
       {% for imp in dynamics.common.afterContent %}
         {% include imp %}
       {% endfor %}
@@ -91,12 +83,12 @@
       {% endfor %}
     </main>
 
-    {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true or settings.dgShowToc === true%}
-      {%include "components/sidebar.njk" %}
-    {%endif%}
+    {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true or settings.dgShowToc === true %}
+      {% include "components/sidebar.njk" %}
+    {% endif %}
 
     {% if settings.dgLinkPreview === true %}
-      {%include "components/linkPreview.njk"%}
+      {% include "components/linkPreview.njk" %}
     {% endif %}
     {% for imp in dynamics.common.footer %}
       {% include imp %}
@@ -104,6 +96,6 @@
     {% for imp in dynamics.index.footer %}
       {% include imp %}
     {% endfor %}
-    {%include "components/lucideIcons.njk"%}
-    </body>
-  </html>
+    {% include "components/lucideIcons.njk" %}
+  </body>
+</html>
