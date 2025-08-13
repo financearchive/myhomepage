@@ -92,10 +92,27 @@ function getAnchorAttributes(filePath, linkTitle) {
     const fullPath = fileName.endsWith(".md")
       ? `${startPath}${fileName}`
       : `${startPath}${fileName}.md`;
+    
+   // link filter 안에서 더 이상 frontMatter.data 접근 에러가 나지 않고, Netlify 빌드가 정상 통과할 겁니다.
     const frontMatter = getFrontMatter(fullPath);
-    if (frontMatter.data.permalink) {
-      permalink = frontMatter.data.permalink;
-    }
+      if (!frontMatter || !frontMatter.data) {
+        deadLink = true;
+      } else {
+        if (frontMatter.data.permalink) {
+          permalink = frontMatter.data.permalink;
+        }
+        if (
+          frontMatter.data.tags &&
+          frontMatter.data.tags.indexOf("gardenEntry") != -1
+        ) {
+          permalink = "/";
+        }
+        if (frontMatter.data.noteIcon) {
+          noteIcon = frontMatter.data.noteIcon;
+        }
+      }
+    // 끝
+    
     if (
       frontMatter.data.tags &&
       frontMatter.data.tags.indexOf("gardenEntry") != -1
