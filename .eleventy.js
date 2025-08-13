@@ -75,8 +75,12 @@ function getAnchorLink(filePath, linkTitle) {
 }
 
 function getAnchorAttributes(filePath, linkTitle) {
-  let fileName = filePath.replaceAll("&amp;", "&");
-  let header = "";
+  // 여기에 들어온 위키링크 정보를 로그로 남깁니다.
+  console.log(`[11ty][getAnchorAttributes] filePath="${filePath}", linkTitle="${linkTitle}"`);
+
+  // 파일 이름 / 헤더 분리
+  const fileNameRaw = filePath.replaceAll("&amp;", "&");
+  let [fileName, header] = [fileNameRaw, ""];
   let headerLinkPath = "";
   if (filePath.includes("#")) {
     [fileName, header] = filePath.split("#");
@@ -84,45 +88,40 @@ function getAnchorAttributes(filePath, linkTitle) {
   }
 
   let noteIcon = process.env.NOTE_ICON_DEFAULT;
-  const title = linkTitle ? linkTitle : fileName;
+  const title = linkTitle || fileName;
   let permalink = `/notes/${slugify(filePath)}`;
   let deadLink = false;
+
+  // 실제 노트 파일 경로
+  const startPath = "./src/site/notes/";
+  const fullPath = fileName.endsWith(".md")
+    ? `${startPath}${fileName}`
+    : `${startPath}${fileName}.md`;
+
+  console.log(`[11ty][getAnchorAttributes] fullPath="${fullPath}"`);
+
   try {
-    const startPath = "./src/site/notes/";
-    const fullPath = fileName.endsWith(".md")
-      ? `${startPath}${fileName}`
-      : `${startPath}${fileName}.md`;
-    
-   // link filter 안에서 더 이상 frontMatter.data 접근 에러가 나지 않고, Netlify 빌드가 정상 통과할 겁니다.
     const frontMatter = getFrontMatter(fullPath);
-      if (!frontMatter || !frontMatter.data) {
-        deadLink = true;
-      } else {
-        if (frontMatter.data.permalink) {
-          permalink = frontMatter.data.permalink;
-        }
-        if (
-          frontMatter.data.tags &&
-          frontMatter.data.tags.indexOf("gardenEntry") != -1
-        ) {
-          permalink = "/";
-        }
-        if (frontMatter.data.noteIcon) {
-          noteIcon = frontMatter.data.noteIcon;
-        }
+    if (!frontMatter || !frontMatter.data) {
+      console.error(`[11ty][getAnchorAttributes] ✖ no frontMatter.data at ${fullPath}`);
+      deadLink = true;
+    } else {
+      // frontMatter 에서 permalink/tags/noteIcon 반영
+      if (frontMatter.data.permalink) {
+        permalink = frontMatter.data.permalink;
       }
-    // 끝
-    
-    if (
-      frontMatter.data.tags &&
-      frontMatter.data.tags.indexOf("gardenEntry") != -1
-    ) {
-      permalink = "/";
+      if (
+        Array.isArray(frontMatter.data.tags) &&
+        frontMatter.data.tags.includes("gardenEntry")
+      ) {
+        permalink = "/";
+      }
+      if (frontMatter.data.noteIcon) {
+        noteIcon = frontMatter.data.noteIcon;
+      }
     }
-    if (frontMatter.data.noteIcon) {
-      noteIcon = frontMatter.data.noteIcon;
-    }
-  } catch {
+  } catch (e) {
+    console.error(`[11ty][getAnchorAttributes] exception reading frontMatter from ${fullPath}:`, e);
     deadLink = true;
   }
 
@@ -131,19 +130,20 @@ function getAnchorAttributes(filePath, linkTitle) {
       attributes: {
         class: "internal-link is-unresolved",
         href: "/404",
-        target: "",
+        target: ""
       },
-      innerHTML: title,
+      innerHTML: title
     };
   }
+
   return {
     attributes: {
       class: "internal-link",
       target: "",
       "data-note-icon": noteIcon,
-      href: `${permalink}${headerLinkPath}`,
+      href: `${permalink}${headerLinkPath}`
     },
-    innerHTML: title,
+    innerHTML: title
   };
 }
 
@@ -279,18 +279,25 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("isoDate", function (date) {
     return date && date.toISOString();
   });
-  eleventyConfig.addFilter("link", function (str) {
-    return (
-      str &&
-      str.replace(/\[\[(.*?\|.*?)\]\]/g, function (match, p1) {
-        if (p1.indexOf("],[") > -1 || p1.indexOf('"$"') > -1) {
+  eleventyConfig.addFilter("link", function(str) {
+    if (!str) return str;
+    try {
+      return str.replace(/\[\[(.*?\|.*?)\]\]/g, function(match, p1) {
+        // Excalidraw 임베드나 수식 스니펫 예외
+        if (p1.includes("],[") || p1.includes('"$"')) {
           return match;
         }
         const [fileLink, linkTitle] = p1.split("|");
         return getAnchorLink(fileLink, linkTitle);
-      })
-    );
+      });
+    } catch (e) {
+      console.error("[11ty][Filter:link] FAILED on input:", str);
+      console.error(e.stack || e);
+      // 에러 발생 시 원본 문자열 리턴
+      return str;
+    }
   });
+
   eleventyConfig.addFilter("taggify", function (str) {
     return (
       str &&
