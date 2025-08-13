@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2.개별종목/Fujifilm/","created":"2024-09-11T10:53:07.713+09:00","updated":"2025-07-29T21:37:04.675+09:00"}
+{"dg-publish":true,"permalink":"/2.개별종목/Fujifilm/","created":"2024-09-11T10:53:07.713+09:00","updated":"2025-06-03T20:05:59.139+09:00"}
 ---
 
 #바이오테크 #헬스케어 #CDMO #일본 
