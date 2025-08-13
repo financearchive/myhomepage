@@ -290,7 +290,7 @@ module.exports = function (eleventyConfig) {
     } catch (e) {
       console.error("[11ty][Filter:link][ERROR] on:", str);
       console.error(e.stack || e);
-  +   throw e;  // ← 이 한 줄만 추가
+      throw e;    // ← 그냥 이렇게
     }
   });
 
